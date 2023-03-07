@@ -1,0 +1,9 @@
+ID,Species,Site,d13C,C%,d15N,N%,d34S,S%,season,tissue,Bay
+BB1RTm,Bonefish,Totten Key,-11.73,47.759,10.3,14.931,5.01,0.927,wet,muscle,Biscayne Bay
+F-8RTm,Bonefish,Shell Key,-10.79,46.8,9.5,13.666,-0.57,0.825,dry,muscle,Florida Bay
+F-2RTm,Bonefish,Rattlesnake Creek,-14.98,51.423,9.76,13.138,6.29,0.849,dry,muscle,Florida Bay
+R-1 9MRTm,Bonefish,Nine mile bank,-11.7,51.146,10.43,14.834,2.83,0.44,dry,muscle,Florida Bay
+R-2KBRTm,Bonefish,Key Biscayne,-15.77,50.257,8.84,15.404,6.29,0.928,dry,muscle,Biscayne Bay
+F-13RTm,Bonefish,Crab Key,-10.01,31.104,9.17,9.307,1.67,0.736,dry,muscle,Florida Bay
+F-16RTm,Bonefish,Crab Key,-10.37,45.311,9.17,13.591,0.77,0.822,dry,muscle,Florida Bay
+F-1RTm,Bonefish,Airport flat,-12.5,49.541,9.4,11.003,5.71,0.356,dry,muscle,Florida Bay
