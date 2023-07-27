@@ -1,0 +1,407 @@
+﻿season,site,Source,species_name,functional_grp,group,sampleID,d13C,C%,d15N,N%,d34S,S%
+wet19,TS11,Arrow Shrimp,Tozeuma carolinense,Shrimp,Consumer,W19-TS11-Tcar1,-15.95,31.56233,4.18,9.877636364,13.28,1.04
+wet19,TS11,Arrow Shrimp,Tozeuma carolinense,Shrimp,Consumer,W19-TS11-Tcar3,-16.44,26.38069091,4.2,7.7434,12.62,0.91
+wet19,TS3,Asian Swamp Eel,Monopterus albus,demersal_fish,Consumer,W19-TS3-Mal3,-23.79,37.72764444,10.11,11.73712222,21.28,1.03
+wet19,TS3,Asian Swamp Eel,Monopterus albus,demersal_fish,Consumer,W19-TS3-Mal2,-21.84,47.23936364,9.51,14.58672727,17.74,1.12
+wet19,TS3,Asian Swamp Eel,Monopterus albus,demersal_fish,Consumer,W19-TS3-Mal1,-21.97,50.41278182,9.66,15.698,17.64,1.08
+wet19,TS3,Asian Swamp Eel,Monopterus albus,demersal_fish,Consumer,W19-TS3-Mal4,-21.23,45.15426667,9.69,14.12666667,16.88,0.95
+wet19,TS3,Asian Swamp Eel,Monopterus albus,demersal_fish,Consumer,W19-TS3-Mal5,-22.61,47.01426667,8.88,15.04833333,18.16,1.1
+dry19,SRS6,Bay Anchovy,Anchoa mitchilli,Forage_fish,Consumer,SRS6 AN1,-24.43,52.435,9.29,14.836,15.42,1.36
+wet19,TS7,Bay Anchovy,Anchoa mitchilli,Forage_fish,Consumer,W19-TS7-Ami1,-18.09,39.21777273,10.77,11.64476923,3.89,1.17
+wet19,TS7,Bay Anchovy,Anchoa mitchilli,Forage_fish,Consumer,W19-TS7-Ami3,-18.08,46.36984546,9.46,12.76711111,3.82,1.21
+wet19,TS7,Bay Anchovy,Anchoa mitchilli,Forage_fish,Consumer,W19-TS7-Ami2,-17.82,46.04783,10,13.33355556,2.38,1.21
+dry19,TS10,Blue Crab,Callinectes sapidus,Crab,Consumer,TS10_BC1_d19,-12.87,29.27433333,5.84,6.728148148,8.49,0.81
+wet19,SRS4,Blue Crab,Callinectus sapidus,Crab,Consumer,W19-SRS4-Csa2,-32.91,40.6737,6.45,12.093,5.21,0.85
+wet19,SRS4,Blue Crab,Callinectus sapidus,Crab,Consumer,W19-SRS4-Csa1,-28.77,34.11236923,7.52,10.58153846,16.06,0.93
+wet19,TS10,Blue Crab,Callinectes sapidus,Crab,Consumer,W19-TS10-Csa1,-11.65,38.65136,6.29,11.1746,1.63,0.99
+wet19,TS10,Blue Crab,Callinectes sapidus,Crab,Consumer,W19-TS10-Csa2,-11.5,25.41051111,4.69,5.2336,9.11,0.79
+wet19,TS10,Blue Crab,Callinectes sapidus,Crab,Consumer,W19-TS10-Csa3,-11.95,19.86351111,4.58,4.543692308,8.43,0.61
+wet19,TS11,Blue Striped Grunt,Haemulon sciurus,demersal_fish,Consumer,W19-TS11-Hsc3,-13.91,36.0994,8.31,11.29225,9.13,1.28
+wet19,TS11,Blue Striped Grunt,Haemulon sciurus,demersal_fish,Consumer,W19-TS11-Hsc1,-15.01,46.07608889,8.94,14.47355556,9.74,1.32
+wet19,TS11,Blue Striped Grunt,Haemulon sciurus,demersal_fish,Consumer,W19-TS11-Hsc2,-14.49,40.52306667,8.91,12.37166667,11.28,1.36
+dry19,SRS3,Bluefin killifish,Lucania goodei,Forage_fish,Consumer,SRS-LUCGOO-1,-31.46,31.88935417,7.95,8.649385417,22.09,0.661661808
+dry19,SRS3,Bluefin killifish,Lucania goodei,Forage_fish,Consumer,SRS-LUCGOO-2,-31.03,26.90833333,8.53,6.912072917,22.31,0.617809917
+dry19,SRS3,Bluefin killifish,Lucania goodei,Forage_fish,Consumer,SRS-LUCGOO-3,-30.66,34.4326125,8.84,9.1038875,21.86,0.585532258
+dry19,TS3,Bluefin killifish,Lucania goodei,Forage_fish,Consumer,TSL-LUCGOO-1,-29.34,29.29259091,7.06,8.464102273,15.22,0.535616046
+dry19,TS3,Bluefin killifish,Lucania goodei,Forage_fish,Consumer,TSL-LUCGOO-2,-29.33,28.65243077,7.55,8.078261539,14.32,0.5389875
+dry19,TS3,Bluefin killifish,Lucania goodei,Forage_fish,Consumer,TSL-LUCGOO-3,-30.42,27.37858108,8.56,7.593108108,14.56,0.618540609
+wet19,RB10,Bluefin Killifish,Lucania goodei,Forage_fish,Consumer,W19-RB10-Lgo1,-29.05,36.9401,9.14,12.15333333,3.7,0.37
+wet19,TS3,Bluefin Killifish,Lucania goodei,Forage_fish,Consumer,W19-TS3-Lgo1,-23.48,40.21578889,7.52,13.6942,12.45,1.12
+wet19,TS3,Bluefin Killifish,Lucania goodei,Forage_fish,Consumer,W19-TS3-Lgo2,-23.05,42.12398889,8.15,12.2522,11.56,1.29
+wet19,TS3,Bluefin Killifish,Lucania goodei,Forage_fish,Consumer,W19-TS3-Lgo3,-23.15,40.84833333,7.49,13.13225,12.02,1.25
+wet19,SRS3,Bluefin Killifish,Lucania goodei,Forage_fish,Consumer,W19-SRS3-Lgo3,-29.11,37.51881111,9.49,10.87,22.39,0.87
+wet19,SRS3,Bluefin Killifish,Lucania goodei,Forage_fish,Consumer,W19-SRS3-Lgo1,-29.32,39.54794167,9.64,11.55133333,21.99,0.94
+wet19,SRS3,Bluefin Killifish,Lucania goodei,Forage_fish,Consumer,W19-SRS3-Lgo2,-28.84,40.68340909,9.45,12.11327273,22.11,0.97
+wet19,RB10,Bluefin Killifish,Lucania goodei,Forage_fish,Consumer,W19-RB10-Lgo2,-31.63,38.05879091,9.1,11.14745455,20.21,0.8
+dry19,RB10,Bluegill,Lepomis macrochirus,demersal_fish,Consumer,RB10_BG1_d19,-31.21,42.681,8.17,9.79,22.15,0.689
+dry19,TS10,Bluegill,Lepomis macrochirus,demersal_fish,Consumer,TS10 BG1,-11.7,23.592,5.66,4.819,9.12,0.532
+dry19,RB10,Bluegill,Lepomis macrochirus,demersal_fish,Consumer,RB10_BG2m_d19,-30.77,46.028,11.13,14.448,26.68,1.103
+dry19,RB10,Bluegill,Lepomis macrochirus,demersal_fish,Consumer,RB10_BG3m_d19,-31.39,47.339,12.72,14.973,23.72,1.305
+dry19,RB10,Bluegill,Lepomis macrochirus,demersal_fish,Consumer,RB10_BG4m_d19,-32.24,52.908,12.64,16.669,25.54,1.235
+dry19,RB10,Bluegill,Lepomis macrochirus,demersal_fish,Consumer,RB10_BG5m_d19,-31.79,48.739,12.19,15.362,25.18,1.186
+dry19,RB10,Bluegill,Lepomis macrochirus,demersal_fish,Consumer,RB10_BG6m_d19,-31.47,44.037,10.99,13.896,24.27,1.102
+wet19,TS3,Bluegill,Lepomis macrochirus,demersal_fish,Consumer,W19-TS3-Lma1,-28.39,49.28174546,8.72,15.11922727,16.38,1.17
+wet19,TS3,Bluegill,Lepomis macrochirus,demersal_fish,Consumer,W19-TS3-Lma3,-28.74,53.78109091,8.72,16.38056364,18.37,1.13
+wet19,SRS3,Bluegill,Lepomis macrochirus,demersal_fish,Consumer,W19-SRS3-Lma1,-28.41,49.05265455,10.11,14.89643636,21.08,1.06
+wet19,RB10,Bluegill,Lepomis macrochirus,demersal_fish,Consumer,W19-RB10-Lma1,-28.35,44.72944,9.54,13.10609,15.9,1.05
+wet19,RB10,Bluegill,Lepomis macrochirus,demersal_fish,Consumer,W19-RB10-Lma2,-32.94,50.84058889,10.46,15.30577778,16.34,1.15
+wet19,SRS3,Bluegill,Lepomis macrochirus,demersal_fish,Consumer,W19-SRS3-Lma2,-33.31,48.90508333,9.93,15.004,21.98,1.78
+wet19,TS3,Bluegill,Lepomis macrochirus,demersal_fish,Consumer,W19-TS3-Lma4,-29.54,35.46421818,8.62,10.86945455,13.17,1.34
+wet19,TS3,Bluegill,Lepomis macrochirus,demersal_fish,Consumer,W19-TS3-Lma5,-26.85,53.64256667,9.47,16.09533333,17.41,1.2
+wet19,SRS3,Bluegill,Lepomis macrochirus,demersal_fish,Consumer,W19-SRS3-Lma3,-33.39,49.17842727,9.83,14.95709091,22.16,1.21
+wet19,TS3,Bluegill,Lepomis macrochirus,demersal_fish,Consumer,W19-TS3-Lma2,-28.94,62.5264,9.09,19.79475,17.96,1.2
+wet19,RB10,Bluegill,Lepomis macrochirus,demersal_fish,Consumer,W19-RB10-Lma3,-33.09,45.01709167,10.96,11.9922,19.65,0.9
+wet19,TS7,Brown grass shrimp,Leander tenuicornis,Shrimp,Consumer,W19-TS7-Lte2,-19.07,38.7668,9.39,10.39066667,7.96,1.06
+wet19,TS11,Brown Grass Shrimp,Leander tenuicornis,Shrimp,Consumer,W19-TS11-Lte1,-14.47,31.76111111,5.93,9.179333333,12.98,0.81
+wet19,SRS6,Brown Grass Shrimp,Leander tenuicornis,Shrimp,Consumer,W19-SRS6-Lte1,-25.77,35.71595556,8.67,9.701384615,5.58,1
+wet19,SRS6,Brown Grass Shrimp,Leander tenuicornis,Shrimp,Consumer,W19-SRS6-Lte3,-26.93,38.5786,8.14,10.5945,5.07,1.04
+wet19,SRS6,Brown Grass Shrimp,Leander tenuicornis,Shrimp,Consumer,W19-SRS6-Lte2,-26.51,37.55966667,7.68,8.294909091,5.53,0.82
+wet19,TS11,Brown Grass Shrimp,Leander tenuicornis,Shrimp,Consumer,W19-TS11-Lte3,-14.62,31.84392857,6.13,9.61,12.79,0.96
+wet19,TS7,Brown grass shrimp,Leander tenuicornis,Shrimp,Consumer,W19-TS7-Lte1,-18.09,40.384,10.68,11.67,5.82,1.11
+wet19,TS10,Brown grass shrimp,Leander tenuicornis,Shrimp,Consumer,W19-TS10-Lte1,-10.87,36.43863333,5.6,8.382444444,10.46,1.04
+wet19,TS10,Brown grass shrimp,Leander tenuicornis,Shrimp,Consumer,W19-TS10-Lte2,-12.02,39.71128889,5.93,9.596,11.17,1.11
+wet19,TS11,Brown Grass Shrimp,Leander tenuicornis,Shrimp,Consumer,W19-TS11-Lte2,-14.51,31.21146,6.05,9.90425,11.88,1.12
+wet19,RB10,Clown Goby,Microgobius gulosus,demersal_fish,Consumer,W19-RB10-Mgu1,-33.59,42.91698,12.39,13.0548,21.83,1.03
+wet19,SRS6,Clown Goby,Microgobius gulosus,demersal_fish,Consumer,W19-SRS6-Mgu3,-25.19,46.04144167,8.9,13.811,1.2,1.12
+wet19,SRS6,Clown Goby,Microgobius gulosus,demersal_fish,Consumer,W19-SRS6-Mgu2,-24.73,47.3931,8.72,14.48622222,2.57,1.21
+dry19,RB10,Coastal Shiner,Notropis petersoni,Forage_fish,Consumer,RB10 NT1,-32.19,51.121,12.38,13.513,25.02,0.953
+dry19,RB10,Coastal Shiner,Notropis petersoni,Forage_fish,Consumer,RB10 NT10,-32.05,39.028,12.89,10.078,24.41,0.843
+dry19,RB10,Coastal Shiner,Notropis petersoni,Forage_fish,Consumer,RB10 NT11,-32.23,40.355,12.96,10.533,24.53,0.784
+dry19,RB10,Coastal Shiner,Notropis petersoni,Forage_fish,Consumer,RB10 NT12,-31.37,44.184,10.65,11.714,24.47,0.865
+dry19,RB10,Coastal Shiner,Notropis petersoni,Forage_fish,Consumer,RB10 NT13,-31.49,42.513,12.43,10.336,24.09,0.807
+dry19,RB10,Coastal Shiner,Notropis petersoni,Forage_fish,Consumer,RB10 NT14,-32.68,37.667,12.09,10.429,24.52,0.945
+dry19,RB10,Coastal Shiner,Notropis petersoni,Forage_fish,Consumer,RB10 NT2,-32.35,39.18,13.74,9.508,24.52,0.798
+dry19,RB10,Coastal Shiner,Notropis petersoni,Forage_fish,Consumer,RB10 NT3,-31.37,40.428,13.29,10.266,25.03,0.835
+dry19,RB10,Coastal Shiner,Notropis petersoni,Forage_fish,Consumer,RB10 NT4,-33.06,37.95,11.33,10.136,21.63,0.544
+dry19,RB10,Coastal Shiner,Notropis petersoni,Forage_fish,Consumer,RB10 NT5,-33.13,34.871,11.47,8.836,27.46,0.348
+dry19,RB10,Coastal Shiner,Notropis petersoni,Forage_fish,Consumer,RB10 NT6,-31.83,39.595,12.7,10.672,16.51,0.22
+dry19,RB10,Coastal Shiner,Notropis petersoni,Forage_fish,Consumer,RB10 NT7,-31.82,38.691,13.03,10.144,15.52,0.202
+dry19,RB10,Coastal Shiner,Notropis petersoni,Forage_fish,Consumer,RB10 NT8,-32.5,41.12,12.11,10.497,25.78,0.616
+dry19,RB10,Coastal Shiner,Notropis petersoni,Forage_fish,Consumer,RB10 NT9,-32.32,41.605,11.9,10.718,24.54,0.866
+dry19,RB10,Coastal Shiner,Notropis petersoni,Forage_fish,Consumer,RB10 SR1,-32.26,36.242,11.79,9.897,24.73,1.027
+wet19,RB10,Coastal Shiner,Notropis petersoni,Forage_fish,Consumer,W19-RB10-Npe1,-32.65,31.3634,10.07,11.7706,23.01,0.81
+wet19,RB10,Coastal Shiner,Notropis petersoni,Forage_fish,Consumer,W19-RB10-Npe2,-30.8,45.454075,13.01,12.151,18.45,0.84
+wet19,TS7,Code Goby,Gobiosoma robustum,demersal_fish,Consumer,W19-TS7-Gro2,-18.75,39.9648,10.62,11.03844444,3.03,1.03
+wet19,TS7,Code Goby,Gobiosoma robustum,demersal_fish,Consumer,W19-TS7-Gro1,-18.49,40.7570375,10.63,11.91475,3.82,1.04
+dry19,SRS6,Crested goby,Lophogobius cyprinoides,demersal_fish,Consumer,SRS6 CR1,-23.36,42.69,7.41,11.27,7.61,1.123
+dry19,SRS6,Crested goby,Lophogobius cyprinoides,demersal_fish,Consumer,SRS6 CR2,-25.55,32.826,8.82,8.292,7.17,1.11
+dry19,SRS6,Crested goby,Lophogobius cyprinoides,demersal_fish,Consumer,SRS6 CR3,-24.52,42.695,9.18,11.994,9.03,1.065
+dry19,SRS6,Crested goby,Lophogobius cyprinoides,demersal_fish,Consumer,SRS6 CR4,-24.86,33.822,9.48,8.525,8.97,1.032
+dry19,SRS4,Crested goby,Lophogobius cyprinoides,demersal_fish,Consumer,SRS4_CR2_d19,-30.57,34.61,9.92,10.17413044,,1.68
+wet19,SRS6,Crested Goby,Lophogobius cyprinoides,demersal_fish,Consumer,W19-SRS6-Lcy1,-28.33,43.6725,10.17,13.0706,-5.88,1.38
+wet19,SRS4,Crested Goby,Lophogobius cyprinoides,demersal_fish,Consumer,W19-SRS4-Lcy1,-30.91,35.92016,10.21,12.67416667,6.93,0.94
+wet19,RB10,Crested Goby,Lophogobius cyprinoides,demersal_fish,Consumer,W19-RB10-Lcy2,-31.97,35.38174546,12.88,6.846923077,20.46,0.75
+wet19,RB10,Crested Goby,Lophogobius cyprinoides,demersal_fish,Consumer,W19-RB10-Lcy1,-32.77,36.28301667,11.3,12.6236,17.23,0.92
+wet19,SRS4,Crested Goby,Lophogobius cyprinoides,demersal_fish,Consumer,W19-SRS4-Lcy2,-28.29,47.31389091,8.81,14.40854546,12.12,1.17
+wet19,SRS6,Crested Goby,Lophogobius cyprinoides,demersal_fish,Consumer,W19-SRS6-Lcy3,-25.91,44.60864,9.5,13.4278,1.09,1.13
+wet19,TS7,Crested Goby,Lophogobius cyprinoides,demersal_fish,Consumer,W19-TS7-Lcy3,-20.35,50.86008889,10.92,15.69844444,-1.47,1.02
+wet19,SRS4,Crested Goby,Lophogobius cyprinoides,demersal_fish,Consumer,W19-SRS4-Lcy3,-27.9,44.92750769,9.1,14.07553846,9.86,1.5
+wet19,TS7,Crested Goby,Lophogobius cyprinoides,demersal_fish,Consumer,W19-TS7-Lcy1,-18.35,44.62256364,9.96,13.19618182,4.58,1.31
+wet19,SRS6,Crested Goby,Lophogobius cyprinoides,demersal_fish,Consumer,W19-SRS6-Lcy2,-29.54,42.46018889,10.81,12.35155556,-5.68,1.07
+wet19,TS7,Crested Goby,Lophogobius cyprinoides,demersal_fish,Consumer,W19-TS7-Lcy2,-18.8,38.11714167,9.5,11.22216667,3.03,1.02
+wet19,RB10,Dollar Sunfish,Lepomis marginatus,demersal_fish,Consumer,W19-RB10-Lmar4,-30,39.7618,10.22,10.97138462,20.61,0.91
+wet19,RB10,Dollar Sunfish,Lepomis marginatus,demersal_fish,Consumer,W19-RB10-Lmar3,-27.5,39.6161,8.81,10.5074,15.66,0.95
+wet19,RB10,Dollar Sunfish,Lepomis marginatus,demersal_fish,Consumer,W19-RB10-Lmar1,-24.71,48.39611429,8.53,14.91171429,15.19,1.04
+wet19,RB10,Dollar Sunfish,Lepomis marginatus,demersal_fish,Consumer,W19-RB10-Lmar1.2,-27.82,42.14227273,8.66,11.07309091,15.51,0.87
+wet19,RB10,Dollar Sunfish,Lepomis marginatus,demersal_fish,Consumer,W19-RB10-Lmar3,-27.5,39.6161,8.81,10.5074,14.79,0.93
+wet19,RB10,Dollar Sunfish,Lepomis marginatus,demersal_fish,Consumer,W19-RB10-Lmar4,-30,39.7618,10.22,10.97138462,18.99,1.01
+wet19,RB10,Dollar Sunfish,Lepomis marginatus,demersal_fish,Consumer,W19-RB10-Lmar6,-26.53,49.76396,7.87,14.938,12.72,1.08
+wet19,RB10,Dollar Sunfish,Lepomis marginatus,demersal_fish,Consumer,W19-RB-Lmar1,-27.69,36.62777778,8.75,11.07345455,11.68,1.14
+dry19,SRS3,Eastern mosquitofish,Gambusia holbrooki,Forage_fish,Consumer,SRS-GAMHOL-1,-29.32,53.40249231,8.98,14.76512308,20.74,0.535046296
+dry19,SRS3,Eastern mosquitofish,Gambusia holbrooki,Forage_fish,Consumer,SRS-GAMHOL-2,-29.35,27.563225,8.98,7.7045625,20.91,0.621407767
+dry19,SRS3,Eastern mosquitofish,Gambusia holbrooki,Forage_fish,Consumer,SRS-GAMHOL-3,-29.91,31.31279452,8.92,8.433465753,20.85,0.655571809
+dry19,TS3,Eastern mosquitofish,Gambusia holbrooki,Forage_fish,Consumer,TSL-GAMHOL-2,-28.59,34.12182279,7.67,7.953341772,15.21,0.556027919
+dry19,TS3,Eastern mosquitofish,Gambusia holbrooki,Forage_fish,Consumer,TSL-GAMHOL-3,-29.02,30.17322785,7.79,7.103632911,16.72,0.529785523
+wet19,SRS6,Eastern Mosquitofish,Gambusia holbrooki,Forage_fish,Consumer,W19-SRS6-Gho5,-25.51,42.47404546,9.1,11.33290909,4.06,1.14
+wet19,SRS6,Eastern Mosquitofish,Gambusia holbrooki,Forage_fish,Consumer,W19-SRS6-Gho1,-26.9,39.4399,8.63,11.26261539,0.33,1.18
+wet19,SRS6,Eastern Mosquitofish,Gambusia holbrooki,Forage_fish,Consumer,W19-SRS6-Gho3,-27.2,41.92595,8.66,11.14977778,0.58,1.11
+wet19,RB10,Eastern Mosquitofish,Gambusia holbrooki,Forage_fish,Consumer,W19-RB10-Gho1,-29.22,42.15489,10.21,11.95777778,19.6,0.89
+wet19,TS3,Eastern Mosquitofish,Gambusia holbrooki,Forage_fish,Consumer,W19-TS3-Gho3,-23.12,42.18305556,8.66,15.4415,11.72,1.26
+wet19,TS3,Eastern Mosquitofish,Gambusia holbrooki,Forage_fish,Consumer,W19-TS3-Gho1,-22.44,47.21017143,8.94,13.44342857,11.99,1.2
+wet19,RB10,Eastern Mosquitofish,Gambusia holbrooki,Forage_fish,Consumer,W19-RB10-Gho2,-28.89,41.687425,10.89,12.0285,18.32,1.15
+wet19,TS3,Eastern Mosquitofish,Gambusia holbrooki,Forage_fish,Consumer,W19-TS3-Gho2,-23.15,41.0179625,8.87,11.56925,11.92,1.2
+wet19,RB10,Eastern Mosquitofish,Gambusia holbrooki,Forage_fish,Consumer,W19-RB10-Gho3,-30.29,49.5488625,10.72,14.23425,20.44,0.96
+wet19,TS11,Estuarine Mudcrab,Rhithropanopeus harrisii,Crab,Consumer,W19-TS11-Rha3,-19.44,19.41831818,3.64,4.239833333,14.22,0.66
+wet19,TS11,Estuarine Mudcrab,Rhithropanopeus harrisii,Crab,Consumer,W19-TS11-Rha2,-19.29,17.18415,3.48,4.1526,13.38,0.36
+dry19,TS11,File fish,filespp,demersal_fish,Consumer,TS11 FF1,-17.71,43.215,6.27,10.393,11.4,1.21
+dry19,SRS3,Flagfish,Jordanella floridae,Forage_fish,Consumer,SRS-JORFLO-1,-31.89,31.51984,7.6,8.58452,19.8,0.523160763
+dry19,SRS3,Flagfish,Jordanella floridae,Forage_fish,Consumer,SRS-JORFLO-2,-31.9,26.79312941,7.6,6.6894,19.68,0.496698113
+dry19,SRS3,Flagfish,Jordanella floridae,Forage_fish,Consumer,SRS-JORFLO-3,-30.79,31.35853333,7.47,8.655453333,18.97,0.680642633
+wet19,SRS3,Flagfish,Jordanella floridae,Forage_fish,Consumer,W19-SRS3-Jfl1,-31.21,40.8836,10.14,10.50283333,21.28,0.8
+wet19,SRS3,Flagfish,Jordanella floridae,Forage_fish,Consumer,W19-SRS3-Jfl2,-29.89,54.76422727,9.59,14.97745455,21.26,0.72
+dry19,RB10,Flatback mud crab,Eurypanopeus depressus,Crab,Consumer,RB10 CB1,-26.13,23.775,9.69,4.41,18,0.292
+dry19,RB10,Flatback mud crab,Eurypanopeus depressus,Crab,Consumer,RB10 NC1,-25.22,22.051,5.63,3.732,5.72,0.398
+wet19,TS7,Flatback mud crab,Eurypanopeus depressus,Crab,Consumer,W19-TS7-Ede2,-25.24,19.46881667,8.26,4.25575,5.5,0.35
+wet19,TS7,Flatback mud crab,Eurypanopeus depressus,Crab,Consumer,W19-TS7-Ede1,-24.17,19.59189091,7.12,4.007333333,5.46,0.27
+wet19,TS11,Fringed Filefish,Monacanthus ciliatus,demersal_fish,Consumer,W19-TS11-Mci3,-14.34,39.39936364,6.83,11.37563636,8.77,1.24
+wet19,TS11,Fringed Filefish,Monacanthus ciliatus,demersal_fish,Consumer,W19-TS11-Mci2,-13.79,38.28912727,6.82,10.68723077,10.5,1.32
+wet19,TS11,Fringed Filefish,Monacanthus ciliatus,demersal_fish,Consumer,W19-TS11-Mci1,-13.63,38.14997,6.85,14.28963636,10.49,1.66
+dry19,SRS3,Ghost Shrimp,Palaemonetes paludosus,Shrimp,Consumer,SRS-PALPAL-1,-31.07,33.15388136,7.74,8.842457627,22.06,0.674924242
+dry19,SRS3,Ghost Shrimp,Palaemonetes paludosus,Shrimp,Consumer,SRS-PALPAL-2,-31.13,28.03640909,7.49,7.896693182,21.96,0.600929919
+dry19,SRS3,Ghost Shrimp,Palaemonetes paludosus,Shrimp,Consumer,SRS-PALPAL-3,-30.48,34.73113253,7.4,9.860807229,22.08,0.726988636
+dry19,TS3,Ghost Shrimp,Palaemonetes paludosus,Shrimp,Consumer,TSL-PALPAL-1,-28.57,33.97319355,6.57,9.541112903,13.68,0.656815642
+dry19,TS3,Ghost Shrimp,Palaemonetes paludosus,Shrimp,Consumer,TSL-PALPAL-2,-29.2,29.76259783,6.43,8.141119565,13.01,0.698372093
+dry19,TS3,Ghost Shrimp,Palaemonetes paludosus,Shrimp,Consumer,TSL-PALPAL-3,-28.22,30.85750667,6.6,9.138026667,13.47,0.756976744
+dry19,SRS4,Ghost Shrimp,Palaemonetes paludosus,Shrimp,Consumer,SRS4 GS1,-28.14,42.743,8.54,10.88,9.48,0.937
+dry19,SRS4,Ghost Shrimp,Palaemonetes paludosus,Shrimp,Consumer,SRS4 GS1 dup,-27.35,43.044,9.27,10.797,12.14,0.867
+dry19,TS9,Ghost Shrimp,Palaemonetes paludosus,Shrimp,Consumer,TS9 GS1,-18.55,38.685,11.61,8.317,15.04,0.881
+dry19,SRS6,Ghost Shrimp,Palaemonetes paludosus,Shrimp,Consumer,SRS6 GS1,-27.56,37.772,9.17,9.291,11.54,1.078
+dry19,RB10,Ghost Shrimp,Palaemonetes paludosus,Shrimp,Consumer,RB10 GS2,-31.61,41.218,12.08,11.035,25.06,0.793
+dry19,SRS4,Ghost Shrimp,Palaemonetes paludosus,Shrimp,Consumer,SRS4 GS2,-28.13,33.822,10.14,9.116,12.21,1.035
+dry19,SRS4,Ghost Shrimp,Palaemonetes paludosus,Shrimp,Consumer,SRS4_G51_d19,-27.75,44.18191753,9.65,11.84185567,9.92,0.95
+wet19,RB10,Ghost Shrimp,Palaemonetes paludosus,Shrimp,Consumer,W19-RB10-Ppa1,-30.23,38.11389091,11.05,10.79857273,22.31,1.01
+wet19,RB10,Ghost Shrimp,Palaemonetes paludosus,Shrimp,Consumer,W19-RB10-Ppa2,-30.82,44.35268,11.27,12.32,21.73,0.98
+wet19,SRS6,Ghost Shrimp,Palaemonetes paludosus,Shrimp,Consumer,W19-SRS6-Ppa1,-26.28,45.18758,8.25,13.2598,2.37,1.18
+wet19,TS3,Ghost Shrimp,Palaemonetes paludosus,Shrimp,Consumer,W19-TS3-Ppa1,-27.53,43.43395,7.03,10.12116667,11.76,1.06
+wet19,TS3,Ghost Shrimp,Palaemonetes paludosus,Shrimp,Consumer,W19-TS3-Ppa2,-27.58,39.9372375,6.59,9.298888889,11.54,1.22
+wet19,SRS4,Ghost Shrimp,Palaemonetes paludosus,Shrimp,Consumer,W19-SRS4-Ppa1,-30.21,36.19974,8.34,10.98225,9.23,0.94
+wet19,SRS4,Ghost Shrimp,Palaemonetes paludosus,Shrimp,Consumer,W19-SRS4-Ppa2,-28.82,38.31443636,8.01,10.283,8.96,0.79
+wet19,TS3,Ghost Shrimp,Palaemonetes paludosus,Shrimp,Consumer,W19-TS3-Ppa3,-27.27,40.58164286,6.57,10.0644,11.83,1.06
+wet19,SRS6,Ghost Shrimp,Palaemonetes paludosus,Shrimp,Consumer,W19-SRS6-Ppa2,-24.66,44.90968889,8.54,13.84,5.23,1.32
+wet19,SRS3,Giant Water Bug,Belastoma sp.,Insect,Consumer,W19-SRS3-Bel1,-32.83,43.53719091,6.36,10.46509091,22.58,0.45
+wet19,SRS3,Giant Water Bug,Belastoma sp.,Insect,Consumer,W19-SRS3-Bel2,-31.66,40.012,5.73,10.69025,23.45,0.51
+dry19,SRS3,Golden topminnow,Fundulus chrysotus,Forage_fish,Consumer,SRS-FUNCHR-1,-28.1,26.66152174,9.47,7.513108696,19.82,0.573669725
+dry19,SRS3,Golden topminnow,Fundulus chrysotus,Forage_fish,Consumer,SRS-FUNCHR-2,-28.31,38.50933333,9.13,10.03630159,21.06,0.539294118
+dry19,SRS3,Golden topminnow,Fundulus chrysotus,Forage_fish,Consumer,SRS-FUNCHR-3,-29.13,30.04610989,9.34,7.893406593,21.11,0.603977636
+dry19,RB10,Golden topminnow,Fundulus chrysotus,Forage_fish,Consumer,RB10 TM1,-27.93,35.955,9.85,10.113,24.67,0.747
+wet19,SRS6,Golden Topminnow,Fundulus chrysotus,Forage_fish,Consumer,W19-SRS6-Fch1,-26.9,34.50966667,8.42,10.72846154,0.51,1.01
+wet19,SRS6,Golden Topminnow,Fundulus chrysotus,Forage_fish,Consumer,W19-SRS6-Fch2,-26.45,36.76223333,7.79,12.16475,0.06,1.03
+wet19,TS3,Golden Topminnow,Fundulus chrysotus,Forage_fish,Consumer,W19-TS3-Fch2,-25.95,30.83267143,8.28,10.51028571,14.16,0.79
+wet19,TS3,Golden Topminnow,Fundulus chrysotus,Forage_fish,Consumer,W19-TS3-Fch1,-21.21,38.95259167,9.15,11.703,17.16,0.71
+wet19,SRS3,Golden Topminnow,Fundulus chrysotus,Forage_fish,Consumer,W19-SRS3-Fch2,-29.94,44.09297778,10.54,13.18222222,21.73,1.05
+wet19,SRS3,Golden Topminnow,Fundulus chrysotus,Forage_fish,Consumer,W19-SRS3-Fch3,-29.23,49.81236667,9.97,14.69444444,21.59,1.06
+wet19,TS7,Goldspotted Killifish,Floridichthys carpio,Forage_fish,Consumer,W19-TS7-Fca2,-17.16,42.95374546,10.83,13.01981818,2.99,1.2
+wet19,TS7,Goldspotted Killifish,Floridichthys carpio,Forage_fish,Consumer,W19-TS7-Fca1,-17.75,45.75258182,10.55,14.04945455,2,1.33
+wet19,TS10,Goldspotted Killifish,Floridichthys carpio,Forage_fish,Consumer,W19-TS10-Fca2,-10.61,39.6243,7.12,12.034,4.69,1.16
+wet19,TS10,Goldspotted Killifish,Floridichthys carpio,Forage_fish,Consumer,W19-TS10-Fca1,-11.05,40.9522,7.53,12.47,4.88,1.26
+wet19,TS10,Goldspotted Killifish,Floridichthys carpio,Forage_fish,Consumer,W19-TS10-Fca3,-11.14,39.94796364,6.84,12.23163636,4.33,1.2
+wet19,RB10,Harris Mud Crab,Rhithropanopeus harrisii,Crab,Consumer,W19-RB10-Rha2,,,9.58,4.803777778,16.82,0.35
+wet19,TS7,Harris Mud Crab,Rhithropanopeus harrisii,Crab,Consumer,W19-TS7-Rha1,-24.13,18.120875,7.8,5.36325,4.72,0.31
+wet19,TS7,Harris Mud Crab,Rhithropanopeus harrisii,Crab,Consumer,W19-TS7-Rha2,-23.32,19.76026667,8.18,5.7765,4.13,0.37
+wet19,SRS4,Harris Mud Crab,Rhithropanopeus harrisii,Crab,Consumer,W19-SRS4-Rha1,-31.55,26.1825375,5.92,5.787076923,4.11,0.39
+wet19,RB10,Harris Mud Crab,Rhithropanopeus harrisii,Crab,Consumer,W19-RB10-Rha1,-31.13,25.26788182,9.34,5.2495,19.36,0.28
+wet19,SRS4,Harris Mud Crab,Rhithropanopeus harrisii,Crab,Consumer,W19-SRS4-Rha2,-32.32,20.20922727,6.28,5.392444444,3.19,0.38
+dry19,TS10,Hermit crab,Paguroidea,Crab,Consumer,TS10 HC1,-14.91,25.257,10.21,4.714,14.13,0.674
+dry19,TS10,Hermit crab,Paguroidea,Crab,Consumer,TS10 HC2,-14.63,34.262,5.17,6.982,9.78,0.826
+dry19,TS10,Hermit crab,Paguroidea,Crab,Consumer,TS10_HC5_d19,-15.42,42.97162264,6.75,6.468301887,10.77,0.92
+dry19,TS10,Hermit crab,Paguroidea,Crab,Consumer,TS10_HC4_d19,-16.29,41.18050704,5.83,5.681126761,11.87,1.24
+wet19,TS10,Hermit Crab,Paguroidea,Crab,Consumer,W19-TS10-Pag1,-14.44,25.7936875,5.25,4.106769231,10.48,0.52
+wet19,TS9,Hermit Crab,Paguroidea,Crab,Consumer,W19-TS9-Pag1,-16.2,24.09048333,9.82,4.457333333,13.67,0.69
+wet19,TS10,Hermit Crab,Paguroidea,Crab,Consumer,W19-TS10-Pag2,-12.68,20.67863077,4.19,5.015636364,13.03,0.63
+wet19,TS10,Hermit Crab,Paguroidea,Crab,Consumer,W19-TS10-Pag3,-13.31,23.07417778,3.72,6.089818182,11.23,1.1
+dry19,RB10,Hogchoker,Trinectes maculatus,demersal_fish,Consumer,RB10 HG1,-31.36,86.746,10.38,25.585,16.71,0.821
+dry19,RB10,Hogchoker,Trinectes maculatus,demersal_fish,Consumer,RB10 HG2,-31.94,40.489,9.83,11.873,15.83,0.805
+dry19,RB10,Hogchoker,Trinectes maculatus,demersal_fish,Consumer,RB10 HG3,-31.4,24.566,10.35,7.359,22.79,0.881
+wet19,RB10,Hogchoker,Trinectes maculatus,demersal_fish,Consumer,W19-RB10-Tmac2,-31.49,47.84736,11.32,14.934,15.55,0.86
+wet19,RB10,Hogchoker,Trinectes maculatus,demersal_fish,Consumer,W19-RB10-Tmac1,-30.87,42.23074444,9.31,12.93,14.9,1.05
+wet19,SRS3,Largemouth Bass,Micropterus salmoides,Predator,Predator,W19-SRS3-Msa3,-29.05,52.37511111,11.64,15.72572222,23.86,1.04
+wet19,SRS3,Largemouth Bass,Micropterus salmoides,Predator,Predator,W19-SRS3-Msa1,-28.44,50.32284,12.14,15.463,23.21,1.09
+wet19,RB10,Largemouth Bass,Micropterus salmoides,Predator,Predator,W19-RB10-Msa1,-29.94,37.81638889,13.05,11.48888889,22.61,1.04
+wet19,RB10,Largemouth Bass,Micropterus salmoides,Predator,Predator,W19-RB10-Msa4,-27.98,55.33443333,12.25,15.82044444,18.12,0.97
+wet19,RB10,Largemouth Bass,Micropterus salmoides,Predator,Predator,W19-RB10-Msa3,-29.31,49.19473333,11.91,14.97311111,22.92,1.06
+wet19,RB10,Largemouth Bass,Micropterus salmoides,Predator,Predator,W19-RB10-Msa2,-29.85,51.37291,12.57,14.4122,23.2,1.04
+wet19,TS3,Largemouth Bass,Micropterus salmoides,Predator,Predator,W19-TS3-Msa3,-26.58,44.149225,10.76,13.49433333,15.05,1.06
+wet19,TS3,Largemouth Bass,Micropterus salmoides,Predator,Predator,W19-TS3-Msa5,-28.16,45.94977273,11.21,14.08672727,14.69,1.21
+wet19,SRS3,Largemouth Bass,Micropterus salmoides,Predator,Predator,W19-SRS3-Msa2,-29.32,48.12513,12.01,14.9104,22.76,1.4
+wet19,TS3,Largemouth Bass,Micropterus salmoides,Predator,Predator,W19-TS3-Msa2,-21.32,46.06349167,11.11,14.42616667,16.24,1.17
+wet19,TS3,Largemouth Bass,Micropterus salmoides,Predator,Predator,W19-TS3-Msa4,-27.03,43.07614546,10.6,13.03018182,15.15,1.02
+wet19,TS3,Largemouth Bass,Micropterus salmoides,Predator,Predator,W19-TS3-Msa1,-22.33,42.73394167,10.46,12.7275,24.01,1.11
+wet19,TS9,Mangrove Snapper,Lutjanus griseus,Predator,Predator,W19-TS9-Lgr1,-13.95,46.91056,15.91,13.62353,6.89,1.09
+wet19,RB10,Mangrove snapper,Lutjanus griseus,Predator,Predator,W19-RB10-Lgr2,-30.01,47.728,13.49,14.11861539,22,1.14
+wet19,SRS4,Mangrove Snapper,Lutjanus griseus,Predator,Predator,W19-SRS4-Lgr2,-31.07,44.91525833,12.07,13.66883333,3.35,1
+wet19,TS9,Mangrove Snapper,Lutjanus griseus,Predator,Predator,W19-TS9-Lgr3,-11.62,45.19160909,13.9,12.74690909,8.72,1.03
+wet19,TS10,Mangrove Snapper,Lutjanus griseus,Predator,Predator,W19-TS10-Lgr2,-7.28,47.638025,12.43,14.799,3.95,1.5
+wet19,TS7,Mangrove Snapper,Lutjanus griseus,Predator,Predator,W19-TS7-Lgr3,-14.53,54.36245833,14.3,16.79866667,6.27,1.14
+wet19,SRS4,Mangrove Snapper,Lutjanus griseus,Predator,Predator,W19-SRS4-Lgr5,-29.63,43.58041667,11.36,13.5695,7.07,1.44
+wet19,TS7,Mangrove Snapper,Lutjanus griseus,Predator,Predator,W19-TS7-Lgr1,-13.64,44.41250909,13.29,14.08381818,6.92,1.61
+wet19,SRS4,Mangrove Snapper,Lutjanus griseus,Predator,Predator,W19-SRS4-Lgr3,-30.56,32.47012,10.03,9.6076,10.67,0.92
+wet19,TS7,Mangrove Snapper,Lutjanus griseus,Predator,Predator,W19-TS7-Lgr2,-15.06,40.83600833,14.25,12.88616667,5.72,1.26
+wet19,TS7,Mangrove Snapper,Lutjanus griseus,Predator,Predator,W19-TS7-Lgr4,-14.54,47.53798333,13.93,15.03133333,6.48,1.46
+wet19,TS10,Mangrove Snapper,Lutjanus griseus,Predator,Predator,W19-TS10-Lgr3,-7.87,51.61246,11.64,16.1736,6.29,1.39
+wet19,TS10,Mangrove Snapper,Lutjanus griseus,Predator,Predator,W19-TS10-Lgr1,-7.85,49.39578182,11.76,15.73672727,5.81,1.36
+wet19,SRS4,Mangrove Snapper,Lutjanus griseus,Predator,Predator,W19-SRS4-Lgr4,-30.12,43.75586667,10.87,13.70583333,8.82,1.3
+wet19,SRS4,Mangrove Snapper,Lutjanus griseus,Predator,Predator,W19-SRS4-Lgr1,-31.1,49.928,12,15.072,3.35,1
+wet19,TS7,Mangrove Snapper,Lutjanus griseus,Predator,Predator,W19-TS7-Lgr5,-15.43,42.14506667,13.98,13.73866667,5.02,1.38
+wet19,TS9,Mangrove Snapper,Lutjanus griseus,Predator,Predator,W19-TS9-Lgr2,-11.34,51.1198,13.95,14.96175,3.95,0.96
+wet19,RB10,Mangrove Snapper,Lutjanus griseus,Predator,Predator,W19-RB-Lgr1,-30.4,49.52088889,12.04,15.51422222,8.66,1.1
+dry19,SRS6,Mangrove tree crab,Aratus pisonii,Crab,Consumer,SRS6 MA1,-24.51,35.809,5.7,9.004,14.15,0.744
+wet19,TS3,Mayan Cichlid,Mayaheros urophthalmus,demersal_fish,Consumer,W19-TS3-Mur3,-28.69,34.1711,8.09,10.5975,14.26,1.51
+wet19,SRS3,Mayan Cichlid,Mayaheros urophthalmus,demersal_fish,Consumer,W19-SRS3-Mur3,-33.73,46.57608182,8.98,14.55181818,21.7,1.4
+wet19,TS3,Mayan Cichlid,Mayaheros urophthalmus,demersal_fish,Consumer,W19-TS3-Mur4,-29.98,61.65155556,7.55,19.03822222,14.45,2.16
+wet19,SRS3,Mayan Cichlid,Mayaheros urophthalmus,demersal_fish,Consumer,W19-SRS3-Mur1,-31.2,42.02757,8.19,12.767,24.75,1.21
+wet19,SRS3,Mayan Cichlid,Mayaheros urophthalmus,demersal_fish,Consumer,W19-SRS3-Mur2,-29.94,45.90272,9.23,14.7172,24,1.27
+wet19,TS3,Mayan Cichlid,Mayaheros urophthalmus,demersal_fish,Consumer,W19-TS3-Mur5,-29.11,45.79768889,7.91,14.18288889,12.99,0.97
+wet19,TS3,Mayan Cichlid,Mayaheros urophthalmus,demersal_fish,Consumer,W19-TS3-Mur2,-29.18,46.57226667,7.09,14.54166667,14.1,1.05
+wet19,TS3,Mayan Cichlid,Mayaheros urophthalmus,demersal_fish,Consumer,W19-TS3-Mur1,-20.97,50.4376,9.35,15.8455,16.15,1.36
+wet19,SRS3,Mosquito Fish,Gambusia affinis,Forage_fish,Consumer,W19-SRS3-Gho1,-30.31,38.00543,9.42,11.0768,21,0.94
+wet19,SRS3,Mosquito Fish,Gambusia affinis,Forage_fish,Consumer,W19-SRS3-Gho2,-30.18,41.7842,9.56,12.0155,21.61,0.73
+dry19,TS11,Mud crab,Panopeidae,Crab,Consumer,TS11 MD1,-15.76,26.379,5.62,5.425,14.74,0.857
+dry19,SRS4,Mud crab,Panopeidae,Crab,Consumer,SRS4 MD2,-25,24.328,7.34,4.548,10.76,0.487
+dry19,SRS4,Mud crab,Panopeidae,Crab,Consumer,SRS4 MD2 dup,-28.98,28.985,7.8,5.671,4.29,0.543
+dry19,TS11,Mud crab,Panopeidae,Crab,Consumer,TS11 MD2,-16.04,24.517,4.08,4.662,14.67,0.628
+dry19,SRS4,Mud crab,Panopeidae,Crab,Consumer,SRS4 MD3,-30.87,25.063,5.87,4.688,0.76,0.425
+dry19,TS11,Mud crab,Panopeidae,Crab,Consumer,TS11 MD3,-14.67,24.46,4.39,4.266,13.44,0.654
+dry19,TS11,Mud crab,Panopeidae,Crab,Consumer,TS11 MD3dup,-31.19,25.28,6.14,5.039,14.29,0.797
+dry19,TS11,Mud crab,Panopeidae,Crab,Consumer,TS11 MD4,-13.57,22.243,3.44,3.427,15.4,0.495
+dry19,TS11,Mud crab,Panopeidae,Crab,Consumer,TS11 MD5,-14.65,22.558,3.93,3.937,15.21,0.567
+dry19,TS11,Mud crab,Panopeidae,Crab,Consumer,TS11 MD6,-16.34,24.321,4.92,4.929,14.54,0.602
+dry19,TS11,Mud crab,Panopeidae,Crab,Consumer,TS11 MD7,-17.6,32.744,5.53,7.688,13.29,0.725
+dry19,SRS4,Mud crab,Panopeidae,Crab,Consumer,SRS4 NC1,-10.51,18.189,7.21,2.105,12.5,0.387
+dry19,SRS4,Mud crab,Panopeidae,Crab,Consumer,SRS4 NC2,-28.55,26.312,6.53,5.232,4.49,0.399
+dry19,SRS4,Mud crab,Panopeidae,Crab,Consumer,SRS4 NC3,-27.55,20.56,6.99,3.579,3.81,0.381
+dry19,SRS4,Mud Crab,Panopeidae,Crab,Consumer,SRS4_MD3_d19,-31.32,28.19565217,6.61,5.677101449,3.04,0.55
+wet19,RB10,Peacock Eel,Macrognathus siamensis,demersal_fish,Consumer,W19-RB10-Msi2,-30.47,43.70931,9.92,13.4126,20.61,1.03
+wet19,RB10,Peacock Eel,Macrognathus siamensis,demersal_fish,Consumer,W19-RB10-Msi4,-30.88,38.31343,9.88,11.5206,21.17,0.98
+wet19,RB10,Peacock Eel,Macrognathus siamensis,demersal_fish,Consumer,W19-RB10-Msi5,-28.99,32.64364,9.16,10.0008,22.76,0.93
+wet19,RB10,Peacock Eel,Macrognathus siamensis,demersal_fish,Consumer,W19-RB10-Msi3,-29.64,44.06733636,9.48,13.18472727,21.47,0.98
+wet19,RB10,Peacock Eel,Macrognathus siamensis,demersal_fish,Consumer,W19-RB10-Msi1,-28.17,41.74990833,9.41,12.729,23.76,0.99
+wet19,SRS3,Peacock Eel,Macrognathus siamensis,demersal_fish,Consumer,W19-SRS3-Msi2,-28.14,48.39378889,10.08,14.74155556,21.97,1.25
+wet19,SRS3,Peacock Eel,Macrognathus siamensis,demersal_fish,Consumer,W19-SRS3-Msi1,-29.82,49.28545,10.07,14.9736,20.81,1.28
+wet19,SRS3,Peacock Eel,Macrognathus siamensis,demersal_fish,Consumer,W19-SRS3-Msi3,-28.76,35.31947,8.36,10.6098,23.21,1.21
+wet19,TS3,Peacock Eel,Macrognathus siamensis,demersal_fish,Consumer,W19-TS3-Msi4,-25.62,49.84356,8.35,14.7322,16.36,0.99
+wet19,TS3,Peacock Eel,Macrognathus siamensis,demersal_fish,Consumer,W19-TS3-Msi5,-25.77,47.00763333,8.69,14.214,14.08,1.03
+wet19,TS3,Peacock Eel,Macrognathus siamensis,demersal_fish,Consumer,W19-TS3-Msi2,-27.62,63.66218889,7.97,19.41711111,19.12,0.87
+wet19,TS3,Peacock Eel,Macrognathus siamensis,demersal_fish,Consumer,W19-TS3-Msi1,-25.62,51.76206364,9.19,15.82309091,14.42,1.03
+wet19,TS3,Peacock Eel,Macrognathus siamensis,demersal_fish,Consumer,W19-TS3-Msi3,-26.5,45.90445,8.52,13.9522,18.22,1.02
+wet19,TS11,Penaeid Shrimp,Penaeid,Shrimp,Consumer,W19-TS11-Pens1,-14.18,36.19887,6.67,9.71025,12.77,1.07
+wet19,TS11,Penaeid Shrimp,Penaeid,Shrimp,Consumer,W19-TS11-Pens2,-14.92,37.61,6.89,9.9548,12.38,1
+wet19,TS7,Pilchard,Sardina pilchardus OR Sardinops sagax,Forage_fish,Consumer,W19-TS7-Clu2,-18.93,37.82581818,8.97,11.32836364,5.6,1.12
+wet19,TS7,Pilchard,Sardina pilchardus OR Sardinops sagax,Forage_fish,Consumer,W19-TS7-Clu1,-18.66,39.03923636,8.82,11.686,5.9,1.06
+wet19,TS10,Pinfish,Lagodon rhomboides,demersal_fish,Consumer,W19-TS10-Lrh1,-9.87,51.37795,8.09,14.09966667,4.9,1.27
+dry19,SRS6,Pink shrimp,Farfantepenaeus duorarum,Shrimp,Consumer,SRS6 SH1,-25.4,41.484,8.08,11.129,5.16,0.942
+dry19,SRS4,Pink shrimp,Farfantepenaeus duorarum,Shrimp,Consumer,SRS4 SH1,-26.33,39.485,10.81,11.126,13.96,1.056
+dry19,TS7,Pink shrimp,Farfantepenaeus duorarum,Shrimp,Consumer,TS7 SH1,-15.12,38.94,11.06,10.186,12.3,1.01
+dry19,TS7,Pink shrimp,Farfantepenaeus duorarum,Shrimp,Consumer,TS7 SH1dup,-15.69,37.209,10.78,10.294,11.51,1.134
+dry19,SRS6,Pink shrimp,Farfantepenaeus duorarum,Shrimp,Consumer,SRS6 SH2,-26.09,38.136,5.33,10.802,6.11,1.075
+dry19,SRS6,Pink shrimp,Farfantepenaeus duorarum,Shrimp,Consumer,SRS6 SH2 dup,-26.46,40.068,5.21,11.009,5.56,1.014
+dry19,SRS6,Pink shrimp,Farfantepenaeus duorarum,Shrimp,Consumer,SRS6 SH3,-25.57,38.894,7.03,10.18,6.76,0.954
+dry19,SRS6,Pink shrimp,Farfantepenaeus duorarum,Shrimp,Consumer,SRS6 SH4,-26.36,39.685,6.61,10.393,4.38,0.944
+dry19,SRS6,Pink shrimp,Farfantepenaeus duorarum,Shrimp,Consumer,SRS6 SH5,-27.64,37.933,8.18,9.792,8.05,0.921
+dry19,SRS6,Pink Shrimp,Farfantepenaeus duorarum,Shrimp,Consumer,SRS6_SH5_d19,-26.66,34.18007792,7.04,8.917662338,4.89,1.39
+wet19,SRS4,Pink Shrimp,Farfantepenaeus duorarum,Shrimp,Consumer,W19-SRS4-Pdu4,-31.32,40.57263333,7.01,12.42683333,4.8,0.83
+wet19,SRS4,Pink Shrimp,Farfantepenaeus duorarum,Shrimp,Consumer,W19-SRS4-Pdu5,-31.92,35.41796,8.08,10.6142,5.7,0.94
+wet19,SRS6,Pink Shrimp,Farfantepenaeus duorarum,Shrimp,Consumer,W19-SRS6-Pdu1,-28.11,37.61875,5.15,11.39966667,5.86,1.06
+wet19,SRS6,Pink Shrimp,Farfantepenaeus duorarum,Shrimp,Consumer,W19-SRS6-Pdu2,-28.87,42.70325556,7.93,13.34955556,3.41,1.1
+wet19,TS7,Pink Shrimp,Farfantepenaeus duorarum,Shrimp,Consumer,W19-TS7-Pdu1,-17.98,40.86848,8.79,12.965,3.14,1.23
+dry19,TS7,Pipefish,Syngnathus,demersal_fish,Consumer,TS7 PP1,-15.91,36.756,11.1,10.708,9.04,0.734
+dry19,SRS6,Porceline crab,Petrolisthes armatus,Crab,Consumer,SRS6 PC1,-22.92,27.538,5.43,4.706,10.98,0.595
+dry19,SRS6,Porceline Crab,Petrolisthes armatus,Crab,Consumer,SRS6_PC2_d19,-25.76,33.1225,6.28,6.916538462,10.19,0.89
+dry19,TS7,Rainwater killifish,Lucania parva,Forage_fish,Consumer,TS7 RK1,-18.14,57.7,10.57,16,12.12,1.139
+dry19,TS7,Rainwater killifish,Lucania parva,Forage_fish,Consumer,TS7 RK2,-17.76,41.049,9.67,11.466,11.77,0.938
+dry19,TS9,Rainwater Killifish,,Forage_fish,Consumer,TS9_RK1_d19,-16.38,28.62389333,13.73,8.2944,12.68,1.17
+wet19,TS7,Rainwater Killifish,Lucania parva,Forage_fish,Consumer,W19-TS7-Lpa1,-18.01,33.07695556,11.95,11.90246154,8.19,1.31
+wet19,TS7,Rainwater Killifish,Lucania parva,Forage_fish,Consumer,W19-TS7-Lpa2,-18.61,38.57184167,12.2,11.71633333,7.19,1.27
+wet19,TS7,Rainwater Killifish,Lucania parva,Forage_fish,Consumer,W19-TS7-Lpa3,-19.94,38.43989167,11.52,11.98066667,6.4,1.19
+wet19,TS9,Rainwater Killifish,Lucania parva,Forage_fish,Consumer,W19-TS9-Lpa1,-15.65,40.84645556,12.66,12.36377778,9.5,1.22
+wet19,TS9,Rainwater Killifish,Lucania parva,Forage_fish,Consumer,W19-TS9-Lpa2,-15.87,39.67712727,12.96,11.90090909,8.4,1.14
+dry19,RB10,Redear sunfish,Lepomis microlophus,demersal_fish,Consumer,RB10 RE1(m),-30.5,47.667,12.82,14.87,25.16,1.017
+dry19,RB10,Redear sunfish,Lepomis microlophus,demersal_fish,Consumer,RB10 RE1(m)dup,-30.54,53.173,12.69,16.458,22.8,1.105
+wet19,RB10,Redear Sunfish,Lepomis microlophus,demersal_fish,Consumer,W19-RB10-Lmi1,-28.08,49.01893333,9.7,15.25911667,22.29,1
+wet19,RB10,Redear Sunfish,Lepomis microlophus,demersal_fish,Consumer,W19-RB10-Lmi3,-28.76,32.45413333,9.35,10.14894167,22.47,1.2
+wet19,RB10,Redear Sunfish,Lepomis microlophus,demersal_fish,Consumer,W19-RB10-Lmi5,-30.86,43.24893333,8.51,13.47586667,22.44,1.15
+wet19,RB10,Redear Sunfish,Lepomis microlophus,demersal_fish,Consumer,W19-RB10-Lmi2,-29.76,49.015,8.55,15.26636364,19.69,1.35
+wet19,RB10,Redear Sunfish,Lepomis microlophus,demersal_fish,Consumer,W19-RB10-Lmi4,-27.64,46.54546667,8.94,14.54577778,13.5,1.07
+wet19,TS3,Redear Sunfish,Lepomis microlophus,demersal_fish,Consumer,W19-TS3-Lmi2,-30.17,50.23951667,9.11,15.27833333,14.85,1.02
+wet19,TS3,Redear Sunfish,Lepomis microlophus,demersal_fish,Consumer,W19-TS3-Lmi1,-30.2,45.26243636,8.88,13.92,16.04,1.19
+wet19,TS3,Redear Sunfish,Lepomis microlophus,demersal_fish,Consumer,W19-TS3-Lmi3,-26.14,49.40363636,8.3,15.47909091,16.6,1.05
+dry19,TS9,Redfin Needle Fish,Strongylura notata,Predator,Predator,TS9_NF1_d19,-15.85,38.61927711,12.29,10.97325301,10.87,1.75
+wet19,TS10,Redfin Needle Fish,Strongylura notata,Predator,Predator,W19-TS10-Sno2,-11.09,34.80316364,11.3,10.97636364,2.59,1.89
+wet19,TS10,Redfin Needle Fish,Strongylura notata,Predator,Predator,W19-TS10-Sno1,-9.04,45.61148235,10.94,14.76517647,4.76,1.46
+wet19,SRS4,Sailfin Molly,Poecilia latipinna,Forage_fish,Consumer,W19-SRS4-Pla2,-30.73,47.03757273,4.34,13.36509091,12.91,1.23
+wet19,SRS4,Sailfin Molly,Poecilia latipinna,Forage_fish,Consumer,W19-SRS4-Pla1,-31.85,48.583,6.27,14.8595,10.63,1.2
+wet19,SRS6,Sailfin Molly,Poecilia latipinna,Forage_fish,Consumer,W19-SRS6-Pla1,-28.34,42.87508889,6.38,12.454,-3.86,0.98
+wet19,SRS4,Sailfin Molly,Poecilia latipinna,Forage_fish,Consumer,W19-SRS4-Pla3,-33.07,45.96509091,4.79,13.61527273,5.78,1.1
+wet19,SRS3,Sailfin Molly,Poecilia latipinna,Forage_fish,Consumer,W19-SRS3-Pla1,-31.1,46.5623,9.18,10.6136,20.98,0.78
+wet19,SRS6,Sailfin Molly,Poecilia latipinna,Forage_fish,Consumer,W19-SRS6-Pla2,-28.92,43.63259,5.23,12.6584,0.56,0.9
+wet19,SRS6,Sailfin Molly,Poecilia latipinna,Forage_fish,Consumer,W19-SRS6-Pla3,-28.21,40.4275125,5.47,11.596,-5.53,0.84
+wet19,SRS3,Sailfin Molly,Poecilia latipinna,Forage_fish,Consumer,W19-SRS3-Pla2,-32.55,51.31285,8.99,9.949,19.41,0.74
+dry19,SRS6,Salt marsh mud crab,Panopeus obesus,Crab,Consumer,SRS6 MD1,-21.03,26.677,5.33,5.306,9.76,0.609
+dry19,SRS6,Salt marsh mud crab,Panopeus obesus,Crab,Consumer,SRS6 MD2,-26.4,39.334,8.13,10.216,11,0.53
+dry19,SRS6,Salt marsh mud crab,Panopeus obesus,Crab,Consumer,SRS6_MD1_d19,-21.73,23.98078873,5.47,4.75915493,8.66,0.58
+wet19,SRS6,Salt marsh mud crab,Panopeus obesus,Crab,Consumer,W19-SRS6-Pob2,-25.31,39.41636,7.72,11.3138,1.28,0.79
+wet19,SRS6,Salt marsh mud crab,Panopeus obesus,Crab,Consumer,W19-SRS6-Pob3,-27.23,27.52901,6.62,4.537272727,5.24,0.45
+wet19,TS11,School Master Snapper,Lutjanus apodus,Predator,Predator,W19-TS11-Lap1,-13.94,50.20119091,8.95,15.74727273,11.81,1.43
+wet19,TS11,School Master Snapper,Lutjanus apodus,Predator,Predator,W19-TS11-Lap2,-14.03,43.5598,8.45,13.2248,11.21,1.91
+dry19,TS10,Seahorse,seaspp,demersal_fish,Consumer,TS10 HR1,-13.87,39.348,6.4,11.264,9.83,0.869
+dry19,TS10,Seahorse,seaspp,demersal_fish,Consumer,TS10_HR2_d19,-9.15,36.55557447,8.63,12.4793617,7.48,0.59
+wet19,SRS6,Silver Jenny,Eucinostomus gula,demersal_fish,Consumer,W19-SRS6-Egu2,-28.66,37.49213,8.85,11.3306,-6.47,1.6
+wet19,TS11,Silver Jenny,Eucinostomus gula,demersal_fish,Consumer,W19-TS11-Egu1,-12.91,44.13276364,7.93,13.70454546,6.12,1.38
+wet19,TS11,Silver Jenny,Eucinostomus gula,demersal_fish,Consumer,W19-TS11-Egu2,-12.99,48.232875,8.18,14.85925,5.41,1.26
+wet19,TS10,Silver Jenny,Eucinostomus gula,demersal_fish,Consumer,W19-TS10-Egu1,-10.07,43.17152,9.4,13.687,1.4,1.59
+wet19,TS11,Silver Jenny,Eucinostomus gula,demersal_fish,Consumer,W19-TS11-Egu3,-11.9,38.93315,7.31,11.38654546,10.03,1.17
+wet19,SRS6,Silver Jenny,Eucinostomus gula,demersal_fish,Consumer,W19-SRS6-Egu1,-27.37,42.36421818,9.24,13.03854546,-3.86,1.28
+wet19,TS10,Silver Jenny,Eucinostomus gula,demersal_fish,Consumer,W19-TS10-Egu2,-11.08,9.58648,9.35,2.912755556,2.16,1.27
+wet19,TS10,Silver Jenny,Eucinostomus gula,demersal_fish,Consumer,W19-TS10-Egu3,-11.54,43.13385455,9.27,12.99236364,2.21,1.18
+wet19,SRS6,Silver Jenny,Eucinostomus gula,demersal_fish,Consumer,W19-SRS6-Egu3,-28.65,43.21745,9.97,12.90125,-6.37,1.33
+dry19,SRS3,Slough crayfish,Procambarus fallax,Benthic_invert,Consumer,SRS-PROFAL-1,-28.61,19.98575343,4.1,5.305726027,20.83,0.40995283
+dry19,SRS3,Slough crayfish,Procambarus fallax,Benthic_invert,Consumer,SRS-PROFAL-2,-30.56,23.86364198,4.18,6.04062963,21.63,0.398753213
+dry19,SRS3,Slough crayfish,Procambarus fallax,Benthic_invert,Consumer,SRS-PROFAL-3,-29.49,23.00047917,3.84,5.56109375,21.35,0.365125628
+dry19,TS10,Snapping shrimp,Alpheus heterochaelis,Shrimp,Consumer,TS10 SA1,-14.26,32.389,11.03,8.068,10.91,0.867
+dry19,TS10,Snapping shrimp,Alpheus heterochaelis,Shrimp,Consumer,TS10 SA1dup,-14.5,30.824,10.27,7.205,7.12,0.245
+dry19,TS10,Snapping shrimp,Alpheus heterochaelis,Shrimp,Consumer,TS10 SA2,-15.73,32.008,11.4,8.206,10.95,1.021
+wet19,TS9,Snapping Shrimp,Alpheus heterochaelis,Shrimp,Consumer,W19-TS9-Ahe2,-18.04,44.21463333,11.87,12.68866667,1.03,1.04
+wet19,TS9,Snapping Shrimp,Alpheus heterochaelis,Shrimp,Consumer,W19-TS9-Ahe1,-17.61,37.3224125,11.45,10.7885,0.85,1.2
+wet19,TS9,Snapping Shrimp,Alpheus heterochaelis,Shrimp,Consumer,W19-TS9-Ahe3,-15.22,44.126175,11.12,12.8205,2.02,1.3
+dry19,TS10,Spider crab,Majidae,Crab,Consumer,TS10 SC1,-12.04,23.941,3.27,3.799,10.64,0.446
+dry19,TS10,Spider crab,Majidae,Crab,Consumer,TS10 SC2,-15.15,28.684,5.34,5.606,7.04,0.306
+dry19,RB10,Spotted sunfish,Lepomis marginatus,demersal_fish,Consumer,RB10 SO1(m),-30.33,48.982,10.94,14.929,25.79,1.143
+wet19,RB10,Spotted Sunfish,Lepomis punctatus,demersal_fish,Consumer,W19-RB10-Lpu2,-29.5,48.40792,11.23,15.0926,22.73,1.3
+wet19,RB10,Spotted Sunfish,Lepomis punctatus,demersal_fish,Consumer,W19-RB10-Lpu1,-30.59,46.92185833,9.79,14.38016667,24.85,1.23
+wet19,SRS3,Spotted Sunfish,Lepomis punctatus,demersal_fish,Consumer,W19-SRS3-Lpu1,-31.64,48.61982727,10.68,14.97818182,21.15,1.55
+wet19,SRS3,Spotted Sunfish,Lepomis punctatus,demersal_fish,Consumer,W19-SRS3-Lpu3,-28.63,51.06108333,10.62,15.7765,24.71,1.41
+wet19,SRS3,Spotted Sunfish,Lepomis punctatus,demersal_fish,Consumer,W19-SRS3-Lpu2,-29.24,54.41456,10.36,17.07,24.58,1.14
+wet19,RB10,Spotted Tilapia,Pelmatolapia mariae,demersal_fish,Consumer,W19-RB10-Tma1,-33.42,49.7071,10.43,15.53416667,24.51,0.98
+wet19,RB10,Spotted Tilapia,Pelmatolapia mariae,demersal_fish,Consumer,W19-RB10-Tma3,-34.96,48.65640909,7.39,15.324,16.22,1.03
+wet19,RB10,Spotted Tilapia,Pelmatolapia mariae,demersal_fish,Consumer,W19-RB10-Tma4,-28.42,37.7107,9.13,11.89927273,17.79,0.99
+wet19,RB10,Spotted Tilapia,Pelmatolapia mariae,demersal_fish,Consumer,W19-RB10-Tma2,-32.44,43.65172727,7.77,13.76727273,19.11,0.9
+wet19,SRS3,Spotted Tilapia,Pelmatolapia mariae,demersal_fish,Consumer,W19-SRS3-Tma1,-31.52,49.35883636,10.35,15.44909091,23.34,1.2
+wet19,SRS3,Spotted Tilapia,Pelmatolapia mariae,demersal_fish,Consumer,W19-SRS3-Tma3,-32.92,50.47683333,10.22,15.64311111,23.36,1.18
+wet19,SRS3,Spotted Tilapia,Pelmatolapia mariae,demersal_fish,Consumer,W19-SRS3-Tma2,-33.32,48.83076667,9.23,13.84816667,24.22,0.92
+wet19,SRS4,Spotted Tilapia,Pelmatolapia mariae,demersal_fish,Consumer,W19-SRS4-Tma1,-31.81,39.32076667,9.8,11.53616667,12.67,1.04
+wet19,SRS4,Spotted Tilapia,Pelmatolapia mariae,demersal_fish,Consumer,W19-SRS4-Tma3,-32.8,40.1122,8.86,12.33925,6.26,1.09
+wet19,SRS4,Spotted Tilapia,Pelmatolapia mariae,demersal_fish,Consumer,W19-SRS4-Tma2,-36.01,41.33318889,9.02,12.16511111,11.34,0.88
+dry19,TS10,Stone crab,Menippe mercenaria,Crab,Consumer,TS10 NC1,-10.57,22.391,4.2,3.441,11.77,0.631
+dry19,TS10,Stone crab,Menippe mercenaria,Crab,Consumer,TS10 NC1dup,-10.82,20.382,5.24,3.92,10.61,0.409
+dry19,TS7,Stone crab,Menippe mercenaria,Crab,Consumer,TS7 NC2,-14.19,26.933,7.2,5.237,9.16,0.525
+wet19,TS11,Stone Crab,Menippe mercenaria,Crab,Consumer,W19-TS11-Mme2,-18.13,19.64689091,7.18,4.3854,15.57,0.66
+wet19,TS11,Stone Crab,Menippe mercenaria,Crab,Consumer,W19-TS11-Mme1,-17.57,16.87213846,6.61,3.669818182,13.11,0.42
+wet19,SRS4,Striped Mojarra,Eugerres plumieri,demersal_fish,Consumer,W19-SRS4-Epl1,-32.75,43.1842,8.89,13.86125,2.76,1.21
+wet19,SRS4,Striped Mojarra,Eugerres plumieri,demersal_fish,Consumer,W19-SRS4-Epl3,-32.69,48.72866667,9.66,15.52116667,1.76,1.28
+wet19,SRS4,Striped Mojarra,Eugerres plumieri,demersal_fish,Consumer,W19-SRS4-Epl2,-31.99,45.54862222,9.87,14.64844444,1.65,1.15
+wet19,RB10,Striped Mullet,Mugilidae,demersal_fish,Consumer,W19-RB10-Mug2,-32.7,43.74133333,11.49,12.94579167,15.03,0.98
+wet19,RB10,Striped Mullet,Mugilidae,demersal_fish,Consumer,W19-RB10-Mug1,-31.91,56.09828889,9.23,16.854,10.58,0.85
+wet19,SRS4,Striped Mullet,Mugilidae,demersal_fish,Consumer,W19-SRS4-Mug1,-24.79,44.36564167,6.7,13.7985,9.71,1.44
+wet19,SRS4,Striped Mullet,Mugilidae,demersal_fish,Consumer,W19-SRS4-Mug2,-15.26,43.46281667,9.15,13.72183333,3.92,0.92
+wet19,SRS4,Striped Mullet,Mugilidae,demersal_fish,Consumer,W19-SRS4-Mug3,-20.1,49.29335455,7.86,14.78963636,4.13,0.94
+wet19,SRS4,Striped Mullet,Mugilidae,demersal_fish,Consumer,W19-SRS4-Mug3,-20.1,49.29335455,7.86,14.78963636,3.39,0.89
+wet19,SRS6,Striped mullet,Mugilidae,demersal_fish,Consumer,W19-SRS6-Mug1,-30.67,49.60142222,7.82,14.56133333,5.44,0.85
+dry19,SRS6,Tidewater Mojarra,Eucinostomus Harengulus,Forage_fish,Consumer,SRS6 MJ1,-23.73,36.719,9.69,10.227,7.8,1.117
+dry19,TS10,Tidewater Mojarra,Eucinostomus Harengulus,Forage_fish,Consumer,TS10 MJ1,-13.57,36.396,7.54,10.884,7.53,1.332
+dry19,SRS6,Tidewater Mojarra,Eucinostomus Harengulus,Forage_fish,Consumer,SRS6 MJ2,-24.52,38.563,9.64,11.576,6.72,1.212
+wet19,RB10,Tidewater Mojarra,Eucinostomus Harengulus,Forage_fish,Consumer,W19-RB10-Eha3,-31.43,45.98323636,12.17,13.77781818,18.12,1.05
+wet19,RB10,Tidewater Mojarra,Eucinostomus Harengulus,Forage_fish,Consumer,W19-RB10-Eha1,-32.07,42.66071,12.27,12.7356,16.65,0.99
+wet19,SRS4,Tidewater Mojarra,Eucinostomus Harengulus,Forage_fish,Consumer,W19-SRS4-Eha1,-31.86,39.224725,9.4,12.11733333,1.64,1.15
+wet19,SRS4,Tidewater Mojarra,Eucinostomus Harengulus,Forage_fish,Consumer,W19-SRS4-Eha2,-32.31,45.50431818,9.52,14.04763636,-0.27,1.57
+wet19,SRS4,Tidewater Mojarra,Eucinostomus Harengulus,Forage_fish,Consumer,W19-SRS4-Eha3,-32.06,48.05766364,9.02,14.79236364,3.2,1.39
+wet19,SRS3,Tidewater Mojarra,Eucinostomus Harengulus,Forage_fish,Consumer,W19-SRS3-Eha1,-33.71,47.15455833,9.39,14.299,20.16,1.63
+wet19,SRS3,Tidewater Mojarra,Eucinostomus Harengulus,Forage_fish,Consumer,W19-SRS3-Eha3,-33.88,48.18001,9.13,14.5828,20.6,1.26
+wet19,TS10,Tidewater Mojarra,Eucinostomus Harengulus,Forage_fish,Consumer,W19-TS10-Eha3,-10.64,42.37991,8.06,13.13733333,4.81,1.44
+wet19,TS10,Tidewater Mojarra,Eucinostomus Harengulus,Forage_fish,Consumer,W19-TS10-Eha2,-10.48,41.800825,8.09,13.97490909,4.4,1.48
+wet19,SRS3,Tidewater Mojarra,Eucinostomus Harengulus,Forage_fish,Consumer,W19-SRS3-Eha2,-32.21,44.76032,11.22,13.9738,18.3,1.15
+wet19,TS10,Tidewater Mojarra,Eucinostomus Harengulus,Forage_fish,Consumer,W19-TS10-Eha1,-10.58,52.10616,8.28,16.1064,4.06,1.36
+wet19,SRS6,Tidewater Mojarra,Eucinostomus Harengulus,Forage_fish,Consumer,W19-SRS6-Eha1,-26.8,41.63192,8.69,12.2286,-0.27,0.98
+wet19,RB10,Tidewater Mojarra,Eucinostomus Harengulus,Forage_fish,Consumer,W19-RB10-Eha2,-32.11,39.39997,12.49,11.83,15.09,1.07
+dry19,RB10,Tidewater Silverside,Menidia peninsulae,Forage_fish,Consumer,RB10 SV1,-30.6,45.672,11.45,13.017,22.16,0.96
+dry19,RB10,Tidewater Silverside,Menidia peninsulae,Forage_fish,Consumer,RB10 SV2,-31.77,40.734,11.01,10.183,22.45,0.798
+wet19,RB10,Tidewater Silverside,Menidia peninsulae,Forage_fish,Consumer,W19-RB10-Mpe2,-30.43,48.8201875,11.91,10.78107692,20.76,1.08
+wet19,TS10,Tidewater Silverside,Menidia peninsulae,Forage_fish,Consumer,W19-TS10-Mpe1,-10.02,47.13993846,9.59,14.45815385,2.4,1.23
+wet19,TS10,Tidewater Silverside,Menidia peninsulae,Forage_fish,Consumer,W19-TS10-Mpe2,-10.02,42.31266667,9.83,13.022,2.66,1.08
+wet19,RB10,Tidewater Silverside,Menidia peninsulae,Forage_fish,Consumer,W19-RB10-Mpe1,-30.13,41.23453,12.26,11.9494,20.57,0.93
+dry19,TS9,Toadfish,toad spp,demersal_fish,Consumer,TS9_TF1_d19,-15.17,53.25642308,12.66,14.60192308,9.54,1.28
+dry19,TS11,Top minnow,top spp,Forage_fish,Consumer,TS11 TN1,-15.17,31.737,4.26,7.655,12.1,1.824
+wet19,SRS3,Walking Catfish,Clarias batrachus,Predator,Predator,W19-SRS3-Cba3,-30.2,48.78197273,9.69,15.15109091,21.75,1.32
+wet19,SRS3,Walking Catfish,Clarias batrachus,Predator,Predator,W19-SRS3-Cba1,-30.43,49.93992727,9.02,15.60527273,20.36,0.9
+wet19,SRS3,Walking Catfish,Clarias batrachus,Predator,Predator,W19-SRS3-Cba2,-30.69,52.08992,8.77,16.2768,20.83,0.85
+dry19,SRS3,Warmouth,Lepomis gulosus,demersal_fish,Consumer,SRS-LEPGUL-1,-29.84,40.83196825,10.01,10.64852381,22.22,0.694194915
+dry19,SRS3,Warmouth,Lepomis gulosus,demersal_fish,Consumer,SRS-LEPGUL-2,-29.85,36.29338889,9.9,9.482388889,22.61,0.659238806
+dry19,SRS3,Warmouth,Lepomis gulosus,demersal_fish,Consumer,SRS-LEPGUL-3,-29.98,29.95624691,9.67,7.375814815,22.78,0.790993789

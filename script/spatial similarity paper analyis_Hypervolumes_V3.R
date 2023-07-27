@@ -1,6 +1,6 @@
 #Author: Mack White
-#Date: November 26, 2022
-#Project: Spatial Similarity Manuscript
+#Date: July/August 2023
+#Project: Spatial Similarity Manuscript - Hyper-Volumes
 
 setwd("/Users/mack/Desktop/RESEARCH/Manuscripts_R Scripts/movement/spatial similarity manuscript")
 # load packages necessary for generating hypervolumes

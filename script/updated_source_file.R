@@ -8,31 +8,26 @@ library(reshape)
 library(plyr)
 library(dplyr)
 library(tidyr)
-# set working directory
-setwd("/Users/mack/Desktop/RESEARCH/Manuscripts_R Scripts/movement/spatial similarity manuscript")
-# code settings -> rainbow parentheses + soft wrap long lines
 
-# read in most recent raw data from MS Teams
-dat <- read.csv("FCE_SI_data_xls_11_30_21_most_recent-PC.csv")
-dat <- na.omit(dat)
+# read in raw data from period of investigation
+#dat <- read.csv("FCE_SI_data_xls_11_30_21_most_recent-PC.csv")
+dat <- FCE_SI_data_xls_11_30_21_most_recent_PC_snookfood07262023 #new source file w/ only snook food and no missing data - 07262023 (406 rows)
+rm(FCE_SI_data_xls_11_30_21_most_recent_PC_snookfood07262023)
 
 # check structure
-str(dat)
+glimpse(dat)
 
-# subset to only the information you need - source file for snook, so only need things they would be likely to eat during the dry season.. talking with ryan think they are feeding at the trophic level immediately below them, but will include small fishes and inverts in source file for bayesian mixing models
-
-dat1 <- subset(dat, functional_grp %in% c("Benthic_invert", "Crab", 
-                                          "demersal_fish","shrimp")) %>%
-      subset(., select = c("site", "common_name", "species_name", "functional_grp",
-                           "d13C", "d15N", "d34S"))
-
-# rename common name to source, what we will need in the end
-dat1 <- rename(dat1, Source = common_name)
-str(dat1)
+### NO LONGER NEED CODE BELOW, SORTED BY HAND IN NEW EXCEL FILE
+# # subset to only the information you need - source file for snook, so only need things they would be likely to eat during the dry season.. talking with ryan think they are feeding at the trophic level immediately below them, but will include small fishes and inverts in source file for bayesian mixing models
+# 
+# dat1 <- subset(dat, functional_grp %in% c("Benthic_invert", "Crab", 
+#                                           "demersal_fish","shrimp")) %>%
+#       subset(., select = c("site", "common_name", "species_name", "functional_grp",
+#                            "d13C", "d15N", "d34S"))
 
 # summarize data to get mean and sd for each source at each site
-dat_summary <- dat1 %>%
-      group_by(site, Source)%>%
+dat_summary <- dat |> 
+      group_by(site, Source) |> 
       summarise(n = n(),
                 Meand13C = mean(d13C),
                 SDd13C = sd(d13C),
@@ -43,15 +38,17 @@ dat_summary <- dat1 %>%
 
 unique(dat_summary$site)
 
-### group by freshwater (i.e., RB10, SRS3), estuarine (i.e., SRS4, SRS6), and seagrass/bay (i.e., all TS sites)
+# recode habitat types w/ updated info 07262023 ---------------------------
 
-dat1$Source1 <- dat1$site %>%
+dat$Source1 <- dat$site %>%
       recode(RB10 = "Freshwater", SRS3 = "Freshwater", SRS4 = "Estuarine", 
-             SRS6 = "Estuarine", TS10 = "Seagrass", TS11 = "Seagrass", TS3 = "Seagrass", 
-             TS7 = "Seagrass", TS9 = "Seagrass")
+             SRS6 = "Estuarine", TS10 = "Seagrass", TS11 = "Seagrass", TS3 = "Freshwater", 
+             TS7 = "Estuarine", TS9 = "Seagrass")
+
+glimpse(dat)
 
 # summarize data to get mean and sd for each source1 and source (habitat + species)
-dat_summary1 <- dat1 %>%
+dat_summary1 <- dat %>%
       group_by(Source1, Source)%>%
       summarise(n = n(),
                 Meand13C = mean(d13C),
@@ -60,10 +57,12 @@ dat_summary1 <- dat1 %>%
                 SDd15N = sd(d15N),
                 Meand34S = mean(d34S),
                 SDd34S = sd(d34S))
+glimpse(dat_summary1)
 
 # summarize data to get mean and sd for each source1 (habitat)
-dat_summary2 <- dat1 %>%
-      group_by(Source1)%>%
+dat_summary2 <- dat |> 
+      drop_na() |> 
+      group_by(Source1) |> 
       summarise(n = n(),
                 Meand13C = mean(d13C),
                 SDd13C = sd(d13C),
@@ -72,4 +71,6 @@ dat_summary2 <- dat1 %>%
                 Meand34S = mean(d34S),
                 SDd34S = sd(d34S))
 
-write.csv(dat_summary2, "ss_snook_source_agg_UPDATED.csv")
+glimpse(dat_summary2)
+
+write.csv(dat_summary2, "ss_snook_source_agg_UPDATED_07262023.csv")

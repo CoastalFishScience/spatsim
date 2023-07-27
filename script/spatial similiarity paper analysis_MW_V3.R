@@ -1,6 +1,6 @@
 #Author: Mack White
-#Date: November 26, 2022
-#Project: Spatial Similarity Manuscript
+#Date: July/August 2023
+#Project: Spatial Similarity Manuscript - Calculating Eadj Values
 
 # Setting Things Up -------------------------------------------------------
 # select softwrap long lines and rainbow parantheses under "Code"
@@ -38,10 +38,8 @@ library(svMisc)
 library(writexl)
 library(ggplot2)
 
-setwd("~/Desktop/RESEARCH/Manuscripts_R Scripts/movement/spatial similarity manuscript")
-
 ################################################################################
-# SKIP TO LINE 122 - DATA SET ALREADY FORMATTED AND PROCESSED CORRECTLY IN LINES 44-119
+# SKIP TO LINE 122 - DATA SET ALREADY FORMATTED AND PROCESSED CORRECTLY IN LINES 44-119 through September 2021
 ################################################################################
 
 # Read Data and Subset Snook (though already technically done) ----------------------------------------------
@@ -117,7 +115,7 @@ snook2<-subset(snook2, Year > 2011 & Year < 2022)
 
 saveRDS(snook2, file = "snook_SR_detection_20122021.rds")
 
-############### START BELOW ###############
+############### START BELOW ######################################################################
 
 snook2 <- readRDS("snook_SR_detection_20122021.rds")
 
@@ -330,92 +328,3 @@ dev.off()
 
 
 # NEXT STEPS WOULD BE TO LOOK AT MODELING CHANGES IN EADJ BETWEEN SEASONS AND AS IT RELATES TO STAGE HEIGHT
-
-####################################################################################
-########### NOW THAT WE HEAVE ALL THE DATA... TIME TO RUN LOOK AT NICHE VOLUME #####
-####################################################################################
-
-####################################################################################
-########### NOW THAT WE HEAVE ALL THE DATA... TIME TO RUN LOOK AT NICHE VOLUME #####
-####################################################################################
-
-####################################################################################
-########### NOW THAT WE HEAVE ALL THE DATA... TIME TO RUN LOOK AT NICHE VOLUME #####
-####################################################################################
-
-####################################################################################
-########### NOW THAT WE HEAVE ALL THE DATA... TIME TO RUN LOOK AT NICHE VOLUME #####
-####################################################################################
-
-# NICHE VOLUME TIME -------------------------------------------------------
-
-# load libraries 
-library(MixSIAR)
-library(tidyverse)
-library(rjags)
-options(max.print = 6000000)
-
-####
-#### TRY WITH PREY AGG BY FW VS ES VS SW
-####
-mixcheck <- read.csv("mix_formatted.csv")
-mix_summary <- mixcheck %>%
-      group_by(wYear) %>%
-      summarise(n = length(unique(ID)))
-
-mix = load_mix_data(file("/Users/mack/Desktop/RESEARCH/Manuscripts_R Scripts/movement/spatial similarity manuscript/mix_formatted.csv"),
-                      iso_names=c("d13C","d34S"),
-                      factors= c("wYear"),
-                      fac_random=c(F),
-                      fac_nested=c(F),
-                      cont_effects=NULL)
-
-# load source data
-source = load_source_data(file("/Users/mack/Desktop/RESEARCH/Manuscripts_R Scripts/movement/spatial similarity manuscript/ss_snook_source_agg_UPDATED.csv"),
-                            source_factors=NULL,
-                            conc_dep=FALSE,
-                            data_type="means",
-                            mix)
-# load TDF data
-discr = load_discr_data(file("/Users/mack/Desktop/RESEARCH/Manuscripts_R Scripts/movement/spatial similarity manuscript/snook_agg_nona_UPDATED.csv"), mix)
-
-# Make an isospace plot
-plot_data(filename="isospace_plot", plot_save_pdf=FALSE, 
-          plot_save_png=FALSE, mix, source, discr)
-
-# Write the JAGS model file
-model_filename = "MixSIAR_model.txt"
-resid_err = T
-process_err = T
-write_JAGS_model(model_filename, resid_err, process_err, mix, source)
-
-# run jags
-jags.sss = run_model(run="normal", mix, source, discr, model_filename,
-                     alpha.prior = 1, resid_err, process_err)
-
-# Process JAGS output
-output_sss = list(summary_save = TRUE,
-                  summary_name = "MixingModels/mm_results/snook_ss11262022",
-                  sup_post = FALSE,
-                  plot_post_save_pdf = FALSE,
-                  plot_post_name = "lower_posterior_density",
-                  sup_pairs = FALSE,
-                  plot_pairs_save_pdf = FALSE,
-                  plot_pairs_name = "lower_pairs_plot",
-                  sup_xy = TRUE,
-                  plot_xy_save_pdf = FALSE,
-                  plot_xy_name = "lower_xy_plot",
-                  gelman = TRUE,
-                  heidel = FALSE,
-                  geweke = TRUE,
-                  diag_save = TRUE,
-                  diag_name = "MixingModels/mm_results/snook_diag11262022",
-                  indiv_effect = FALSE,
-                  plot_post_save_png = F,
-                  plot_pairs_save_png = FALSE,
-                  plot_xy_save_png = FALSE)
-
-output_JAGS_11_26_2022 <- output_JAGS(jags.sss, mix, source, output_sss)
-
-# Redo Analysis with peak months (i.e.,  March, April, May) ---------------
-### conducted in separated R file... "ThreeMonthTest_SpatialSimilarityV1"
