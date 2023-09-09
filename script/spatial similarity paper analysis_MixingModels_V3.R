@@ -14,7 +14,7 @@ options(max.print = 6000000)
 
 ### mixing file (i.e., common snook values)
 
-mixcheck <- mix_formatted 
+mixcheck <- mix_formatted_07272023 #or should it be simply, mix_formatted.csv
 glimpse(mixcheck)
 
 mix_summary <- mixcheck |> 
@@ -70,7 +70,7 @@ jags.sss = run_model(run="test", mix, source, discr, model_filename,
 
 # Process JAGS output
 output_sss = list(summary_save = TRUE,
-                  summary_name = "~/Library/CloudStorage/Dropbox/R/github/spatsim/data/snook_ss07272023",
+                  summary_name = "snook_ss07272023_1",
                   sup_post = FALSE,
                   plot_post_save_pdf = FALSE,
                   plot_post_name = "lower_posterior_density",
@@ -84,13 +84,13 @@ output_sss = list(summary_save = TRUE,
                   heidel = FALSE,
                   geweke = TRUE,
                   diag_save = TRUE,
-                  diag_name = "~/Library/CloudStorage/Dropbox/R/github/spatsim/data/snook_diag07272023",
+                  diag_name = "snook_diag07272023_1",
                   indiv_effect = FALSE,
                   plot_post_save_png = F,
                   plot_pairs_save_png = FALSE,
                   plot_xy_save_png = FALSE)
 
-output_JAGS_07_26_2023 <- output_JAGS(jags.sss, mix, source, output_sss)
-
+output_JAGS(jags.sss, mix, source, output_sss)
+# output_JAGS_07_26_2023 <- 
 # Redo Analysis with peak months (i.e.,  March, April, May) ---------------
 ### conducted in separated R file... "ThreeMonthTest_SpatialSimilarityV1"
