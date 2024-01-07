@@ -1,0 +1,683 @@
+
+#################################################################
+# Summary Statistics
+#################################################################
+
+DIC = 349.8467
+
+                                Mean    SD  2.5%    5%   25%   50%
+Epsilon.1                      0.058 0.014 0.034 0.037 0.048 0.056
+Epsilon.2                      0.202 0.037 0.144 0.150 0.176 0.198
+Epsilon.3                      0.469 0.118 0.286 0.307 0.382 0.454
+ID.SD                          2.184 0.265 1.691 1.764 2.001 2.177
+p.wYear 2011.Estuarine         0.091 0.037 0.042 0.047 0.062 0.082
+p.wYear 2012.Estuarine         0.132 0.110 0.016 0.020 0.049 0.100
+p.wYear 2013.Estuarine         0.045 0.034 0.007 0.009 0.020 0.035
+p.wYear 2014.Estuarine         0.052 0.049 0.008 0.010 0.020 0.033
+p.wYear 2016.Estuarine         0.039 0.038 0.004 0.005 0.013 0.026
+p.wYear 2017.Estuarine         0.087 0.068 0.015 0.018 0.042 0.069
+p.wYear 2018.Estuarine         0.083 0.076 0.010 0.014 0.029 0.055
+p.wYear 2019.Estuarine         0.080 0.072 0.008 0.011 0.028 0.057
+p.wYear 2020.Estuarine         0.232 0.153 0.033 0.045 0.105 0.203
+p.wYear 2011.Freshwater        0.885 0.038 0.806 0.811 0.858 0.888
+p.wYear 2012.Freshwater        0.848 0.115 0.549 0.627 0.792 0.878
+p.wYear 2013.Freshwater        0.932 0.042 0.826 0.849 0.911 0.941
+p.wYear 2014.Freshwater        0.925 0.056 0.771 0.802 0.903 0.942
+p.wYear 2016.Freshwater        0.955 0.040 0.850 0.869 0.941 0.968
+p.wYear 2017.Freshwater        0.905 0.069 0.730 0.778 0.880 0.922
+p.wYear 2018.Freshwater        0.902 0.082 0.674 0.731 0.870 0.930
+p.wYear 2019.Freshwater        0.907 0.077 0.696 0.736 0.875 0.932
+p.wYear 2020.Freshwater        0.652 0.209 0.183 0.255 0.507 0.694
+p.wYear 2011.Seagrass          0.025 0.018 0.009 0.009 0.015 0.019
+p.wYear 2012.Seagrass          0.020 0.030 0.001 0.002 0.005 0.010
+p.wYear 2013.Seagrass          0.023 0.014 0.005 0.006 0.013 0.020
+p.wYear 2014.Seagrass          0.023 0.020 0.002 0.004 0.009 0.017
+p.wYear 2016.Seagrass          0.006 0.008 0.001 0.001 0.002 0.004
+p.wYear 2017.Seagrass          0.008 0.009 0.001 0.001 0.003 0.005
+p.wYear 2018.Seagrass          0.015 0.018 0.001 0.002 0.004 0.009
+p.wYear 2019.Seagrass          0.013 0.016 0.001 0.001 0.003 0.008
+p.wYear 2020.Seagrass          0.115 0.107 0.009 0.013 0.038 0.078
+p.wYear 2011.ID 1.Estuarine    0.815 0.132 0.508 0.569 0.734 0.837
+p.wYear 2011.ID 1.Freshwater   0.104 0.084 0.003 0.006 0.035 0.083
+p.wYear 2011.ID 1.Seagrass     0.081 0.083 0.000 0.000 0.006 0.048
+p.wYear 2011.ID 2.Estuarine    0.285 0.147 0.038 0.058 0.174 0.279
+p.wYear 2011.ID 2.Freshwater   0.230 0.110 0.016 0.046 0.150 0.226
+p.wYear 2011.ID 2.Seagrass     0.486 0.066 0.337 0.372 0.451 0.495
+p.wYear 2011.ID 3.Estuarine    0.089 0.096 0.000 0.001 0.012 0.056
+p.wYear 2011.ID 3.Freshwater   0.856 0.093 0.634 0.678 0.804 0.868
+p.wYear 2011.ID 3.Seagrass     0.055 0.047 0.000 0.000 0.012 0.044
+p.wYear 2011.ID 4.Estuarine    0.961 0.037 0.868 0.885 0.946 0.971
+p.wYear 2011.ID 4.Freshwater   0.032 0.034 0.001 0.001 0.007 0.021
+p.wYear 2011.ID 4.Seagrass     0.007 0.012 0.000 0.000 0.001 0.002
+p.wYear 2011.ID 5.Estuarine    0.393 0.125 0.107 0.155 0.320 0.405
+p.wYear 2011.ID 5.Freshwater   0.106 0.082 0.007 0.010 0.044 0.086
+p.wYear 2011.ID 5.Seagrass     0.501 0.071 0.337 0.374 0.459 0.507
+p.wYear 2011.ID 6.Estuarine    0.024 0.036 0.000 0.000 0.002 0.009
+p.wYear 2011.ID 6.Freshwater   0.967 0.040 0.854 0.881 0.955 0.981
+p.wYear 2011.ID 6.Seagrass     0.010 0.016 0.000 0.000 0.001 0.003
+p.wYear 2011.ID 7.Estuarine    0.156 0.142 0.000 0.001 0.025 0.127
+p.wYear 2011.ID 7.Freshwater   0.807 0.133 0.521 0.565 0.719 0.829
+p.wYear 2011.ID 7.Seagrass     0.038 0.037 0.000 0.000 0.005 0.026
+p.wYear 2011.ID 8.Estuarine    0.879 0.100 0.635 0.681 0.822 0.903
+p.wYear 2011.ID 8.Freshwater   0.106 0.096 0.001 0.003 0.026 0.079
+p.wYear 2011.ID 8.Seagrass     0.015 0.023 0.000 0.000 0.001 0.005
+p.wYear 2011.ID 9.Estuarine    0.014 0.021 0.000 0.000 0.001 0.005
+p.wYear 2011.ID 9.Freshwater   0.981 0.024 0.913 0.934 0.974 0.990
+p.wYear 2011.ID 9.Seagrass     0.005 0.009 0.000 0.000 0.000 0.002
+p.wYear 2011.ID 10.Estuarine   0.048 0.065 0.000 0.000 0.004 0.020
+p.wYear 2011.ID 10.Freshwater  0.877 0.070 0.715 0.744 0.839 0.881
+p.wYear 2011.ID 10.Seagrass    0.075 0.050 0.000 0.001 0.029 0.077
+p.wYear 2011.ID 11.Estuarine   0.040 0.055 0.000 0.000 0.003 0.015
+p.wYear 2011.ID 11.Freshwater  0.948 0.057 0.790 0.827 0.924 0.967
+p.wYear 2011.ID 11.Seagrass    0.012 0.018 0.000 0.000 0.001 0.004
+p.wYear 2011.ID 12.Estuarine   0.023 0.038 0.000 0.000 0.002 0.007
+p.wYear 2011.ID 12.Freshwater  0.972 0.039 0.853 0.893 0.965 0.987
+p.wYear 2011.ID 12.Seagrass    0.005 0.008 0.000 0.000 0.000 0.002
+p.wYear 2011.ID 13.Estuarine   0.067 0.090 0.000 0.000 0.005 0.030
+p.wYear 2011.ID 13.Freshwater  0.819 0.084 0.644 0.678 0.777 0.825
+p.wYear 2011.ID 13.Seagrass    0.115 0.057 0.001 0.002 0.080 0.123
+p.wYear 2011.ID 14.Estuarine   0.009 0.014 0.000 0.000 0.001 0.003
+p.wYear 2011.ID 14.Freshwater  0.988 0.016 0.946 0.955 0.983 0.994
+p.wYear 2011.ID 14.Seagrass    0.003 0.006 0.000 0.000 0.000 0.001
+p.wYear 2011.ID 15.Estuarine   0.015 0.022 0.000 0.000 0.001 0.005
+p.wYear 2011.ID 15.Freshwater  0.979 0.025 0.909 0.927 0.972 0.988
+p.wYear 2011.ID 15.Seagrass    0.006 0.010 0.000 0.000 0.000 0.002
+p.wYear 2011.ID 16.Estuarine   0.016 0.024 0.000 0.000 0.001 0.006
+p.wYear 2011.ID 16.Freshwater  0.978 0.027 0.905 0.923 0.970 0.988
+p.wYear 2011.ID 16.Seagrass    0.006 0.010 0.000 0.000 0.000 0.002
+p.wYear 2011.ID 17.Estuarine   0.014 0.021 0.000 0.000 0.001 0.006
+p.wYear 2011.ID 17.Freshwater  0.980 0.024 0.914 0.932 0.972 0.988
+p.wYear 2011.ID 17.Seagrass    0.006 0.010 0.000 0.000 0.000 0.002
+p.wYear 2012.ID 18.Estuarine   0.019 0.028 0.000 0.000 0.001 0.008
+p.wYear 2012.ID 18.Freshwater  0.975 0.031 0.891 0.912 0.966 0.986
+p.wYear 2012.ID 18.Seagrass    0.006 0.010 0.000 0.000 0.000 0.002
+p.wYear 2012.ID 19.Estuarine   0.053 0.068 0.000 0.000 0.005 0.022
+p.wYear 2012.ID 19.Freshwater  0.930 0.071 0.743 0.788 0.897 0.952
+p.wYear 2012.ID 19.Seagrass    0.018 0.026 0.000 0.000 0.001 0.005
+p.wYear 2012.ID 20.Estuarine   0.398 0.167 0.037 0.084 0.297 0.410
+p.wYear 2012.ID 20.Freshwater  0.583 0.159 0.282 0.324 0.480 0.574
+p.wYear 2012.ID 20.Seagrass    0.019 0.025 0.000 0.000 0.002 0.008
+p.wYear 2012.ID 21.Estuarine   0.863 0.102 0.631 0.669 0.798 0.880
+p.wYear 2012.ID 21.Freshwater  0.118 0.095 0.002 0.005 0.039 0.098
+p.wYear 2012.ID 21.Seagrass    0.019 0.030 0.000 0.000 0.001 0.006
+p.wYear 2013.ID 22.Estuarine   0.190 0.153 0.000 0.001 0.038 0.182
+p.wYear 2013.ID 22.Freshwater  0.234 0.113 0.033 0.049 0.138 0.241
+p.wYear 2013.ID 22.Seagrass    0.576 0.064 0.434 0.467 0.536 0.578
+p.wYear 2013.ID 23.Estuarine   0.830 0.114 0.580 0.622 0.759 0.845
+p.wYear 2013.ID 23.Freshwater  0.123 0.093 0.004 0.008 0.046 0.105
+p.wYear 2013.ID 23.Seagrass    0.047 0.055 0.000 0.000 0.005 0.025
+p.wYear 2013.ID 24.Estuarine   0.395 0.193 0.007 0.028 0.279 0.401
+p.wYear 2013.ID 24.Freshwater  0.544 0.163 0.177 0.271 0.450 0.539
+p.wYear 2013.ID 24.Seagrass    0.061 0.053 0.000 0.001 0.012 0.051
+p.wYear 2013.ID 25.Estuarine   0.049 0.066 0.000 0.000 0.004 0.018
+p.wYear 2013.ID 25.Freshwater  0.911 0.073 0.728 0.771 0.865 0.923
+p.wYear 2013.ID 25.Seagrass    0.040 0.039 0.000 0.000 0.006 0.028
+p.wYear 2013.ID 26.Estuarine   0.056 0.068 0.000 0.000 0.008 0.030
+p.wYear 2013.ID 26.Freshwater  0.690 0.062 0.543 0.575 0.657 0.696
+p.wYear 2013.ID 26.Seagrass    0.254 0.042 0.164 0.182 0.229 0.257
+p.wYear 2013.ID 27.Estuarine   0.015 0.025 0.000 0.000 0.001 0.004
+p.wYear 2013.ID 27.Freshwater  0.979 0.028 0.901 0.924 0.971 0.990
+p.wYear 2013.ID 27.Seagrass    0.006 0.010 0.000 0.000 0.001 0.002
+p.wYear 2013.ID 28.Estuarine   0.099 0.108 0.000 0.001 0.013 0.060
+p.wYear 2013.ID 28.Freshwater  0.773 0.089 0.563 0.599 0.723 0.790
+p.wYear 2013.ID 28.Seagrass    0.129 0.051 0.010 0.031 0.099 0.132
+p.wYear 2013.ID 29.Estuarine   0.047 0.064 0.000 0.000 0.004 0.017
+p.wYear 2013.ID 29.Freshwater  0.906 0.072 0.733 0.773 0.864 0.916
+p.wYear 2013.ID 29.Seagrass    0.047 0.043 0.000 0.000 0.007 0.038
+p.wYear 2013.ID 30.Estuarine   0.173 0.148 0.000 0.001 0.028 0.159
+p.wYear 2013.ID 30.Freshwater  0.787 0.139 0.501 0.548 0.691 0.796
+p.wYear 2013.ID 30.Seagrass    0.039 0.039 0.000 0.000 0.006 0.028
+p.wYear 2013.ID 31.Estuarine   0.045 0.063 0.000 0.000 0.002 0.017
+p.wYear 2013.ID 31.Freshwater  0.935 0.067 0.766 0.796 0.903 0.956
+p.wYear 2013.ID 31.Seagrass    0.020 0.026 0.000 0.000 0.001 0.009
+p.wYear 2013.ID 32.Estuarine   0.036 0.057 0.000 0.000 0.001 0.009
+p.wYear 2013.ID 32.Freshwater  0.953 0.059 0.783 0.815 0.937 0.976
+p.wYear 2013.ID 32.Seagrass    0.012 0.017 0.000 0.000 0.001 0.004
+p.wYear 2013.ID 33.Estuarine   0.036 0.058 0.000 0.000 0.001 0.008
+p.wYear 2013.ID 33.Freshwater  0.956 0.060 0.780 0.822 0.941 0.980
+p.wYear 2013.ID 33.Seagrass    0.009 0.014 0.000 0.000 0.000 0.003
+p.wYear 2013.ID 34.Estuarine   0.019 0.032 0.000 0.000 0.001 0.005
+p.wYear 2013.ID 34.Freshwater  0.973 0.035 0.878 0.904 0.963 0.987
+p.wYear 2013.ID 34.Seagrass    0.008 0.013 0.000 0.000 0.001 0.003
+p.wYear 2013.ID 35.Estuarine   0.018 0.030 0.000 0.000 0.001 0.005
+p.wYear 2013.ID 35.Freshwater  0.975 0.032 0.880 0.907 0.966 0.988
+p.wYear 2013.ID 35.Seagrass    0.007 0.011 0.000 0.000 0.001 0.003
+p.wYear 2013.ID 36.Estuarine   0.046 0.065 0.000 0.000 0.003 0.015
+p.wYear 2013.ID 36.Freshwater  0.930 0.070 0.759 0.784 0.898 0.951
+p.wYear 2013.ID 36.Seagrass    0.023 0.029 0.000 0.000 0.002 0.011
+p.wYear 2013.ID 37.Estuarine   0.025 0.040 0.000 0.000 0.001 0.007
+p.wYear 2013.ID 37.Freshwater  0.962 0.045 0.833 0.869 0.943 0.979
+p.wYear 2013.ID 37.Seagrass    0.014 0.020 0.000 0.000 0.001 0.005
+p.wYear 2013.ID 38.Estuarine   0.025 0.039 0.000 0.000 0.002 0.008
+p.wYear 2013.ID 38.Freshwater  0.945 0.051 0.821 0.848 0.915 0.958
+p.wYear 2013.ID 38.Seagrass    0.029 0.033 0.000 0.000 0.002 0.015
+p.wYear 2013.ID 39.Estuarine   0.045 0.062 0.000 0.000 0.003 0.018
+p.wYear 2013.ID 39.Freshwater  0.926 0.068 0.749 0.787 0.892 0.941
+p.wYear 2013.ID 39.Seagrass    0.030 0.033 0.000 0.000 0.003 0.016
+p.wYear 2013.ID 40.Estuarine   0.117 0.116 0.000 0.001 0.014 0.084
+p.wYear 2013.ID 40.Freshwater  0.852 0.115 0.600 0.633 0.776 0.876
+p.wYear 2013.ID 40.Seagrass    0.031 0.033 0.000 0.000 0.004 0.018
+p.wYear 2014.ID 41.Estuarine   0.024 0.039 0.000 0.000 0.001 0.007
+p.wYear 2014.ID 41.Freshwater  0.965 0.043 0.840 0.878 0.951 0.982
+p.wYear 2014.ID 41.Seagrass    0.010 0.016 0.000 0.000 0.001 0.004
+p.wYear 2014.ID 42.Estuarine   0.193 0.122 0.002 0.005 0.090 0.196
+p.wYear 2014.ID 42.Freshwater  0.146 0.088 0.010 0.018 0.071 0.140
+p.wYear 2014.ID 42.Seagrass    0.661 0.065 0.537 0.555 0.618 0.663
+p.wYear 2014.ID 43.Estuarine   0.025 0.039 0.000 0.000 0.001 0.007
+p.wYear 2014.ID 43.Freshwater  0.964 0.043 0.844 0.877 0.948 0.980
+p.wYear 2014.ID 43.Seagrass    0.011 0.017 0.000 0.000 0.001 0.004
+p.wYear 2014.ID 44.Estuarine   0.026 0.038 0.000 0.000 0.002 0.009
+p.wYear 2014.ID 44.Freshwater  0.945 0.050 0.826 0.845 0.915 0.957
+p.wYear 2014.ID 44.Seagrass    0.030 0.034 0.000 0.000 0.003 0.016
+p.wYear 2014.ID 45.Estuarine   0.040 0.060 0.000 0.000 0.003 0.014
+p.wYear 2014.ID 45.Freshwater  0.930 0.067 0.769 0.803 0.896 0.945
+p.wYear 2014.ID 45.Seagrass    0.030 0.033 0.000 0.000 0.002 0.018
+p.wYear 2014.ID 46.Estuarine   0.032 0.047 0.000 0.000 0.002 0.011
+p.wYear 2014.ID 46.Freshwater  0.944 0.055 0.811 0.837 0.913 0.960
+p.wYear 2014.ID 46.Seagrass    0.024 0.031 0.000 0.000 0.001 0.008
+p.wYear 2014.ID 47.Estuarine   0.055 0.076 0.000 0.000 0.004 0.020
+p.wYear 2014.ID 47.Freshwater  0.906 0.079 0.703 0.752 0.865 0.922
+p.wYear 2014.ID 47.Seagrass    0.039 0.040 0.000 0.000 0.004 0.026
+p.wYear 2014.ID 48.Estuarine   0.016 0.028 0.000 0.000 0.001 0.005
+p.wYear 2014.ID 48.Freshwater  0.975 0.031 0.886 0.912 0.967 0.987
+p.wYear 2014.ID 48.Seagrass    0.008 0.013 0.000 0.000 0.001 0.003
+p.wYear 2014.ID 49.Estuarine   0.097 0.110 0.000 0.000 0.009 0.055
+p.wYear 2014.ID 49.Freshwater  0.848 0.105 0.628 0.666 0.786 0.861
+p.wYear 2014.ID 49.Seagrass    0.055 0.046 0.000 0.000 0.011 0.048
+p.wYear 2014.ID 50.Estuarine   0.026 0.041 0.000 0.000 0.001 0.008
+p.wYear 2014.ID 50.Freshwater  0.958 0.048 0.826 0.859 0.938 0.977
+p.wYear 2014.ID 50.Seagrass    0.015 0.023 0.000 0.000 0.001 0.005
+p.wYear 2014.ID 51.Estuarine   0.747 0.150 0.451 0.517 0.649 0.752
+p.wYear 2014.ID 51.Freshwater  0.216 0.134 0.005 0.011 0.114 0.211
+p.wYear 2014.ID 51.Seagrass    0.036 0.045 0.000 0.000 0.003 0.016
+p.wYear 2014.ID 52.Estuarine   0.208 0.179 0.001 0.002 0.031 0.185
+p.wYear 2014.ID 52.Freshwater  0.706 0.150 0.386 0.446 0.603 0.723
+p.wYear 2014.ID 52.Seagrass    0.085 0.056 0.001 0.002 0.035 0.087
+p.wYear 2016.ID 53.Estuarine   0.023 0.041 0.000 0.000 0.001 0.006
+p.wYear 2016.ID 53.Freshwater  0.972 0.043 0.847 0.879 0.967 0.989
+p.wYear 2016.ID 53.Seagrass    0.004 0.009 0.000 0.000 0.000 0.001
+p.wYear 2016.ID 54.Estuarine   0.017 0.030 0.000 0.000 0.001 0.004
+p.wYear 2016.ID 54.Freshwater  0.980 0.031 0.888 0.915 0.974 0.992
+p.wYear 2016.ID 54.Seagrass    0.003 0.006 0.000 0.000 0.000 0.001
+p.wYear 2016.ID 55.Estuarine   0.043 0.065 0.000 0.000 0.002 0.014
+p.wYear 2016.ID 55.Freshwater  0.937 0.070 0.757 0.804 0.906 0.962
+p.wYear 2016.ID 55.Seagrass    0.020 0.029 0.000 0.000 0.001 0.004
+p.wYear 2016.ID 56.Estuarine   0.876 0.094 0.650 0.698 0.818 0.892
+p.wYear 2016.ID 56.Freshwater  0.107 0.086 0.003 0.006 0.035 0.090
+p.wYear 2016.ID 56.Seagrass    0.017 0.029 0.000 0.000 0.001 0.004
+p.wYear 2016.ID 57.Estuarine   0.018 0.031 0.000 0.000 0.001 0.005
+p.wYear 2016.ID 57.Freshwater  0.978 0.033 0.877 0.910 0.973 0.992
+p.wYear 2016.ID 57.Seagrass    0.004 0.008 0.000 0.000 0.000 0.001
+p.wYear 2016.ID 58.Estuarine   0.040 0.058 0.000 0.000 0.002 0.013
+p.wYear 2016.ID 58.Freshwater  0.948 0.063 0.780 0.812 0.923 0.973
+p.wYear 2016.ID 58.Seagrass    0.013 0.021 0.000 0.000 0.000 0.003
+p.wYear 2016.ID 59.Estuarine   0.032 0.048 0.000 0.000 0.002 0.009
+p.wYear 2016.ID 59.Freshwater  0.962 0.051 0.817 0.855 0.944 0.983
+p.wYear 2016.ID 59.Seagrass    0.007 0.012 0.000 0.000 0.000 0.002
+p.wYear 2016.ID 60.Estuarine   0.032 0.050 0.000 0.000 0.002 0.009
+p.wYear 2016.ID 60.Freshwater  0.962 0.052 0.819 0.855 0.946 0.983
+p.wYear 2016.ID 60.Seagrass    0.006 0.012 0.000 0.000 0.000 0.001
+p.wYear 2016.ID 61.Estuarine   0.081 0.099 0.000 0.000 0.004 0.034
+p.wYear 2016.ID 61.Freshwater  0.907 0.100 0.661 0.699 0.849 0.947
+p.wYear 2016.ID 61.Seagrass    0.012 0.020 0.000 0.000 0.000 0.003
+p.wYear 2016.ID 62.Estuarine   0.106 0.117 0.000 0.000 0.008 0.056
+p.wYear 2016.ID 62.Freshwater  0.881 0.116 0.614 0.645 0.806 0.919
+p.wYear 2016.ID 62.Seagrass    0.013 0.021 0.000 0.000 0.001 0.003
+p.wYear 2016.ID 63.Estuarine   0.047 0.067 0.000 0.000 0.002 0.016
+p.wYear 2016.ID 63.Freshwater  0.940 0.070 0.754 0.794 0.913 0.966
+p.wYear 2016.ID 63.Seagrass    0.014 0.021 0.000 0.000 0.000 0.003
+p.wYear 2017.ID 64.Estuarine   0.060 0.072 0.000 0.000 0.005 0.030
+p.wYear 2017.ID 64.Freshwater  0.929 0.074 0.737 0.775 0.891 0.955
+p.wYear 2017.ID 64.Seagrass    0.011 0.018 0.000 0.000 0.000 0.002
+p.wYear 2017.ID 65.Estuarine   0.043 0.059 0.000 0.000 0.003 0.018
+p.wYear 2017.ID 65.Freshwater  0.951 0.060 0.786 0.814 0.926 0.975
+p.wYear 2017.ID 65.Seagrass    0.006 0.013 0.000 0.000 0.000 0.001
+p.wYear 2017.ID 66.Estuarine   0.027 0.041 0.000 0.000 0.002 0.009
+p.wYear 2017.ID 66.Freshwater  0.968 0.042 0.848 0.880 0.956 0.985
+p.wYear 2017.ID 66.Seagrass    0.005 0.010 0.000 0.000 0.000 0.001
+p.wYear 2017.ID 67.Estuarine   0.897 0.084 0.704 0.732 0.844 0.918
+p.wYear 2017.ID 67.Freshwater  0.093 0.080 0.002 0.004 0.027 0.071
+p.wYear 2017.ID 67.Seagrass    0.010 0.019 0.000 0.000 0.000 0.002
+p.wYear 2017.ID 68.Estuarine   0.838 0.114 0.590 0.632 0.764 0.853
+p.wYear 2017.ID 68.Freshwater  0.151 0.113 0.003 0.008 0.057 0.132
+p.wYear 2017.ID 68.Seagrass    0.010 0.018 0.000 0.000 0.001 0.003
+p.wYear 2017.ID 69.Estuarine   0.736 0.170 0.405 0.453 0.614 0.740
+p.wYear 2017.ID 69.Freshwater  0.132 0.093 0.002 0.007 0.056 0.121
+p.wYear 2017.ID 69.Seagrass    0.132 0.110 0.000 0.000 0.009 0.135
+p.wYear 2017.ID 70.Estuarine   0.044 0.059 0.000 0.000 0.004 0.019
+p.wYear 2017.ID 70.Freshwater  0.935 0.066 0.770 0.804 0.900 0.956
+p.wYear 2017.ID 70.Seagrass    0.021 0.032 0.000 0.000 0.000 0.004
+p.wYear 2017.ID 71.Estuarine   0.020 0.032 0.000 0.000 0.001 0.007
+p.wYear 2017.ID 71.Freshwater  0.974 0.034 0.875 0.906 0.966 0.988
+p.wYear 2017.ID 71.Seagrass    0.005 0.010 0.000 0.000 0.000 0.001
+p.wYear 2017.ID 72.Estuarine   0.021 0.032 0.000 0.000 0.002 0.007
+p.wYear 2017.ID 72.Freshwater  0.973 0.034 0.875 0.902 0.961 0.986
+p.wYear 2017.ID 72.Seagrass    0.006 0.011 0.000 0.000 0.000 0.001
+p.wYear 2017.ID 73.Estuarine   0.042 0.056 0.000 0.000 0.003 0.016
+p.wYear 2017.ID 73.Freshwater  0.950 0.059 0.796 0.826 0.924 0.971
+p.wYear 2017.ID 73.Seagrass    0.009 0.016 0.000 0.000 0.000 0.002
+p.wYear 2017.ID 74.Estuarine   0.029 0.043 0.000 0.000 0.002 0.011
+p.wYear 2017.ID 74.Freshwater  0.961 0.047 0.823 0.861 0.943 0.979
+p.wYear 2017.ID 74.Seagrass    0.010 0.018 0.000 0.000 0.000 0.002
+p.wYear 2017.ID 75.Estuarine   0.884 0.094 0.665 0.707 0.827 0.905
+p.wYear 2017.ID 75.Freshwater  0.102 0.088 0.002 0.004 0.030 0.079
+p.wYear 2017.ID 75.Seagrass    0.015 0.026 0.000 0.000 0.001 0.003
+p.wYear 2017.ID 76.Estuarine   0.397 0.182 0.015 0.047 0.289 0.409
+p.wYear 2017.ID 76.Freshwater  0.575 0.168 0.241 0.306 0.467 0.571
+p.wYear 2017.ID 76.Seagrass    0.027 0.038 0.000 0.000 0.001 0.009
+p.wYear 2017.ID 77.Estuarine   0.020 0.028 0.000 0.000 0.002 0.008
+p.wYear 2017.ID 77.Freshwater  0.975 0.030 0.887 0.914 0.965 0.987
+p.wYear 2017.ID 77.Seagrass    0.005 0.009 0.000 0.000 0.000 0.001
+p.wYear 2017.ID 78.Estuarine   0.056 0.073 0.000 0.000 0.004 0.024
+p.wYear 2017.ID 78.Freshwater  0.933 0.075 0.729 0.781 0.901 0.961
+p.wYear 2017.ID 78.Seagrass    0.011 0.020 0.000 0.000 0.000 0.002
+p.wYear 2017.ID 79.Estuarine   0.038 0.052 0.000 0.000 0.003 0.016
+p.wYear 2017.ID 79.Freshwater  0.948 0.056 0.797 0.829 0.924 0.969
+p.wYear 2017.ID 79.Seagrass    0.013 0.022 0.000 0.000 0.000 0.003
+p.wYear 2017.ID 80.Estuarine   0.072 0.088 0.000 0.000 0.006 0.030
+p.wYear 2017.ID 80.Freshwater  0.908 0.089 0.690 0.731 0.858 0.933
+p.wYear 2017.ID 80.Seagrass    0.021 0.030 0.000 0.000 0.001 0.006
+p.wYear 2018.ID 81.Estuarine   0.040 0.055 0.000 0.000 0.003 0.016
+p.wYear 2018.ID 81.Freshwater  0.946 0.059 0.790 0.827 0.917 0.967
+p.wYear 2018.ID 81.Seagrass    0.015 0.022 0.000 0.000 0.001 0.004
+p.wYear 2018.ID 82.Estuarine   0.324 0.210 0.004 0.013 0.158 0.320
+p.wYear 2018.ID 82.Freshwater  0.586 0.162 0.214 0.291 0.493 0.591
+p.wYear 2018.ID 82.Seagrass    0.090 0.067 0.000 0.000 0.022 0.091
+p.wYear 2018.ID 83.Estuarine   0.040 0.056 0.000 0.000 0.003 0.015
+p.wYear 2018.ID 83.Freshwater  0.944 0.060 0.785 0.816 0.916 0.963
+p.wYear 2018.ID 83.Seagrass    0.016 0.024 0.000 0.000 0.001 0.005
+p.wYear 2018.ID 84.Estuarine   0.566 0.160 0.253 0.317 0.467 0.562
+p.wYear 2018.ID 84.Freshwater  0.399 0.143 0.069 0.136 0.314 0.407
+p.wYear 2018.ID 84.Seagrass    0.036 0.043 0.000 0.000 0.003 0.016
+p.wYear 2018.ID 85.Estuarine   0.057 0.074 0.000 0.000 0.004 0.024
+p.wYear 2018.ID 85.Freshwater  0.926 0.076 0.730 0.765 0.889 0.949
+p.wYear 2018.ID 85.Seagrass    0.017 0.025 0.000 0.000 0.001 0.006
+p.wYear 2018.ID 86.Estuarine   0.361 0.205 0.000 0.002 0.234 0.391
+p.wYear 2018.ID 86.Freshwater  0.610 0.190 0.262 0.321 0.477 0.589
+p.wYear 2018.ID 86.Seagrass    0.029 0.037 0.000 0.000 0.002 0.012
+p.wYear 2018.ID 87.Estuarine   0.060 0.076 0.000 0.000 0.004 0.025
+p.wYear 2018.ID 87.Freshwater  0.930 0.078 0.726 0.767 0.893 0.959
+p.wYear 2018.ID 87.Seagrass    0.010 0.016 0.000 0.000 0.000 0.003
+p.wYear 2018.ID 88.Estuarine   0.121 0.129 0.000 0.001 0.012 0.070
+p.wYear 2018.ID 88.Freshwater  0.864 0.128 0.564 0.617 0.781 0.905
+p.wYear 2018.ID 88.Seagrass    0.015 0.022 0.000 0.000 0.001 0.005
+p.wYear 2018.ID 89.Estuarine   0.134 0.128 0.000 0.001 0.021 0.099
+p.wYear 2018.ID 89.Freshwater  0.804 0.115 0.541 0.591 0.731 0.816
+p.wYear 2018.ID 89.Seagrass    0.062 0.051 0.000 0.000 0.013 0.059
+p.wYear 2018.ID 90.Estuarine   0.036 0.052 0.000 0.000 0.002 0.014
+p.wYear 2018.ID 90.Freshwater  0.955 0.054 0.808 0.845 0.937 0.974
+p.wYear 2018.ID 90.Seagrass    0.010 0.016 0.000 0.000 0.000 0.002
+p.wYear 2019.ID 91.Estuarine   0.090 0.103 0.000 0.000 0.009 0.045
+p.wYear 2019.ID 91.Freshwater  0.894 0.104 0.635 0.687 0.838 0.926
+p.wYear 2019.ID 91.Seagrass    0.016 0.023 0.000 0.000 0.001 0.005
+p.wYear 2019.ID 92.Estuarine   0.087 0.098 0.000 0.000 0.007 0.045
+p.wYear 2019.ID 92.Freshwater  0.899 0.098 0.666 0.709 0.839 0.929
+p.wYear 2019.ID 92.Seagrass    0.014 0.021 0.000 0.000 0.001 0.004
+p.wYear 2019.ID 93.Estuarine   0.047 0.065 0.000 0.000 0.002 0.017
+p.wYear 2019.ID 93.Freshwater  0.942 0.067 0.767 0.801 0.915 0.969
+p.wYear 2019.ID 93.Seagrass    0.011 0.018 0.000 0.000 0.001 0.003
+p.wYear 2019.ID 94.Estuarine   0.056 0.073 0.000 0.000 0.005 0.024
+p.wYear 2019.ID 94.Freshwater  0.936 0.074 0.733 0.776 0.907 0.965
+p.wYear 2019.ID 94.Seagrass    0.009 0.015 0.000 0.000 0.000 0.002
+p.wYear 2019.ID 95.Estuarine   0.792 0.132 0.521 0.569 0.700 0.798
+p.wYear 2019.ID 95.Freshwater  0.195 0.129 0.005 0.010 0.086 0.187
+p.wYear 2019.ID 95.Seagrass    0.013 0.022 0.000 0.000 0.001 0.004
+p.wYear 2019.ID 96.Estuarine   0.102 0.110 0.000 0.001 0.014 0.062
+p.wYear 2019.ID 96.Freshwater  0.839 0.102 0.608 0.652 0.783 0.852
+p.wYear 2019.ID 96.Seagrass    0.059 0.052 0.000 0.000 0.007 0.051
+p.wYear 2019.ID 97.Estuarine   0.048 0.069 0.000 0.000 0.002 0.017
+p.wYear 2019.ID 97.Freshwater  0.944 0.070 0.748 0.794 0.920 0.971
+p.wYear 2019.ID 97.Seagrass    0.008 0.014 0.000 0.000 0.000 0.002
+p.wYear 2019.ID 98.Estuarine   0.094 0.107 0.000 0.000 0.007 0.050
+p.wYear 2019.ID 98.Freshwater  0.884 0.107 0.616 0.678 0.822 0.912
+p.wYear 2019.ID 98.Seagrass    0.022 0.030 0.000 0.000 0.001 0.007
+p.wYear 2020.ID 99.Estuarine   0.582 0.132 0.333 0.380 0.497 0.575
+p.wYear 2020.ID 99.Freshwater  0.083 0.068 0.002 0.004 0.030 0.068
+p.wYear 2020.ID 99.Seagrass    0.335 0.099 0.059 0.133 0.289 0.350
+p.wYear 2020.ID 100.Estuarine  0.944 0.055 0.801 0.831 0.920 0.963
+p.wYear 2020.ID 100.Freshwater 0.046 0.053 0.000 0.001 0.007 0.025
+p.wYear 2020.ID 100.Seagrass   0.010 0.015 0.000 0.000 0.001 0.005
+p.wYear 2020.ID 101.Estuarine  0.291 0.146 0.036 0.049 0.186 0.283
+p.wYear 2020.ID 101.Freshwater 0.202 0.106 0.016 0.029 0.119 0.202
+p.wYear 2020.ID 101.Seagrass   0.507 0.066 0.359 0.393 0.475 0.513
+p.wYear 2020.ID 102.Estuarine  0.090 0.095 0.000 0.001 0.012 0.055
+p.wYear 2020.ID 102.Freshwater 0.874 0.094 0.655 0.699 0.815 0.892
+p.wYear 2020.ID 102.Seagrass   0.037 0.034 0.000 0.000 0.008 0.028
+                                 75%   95% 97.5%
+Epsilon.1                      0.066 0.084 0.090
+Epsilon.2                      0.224 0.267 0.287
+Epsilon.3                      0.536 0.678 0.747
+ID.SD                          2.360 2.625 2.697
+p.wYear 2011.Estuarine         0.111 0.176 0.183
+p.wYear 2012.Estuarine         0.182 0.342 0.427
+p.wYear 2013.Estuarine         0.060 0.113 0.138
+p.wYear 2014.Estuarine         0.066 0.156 0.200
+p.wYear 2016.Estuarine         0.051 0.120 0.140
+p.wYear 2017.Estuarine         0.112 0.217 0.253
+p.wYear 2018.Estuarine         0.111 0.248 0.293
+p.wYear 2019.Estuarine         0.104 0.234 0.280
+p.wYear 2020.Estuarine         0.335 0.517 0.581
+p.wYear 2011.Freshwater        0.913 0.942 0.948
+p.wYear 2012.Freshwater        0.934 0.973 0.979
+p.wYear 2013.Freshwater        0.963 0.982 0.987
+p.wYear 2014.Freshwater        0.966 0.981 0.985
+p.wYear 2016.Freshwater        0.982 0.993 0.995
+p.wYear 2017.Freshwater        0.952 0.977 0.981
+p.wYear 2018.Freshwater        0.962 0.981 0.984
+p.wYear 2019.Freshwater        0.962 0.983 0.987
+p.wYear 2020.Freshwater        0.824 0.919 0.939
+p.wYear 2011.Seagrass          0.027 0.080 0.088
+p.wYear 2012.Seagrass          0.025 0.068 0.094
+p.wYear 2013.Seagrass          0.029 0.047 0.054
+p.wYear 2014.Seagrass          0.031 0.067 0.079
+p.wYear 2016.Seagrass          0.008 0.020 0.028
+p.wYear 2017.Seagrass          0.011 0.025 0.034
+p.wYear 2018.Seagrass          0.018 0.052 0.069
+p.wYear 2019.Seagrass          0.017 0.043 0.059
+p.wYear 2020.Seagrass          0.160 0.335 0.397
+p.wYear 2011.ID 1.Estuarine    0.924 0.985 0.992
+p.wYear 2011.ID 1.Freshwater   0.156 0.270 0.311
+p.wYear 2011.ID 1.Seagrass     0.141 0.238 0.266
+p.wYear 2011.ID 2.Estuarine    0.385 0.538 0.591
+p.wYear 2011.ID 2.Freshwater   0.308 0.414 0.435
+p.wYear 2011.ID 2.Seagrass     0.530 0.574 0.592
+p.wYear 2011.ID 3.Estuarine    0.136 0.290 0.340
+p.wYear 2011.ID 3.Freshwater   0.924 0.986 0.993
+p.wYear 2011.ID 3.Seagrass     0.090 0.140 0.156
+p.wYear 2011.ID 4.Estuarine    0.988 0.997 0.999
+p.wYear 2011.ID 4.Freshwater   0.045 0.103 0.121
+p.wYear 2011.ID 4.Seagrass     0.008 0.033 0.043
+p.wYear 2011.ID 5.Estuarine    0.478 0.577 0.609
+p.wYear 2011.ID 5.Freshwater   0.151 0.275 0.325
+p.wYear 2011.ID 5.Seagrass     0.551 0.603 0.618
+p.wYear 2011.ID 6.Estuarine    0.029 0.098 0.130
+p.wYear 2011.ID 6.Freshwater   0.994 0.999 1.000
+p.wYear 2011.ID 6.Seagrass     0.011 0.042 0.054
+p.wYear 2011.ID 7.Estuarine    0.257 0.418 0.462
+p.wYear 2011.ID 7.Freshwater   0.913 0.989 0.995
+p.wYear 2011.ID 7.Seagrass     0.063 0.106 0.129
+p.wYear 2011.ID 8.Estuarine    0.962 0.993 0.997
+p.wYear 2011.ID 8.Freshwater   0.162 0.302 0.346
+p.wYear 2011.ID 8.Seagrass     0.019 0.062 0.078
+p.wYear 2011.ID 9.Estuarine    0.017 0.056 0.074
+p.wYear 2011.ID 9.Freshwater   0.997 1.000 1.000
+p.wYear 2011.ID 9.Seagrass     0.006 0.023 0.029
+p.wYear 2011.ID 10.Estuarine   0.063 0.195 0.242
+p.wYear 2011.ID 10.Freshwater  0.924 0.987 0.996
+p.wYear 2011.ID 10.Seagrass    0.113 0.156 0.166
+p.wYear 2011.ID 11.Estuarine   0.054 0.165 0.201
+p.wYear 2011.ID 11.Freshwater  0.991 0.999 0.999
+p.wYear 2011.ID 11.Seagrass    0.016 0.053 0.064
+p.wYear 2011.ID 12.Estuarine   0.029 0.099 0.139
+p.wYear 2011.ID 12.Freshwater  0.996 1.000 1.000
+p.wYear 2011.ID 12.Seagrass    0.006 0.020 0.027
+p.wYear 2011.ID 13.Estuarine   0.092 0.242 0.314
+p.wYear 2011.ID 13.Freshwater  0.868 0.947 0.981
+p.wYear 2011.ID 13.Seagrass    0.156 0.196 0.207
+p.wYear 2011.ID 14.Estuarine   0.010 0.038 0.049
+p.wYear 2011.ID 14.Freshwater  0.998 1.000 1.000
+p.wYear 2011.ID 14.Seagrass    0.004 0.015 0.020
+p.wYear 2011.ID 15.Estuarine   0.018 0.062 0.080
+p.wYear 2011.ID 15.Freshwater  0.997 1.000 1.000
+p.wYear 2011.ID 15.Seagrass    0.007 0.027 0.035
+p.wYear 2011.ID 16.Estuarine   0.020 0.066 0.084
+p.wYear 2011.ID 16.Freshwater  0.996 1.000 1.000
+p.wYear 2011.ID 16.Seagrass    0.007 0.025 0.036
+p.wYear 2011.ID 17.Estuarine   0.018 0.055 0.076
+p.wYear 2011.ID 17.Freshwater  0.996 1.000 1.000
+p.wYear 2011.ID 17.Seagrass    0.008 0.027 0.036
+p.wYear 2012.ID 18.Estuarine   0.025 0.078 0.101
+p.wYear 2012.ID 18.Freshwater  0.996 1.000 1.000
+p.wYear 2012.ID 18.Seagrass    0.006 0.026 0.035
+p.wYear 2012.ID 19.Estuarine   0.079 0.197 0.242
+p.wYear 2012.ID 19.Freshwater  0.986 0.999 0.999
+p.wYear 2012.ID 19.Seagrass    0.024 0.076 0.090
+p.wYear 2012.ID 20.Estuarine   0.507 0.666 0.705
+p.wYear 2012.ID 20.Freshwater  0.678 0.866 0.926
+p.wYear 2012.ID 20.Seagrass    0.025 0.075 0.091
+p.wYear 2012.ID 21.Estuarine   0.949 0.991 0.995
+p.wYear 2012.ID 21.Freshwater  0.179 0.295 0.338
+p.wYear 2012.ID 21.Seagrass    0.023 0.086 0.107
+p.wYear 2013.ID 22.Estuarine   0.313 0.451 0.490
+p.wYear 2013.ID 22.Freshwater  0.330 0.407 0.421
+p.wYear 2013.ID 22.Seagrass    0.619 0.676 0.696
+p.wYear 2013.ID 23.Estuarine   0.922 0.982 0.990
+p.wYear 2013.ID 23.Freshwater  0.182 0.293 0.332
+p.wYear 2013.ID 23.Seagrass    0.074 0.165 0.188
+p.wYear 2013.ID 24.Estuarine   0.509 0.721 0.800
+p.wYear 2013.ID 24.Freshwater  0.643 0.823 0.857
+p.wYear 2013.ID 24.Seagrass    0.099 0.162 0.183
+p.wYear 2013.ID 25.Estuarine   0.070 0.190 0.240
+p.wYear 2013.ID 25.Freshwater  0.972 0.998 0.999
+p.wYear 2013.ID 25.Seagrass    0.065 0.116 0.131
+p.wYear 2013.ID 26.Estuarine   0.079 0.204 0.246
+p.wYear 2013.ID 26.Freshwater  0.731 0.777 0.791
+p.wYear 2013.ID 26.Seagrass    0.282 0.318 0.331
+p.wYear 2013.ID 27.Estuarine   0.016 0.065 0.092
+p.wYear 2013.ID 27.Freshwater  0.997 1.000 1.000
+p.wYear 2013.ID 27.Seagrass    0.008 0.026 0.035
+p.wYear 2013.ID 28.Estuarine   0.149 0.328 0.388
+p.wYear 2013.ID 28.Freshwater  0.835 0.896 0.910
+p.wYear 2013.ID 28.Seagrass    0.165 0.208 0.220
+p.wYear 2013.ID 29.Estuarine   0.065 0.189 0.230
+p.wYear 2013.ID 29.Freshwater  0.965 0.997 0.999
+p.wYear 2013.ID 29.Seagrass    0.077 0.127 0.142
+p.wYear 2013.ID 30.Estuarine   0.280 0.429 0.481
+p.wYear 2013.ID 30.Freshwater  0.905 0.988 0.995
+p.wYear 2013.ID 30.Seagrass    0.062 0.118 0.136
+p.wYear 2013.ID 31.Estuarine   0.067 0.182 0.218
+p.wYear 2013.ID 31.Freshwater  0.989 0.999 1.000
+p.wYear 2013.ID 31.Seagrass    0.030 0.080 0.097
+p.wYear 2013.ID 32.Estuarine   0.041 0.167 0.207
+p.wYear 2013.ID 32.Freshwater  0.994 0.999 1.000
+p.wYear 2013.ID 32.Seagrass    0.015 0.046 0.062
+p.wYear 2013.ID 33.Estuarine   0.044 0.169 0.212
+p.wYear 2013.ID 33.Freshwater  0.995 1.000 1.000
+p.wYear 2013.ID 33.Seagrass    0.010 0.038 0.048
+p.wYear 2013.ID 34.Estuarine   0.022 0.086 0.104
+p.wYear 2013.ID 34.Freshwater  0.996 0.999 1.000
+p.wYear 2013.ID 34.Seagrass    0.010 0.034 0.048
+p.wYear 2013.ID 35.Estuarine   0.020 0.086 0.110
+p.wYear 2013.ID 35.Freshwater  0.997 1.000 1.000
+p.wYear 2013.ID 35.Seagrass    0.008 0.031 0.039
+p.wYear 2013.ID 36.Estuarine   0.064 0.196 0.228
+p.wYear 2013.ID 36.Freshwater  0.987 0.999 1.000
+p.wYear 2013.ID 36.Seagrass    0.035 0.086 0.104
+p.wYear 2013.ID 37.Estuarine   0.029 0.114 0.146
+p.wYear 2013.ID 37.Freshwater  0.995 1.000 1.000
+p.wYear 2013.ID 37.Seagrass    0.018 0.058 0.070
+p.wYear 2013.ID 38.Estuarine   0.031 0.111 0.138
+p.wYear 2013.ID 38.Freshwater  0.989 0.999 1.000
+p.wYear 2013.ID 38.Seagrass    0.049 0.097 0.109
+p.wYear 2013.ID 39.Estuarine   0.063 0.178 0.226
+p.wYear 2013.ID 39.Freshwater  0.981 0.998 0.999
+p.wYear 2013.ID 39.Seagrass    0.048 0.095 0.112
+p.wYear 2013.ID 40.Estuarine   0.194 0.344 0.389
+p.wYear 2013.ID 40.Freshwater  0.947 0.996 0.999
+p.wYear 2013.ID 40.Seagrass    0.050 0.099 0.111
+p.wYear 2014.ID 41.Estuarine   0.031 0.107 0.142
+p.wYear 2014.ID 41.Freshwater  0.995 1.000 1.000
+p.wYear 2014.ID 41.Seagrass    0.014 0.043 0.055
+p.wYear 2014.ID 42.Estuarine   0.285 0.392 0.421
+p.wYear 2014.ID 42.Freshwater  0.215 0.297 0.316
+p.wYear 2014.ID 42.Seagrass    0.702 0.765 0.786
+p.wYear 2014.ID 43.Estuarine   0.031 0.106 0.148
+p.wYear 2014.ID 43.Freshwater  0.995 1.000 1.000
+p.wYear 2014.ID 43.Seagrass    0.015 0.048 0.064
+p.wYear 2014.ID 44.Estuarine   0.033 0.102 0.146
+p.wYear 2014.ID 44.Freshwater  0.986 0.999 1.000
+p.wYear 2014.ID 44.Seagrass    0.048 0.099 0.116
+p.wYear 2014.ID 45.Estuarine   0.052 0.171 0.208
+p.wYear 2014.ID 45.Freshwater  0.984 0.999 1.000
+p.wYear 2014.ID 45.Seagrass    0.051 0.097 0.109
+p.wYear 2014.ID 46.Estuarine   0.044 0.132 0.166
+p.wYear 2014.ID 46.Freshwater  0.989 0.999 1.000
+p.wYear 2014.ID 46.Seagrass    0.038 0.090 0.106
+p.wYear 2014.ID 47.Estuarine   0.077 0.224 0.266
+p.wYear 2014.ID 47.Freshwater  0.969 0.998 0.999
+p.wYear 2014.ID 47.Seagrass    0.066 0.118 0.131
+p.wYear 2014.ID 48.Estuarine   0.018 0.076 0.105
+p.wYear 2014.ID 48.Freshwater  0.997 1.000 1.000
+p.wYear 2014.ID 48.Seagrass    0.010 0.037 0.049
+p.wYear 2014.ID 49.Estuarine   0.161 0.299 0.343
+p.wYear 2014.ID 49.Freshwater  0.921 0.993 0.998
+p.wYear 2014.ID 49.Seagrass    0.088 0.139 0.151
+p.wYear 2014.ID 50.Estuarine   0.032 0.120 0.151
+p.wYear 2014.ID 50.Freshwater  0.994 1.000 1.000
+p.wYear 2014.ID 50.Seagrass    0.022 0.065 0.084
+p.wYear 2014.ID 51.Estuarine   0.860 0.978 0.989
+p.wYear 2014.ID 51.Freshwater  0.308 0.427 0.477
+p.wYear 2014.ID 51.Seagrass    0.056 0.137 0.160
+p.wYear 2014.ID 52.Estuarine   0.339 0.522 0.582
+p.wYear 2014.ID 52.Freshwater  0.828 0.910 0.935
+p.wYear 2014.ID 52.Seagrass    0.128 0.178 0.193
+p.wYear 2016.ID 53.Estuarine   0.025 0.111 0.144
+p.wYear 2016.ID 53.Freshwater  0.998 1.000 1.000
+p.wYear 2016.ID 53.Seagrass    0.005 0.021 0.033
+p.wYear 2016.ID 54.Estuarine   0.019 0.079 0.109
+p.wYear 2016.ID 54.Freshwater  0.998 1.000 1.000
+p.wYear 2016.ID 54.Seagrass    0.003 0.015 0.022
+p.wYear 2016.ID 55.Estuarine   0.056 0.182 0.232
+p.wYear 2016.ID 55.Freshwater  0.992 0.999 1.000
+p.wYear 2016.ID 55.Seagrass    0.028 0.083 0.106
+p.wYear 2016.ID 56.Estuarine   0.952 0.991 0.995
+p.wYear 2016.ID 56.Freshwater  0.159 0.268 0.312
+p.wYear 2016.ID 56.Seagrass    0.019 0.082 0.108
+p.wYear 2016.ID 57.Estuarine   0.019 0.083 0.111
+p.wYear 2016.ID 57.Freshwater  0.998 1.000 1.000
+p.wYear 2016.ID 57.Seagrass    0.005 0.021 0.027
+p.wYear 2016.ID 58.Estuarine   0.056 0.167 0.201
+p.wYear 2016.ID 58.Freshwater  0.994 1.000 1.000
+p.wYear 2016.ID 58.Seagrass    0.016 0.060 0.080
+p.wYear 2016.ID 59.Estuarine   0.042 0.136 0.176
+p.wYear 2016.ID 59.Freshwater  0.996 1.000 1.000
+p.wYear 2016.ID 59.Seagrass    0.008 0.032 0.045
+p.wYear 2016.ID 60.Estuarine   0.044 0.136 0.176
+p.wYear 2016.ID 60.Freshwater  0.996 1.000 1.000
+p.wYear 2016.ID 60.Seagrass    0.006 0.032 0.043
+p.wYear 2016.ID 61.Estuarine   0.136 0.293 0.327
+p.wYear 2016.ID 61.Freshwater  0.988 0.999 1.000
+p.wYear 2016.ID 61.Seagrass    0.014 0.056 0.073
+p.wYear 2016.ID 62.Estuarine   0.179 0.349 0.378
+p.wYear 2016.ID 62.Freshwater  0.978 0.999 1.000
+p.wYear 2016.ID 62.Seagrass    0.017 0.059 0.076
+p.wYear 2016.ID 63.Estuarine   0.066 0.190 0.233
+p.wYear 2016.ID 63.Freshwater  0.992 0.999 1.000
+p.wYear 2016.ID 63.Seagrass    0.017 0.061 0.077
+p.wYear 2017.ID 64.Estuarine   0.092 0.215 0.251
+p.wYear 2017.ID 64.Freshwater  0.990 0.999 1.000
+p.wYear 2017.ID 64.Seagrass    0.012 0.053 0.066
+p.wYear 2017.ID 65.Estuarine   0.061 0.181 0.210
+p.wYear 2017.ID 65.Freshwater  0.994 0.999 1.000
+p.wYear 2017.ID 65.Seagrass    0.006 0.030 0.046
+p.wYear 2017.ID 66.Estuarine   0.036 0.109 0.141
+p.wYear 2017.ID 66.Freshwater  0.996 1.000 1.000
+p.wYear 2017.ID 66.Seagrass    0.005 0.025 0.037
+p.wYear 2017.ID 67.Estuarine   0.966 0.994 0.997
+p.wYear 2017.ID 67.Freshwater  0.141 0.252 0.285
+p.wYear 2017.ID 67.Seagrass    0.010 0.047 0.069
+p.wYear 2017.ID 68.Estuarine   0.935 0.988 0.994
+p.wYear 2017.ID 68.Freshwater  0.226 0.360 0.400
+p.wYear 2017.ID 68.Seagrass    0.012 0.046 0.067
+p.wYear 2017.ID 69.Estuarine   0.883 0.982 0.994
+p.wYear 2017.ID 69.Freshwater  0.192 0.300 0.332
+p.wYear 2017.ID 69.Seagrass    0.223 0.309 0.329
+p.wYear 2017.ID 70.Estuarine   0.059 0.173 0.217
+p.wYear 2017.ID 70.Freshwater  0.988 0.999 1.000
+p.wYear 2017.ID 70.Seagrass    0.031 0.092 0.109
+p.wYear 2017.ID 71.Estuarine   0.025 0.087 0.120
+p.wYear 2017.ID 71.Freshwater  0.997 1.000 1.000
+p.wYear 2017.ID 71.Seagrass    0.005 0.024 0.034
+p.wYear 2017.ID 72.Estuarine   0.028 0.088 0.114
+p.wYear 2017.ID 72.Freshwater  0.996 1.000 1.000
+p.wYear 2017.ID 72.Seagrass    0.006 0.028 0.041
+p.wYear 2017.ID 73.Estuarine   0.057 0.158 0.199
+p.wYear 2017.ID 73.Freshwater  0.994 1.000 1.000
+p.wYear 2017.ID 73.Seagrass    0.009 0.041 0.057
+p.wYear 2017.ID 74.Estuarine   0.039 0.119 0.162
+p.wYear 2017.ID 74.Freshwater  0.994 0.999 1.000
+p.wYear 2017.ID 74.Seagrass    0.010 0.050 0.066
+p.wYear 2017.ID 75.Estuarine   0.961 0.993 0.996
+p.wYear 2017.ID 75.Freshwater  0.154 0.273 0.314
+p.wYear 2017.ID 75.Seagrass    0.014 0.071 0.098
+p.wYear 2017.ID 76.Estuarine   0.517 0.679 0.742
+p.wYear 2017.ID 76.Freshwater  0.683 0.864 0.921
+p.wYear 2017.ID 76.Seagrass    0.042 0.112 0.129
+p.wYear 2017.ID 77.Estuarine   0.027 0.080 0.102
+p.wYear 2017.ID 77.Freshwater  0.997 1.000 1.000
+p.wYear 2017.ID 77.Seagrass    0.005 0.024 0.033
+p.wYear 2017.ID 78.Estuarine   0.084 0.212 0.262
+p.wYear 2017.ID 78.Freshwater  0.990 0.999 1.000
+p.wYear 2017.ID 78.Seagrass    0.013 0.057 0.075
+p.wYear 2017.ID 79.Estuarine   0.052 0.154 0.186
+p.wYear 2017.ID 79.Freshwater  0.991 0.999 1.000
+p.wYear 2017.ID 79.Seagrass    0.016 0.066 0.077
+p.wYear 2017.ID 80.Estuarine   0.113 0.257 0.301
+p.wYear 2017.ID 80.Freshwater  0.982 0.999 1.000
+p.wYear 2017.ID 80.Seagrass    0.031 0.088 0.105
+p.wYear 2018.ID 81.Estuarine   0.053 0.154 0.201
+p.wYear 2018.ID 81.Freshwater  0.990 0.999 1.000
+p.wYear 2018.ID 81.Seagrass    0.019 0.064 0.082
+p.wYear 2018.ID 82.Estuarine   0.463 0.686 0.778
+p.wYear 2018.ID 82.Freshwater  0.702 0.821 0.847
+p.wYear 2018.ID 82.Seagrass    0.145 0.199 0.213
+p.wYear 2018.ID 83.Estuarine   0.053 0.161 0.197
+p.wYear 2018.ID 83.Freshwater  0.990 0.999 1.000
+p.wYear 2018.ID 83.Seagrass    0.024 0.067 0.083
+p.wYear 2018.ID 84.Estuarine   0.658 0.849 0.928
+p.wYear 2018.ID 84.Freshwater  0.492 0.622 0.656
+p.wYear 2018.ID 84.Seagrass    0.058 0.123 0.144
+p.wYear 2018.ID 85.Estuarine   0.086 0.222 0.257
+p.wYear 2018.ID 85.Freshwater  0.986 0.999 1.000
+p.wYear 2018.ID 85.Seagrass    0.025 0.073 0.092
+p.wYear 2018.ID 86.Estuarine   0.501 0.667 0.719
+p.wYear 2018.ID 86.Freshwater  0.730 0.962 0.991
+p.wYear 2018.ID 86.Seagrass    0.042 0.111 0.131
+p.wYear 2018.ID 87.Estuarine   0.094 0.222 0.261
+p.wYear 2018.ID 87.Freshwater  0.990 0.999 1.000
+p.wYear 2018.ID 87.Seagrass    0.013 0.048 0.057
+p.wYear 2018.ID 88.Estuarine   0.204 0.373 0.426
+p.wYear 2018.ID 88.Freshwater  0.971 0.998 0.999
+p.wYear 2018.ID 88.Seagrass    0.019 0.065 0.082
+p.wYear 2018.ID 89.Estuarine   0.219 0.389 0.442
+p.wYear 2018.ID 89.Freshwater  0.886 0.977 0.995
+p.wYear 2018.ID 89.Seagrass    0.098 0.152 0.167
+p.wYear 2018.ID 90.Estuarine   0.047 0.148 0.187
+p.wYear 2018.ID 90.Freshwater  0.994 1.000 1.000
+p.wYear 2018.ID 90.Seagrass    0.012 0.045 0.055
+p.wYear 2019.ID 91.Estuarine   0.144 0.302 0.356
+p.wYear 2019.ID 91.Freshwater  0.979 0.999 1.000
+p.wYear 2019.ID 91.Seagrass    0.022 0.068 0.084
+p.wYear 2019.ID 92.Estuarine   0.144 0.286 0.325
+p.wYear 2019.ID 92.Freshwater  0.982 0.999 0.999
+p.wYear 2019.ID 92.Seagrass    0.019 0.062 0.078
+p.wYear 2019.ID 93.Estuarine   0.068 0.190 0.229
+p.wYear 2019.ID 93.Freshwater  0.993 1.000 1.000
+p.wYear 2019.ID 93.Seagrass    0.013 0.049 0.062
+p.wYear 2019.ID 94.Estuarine   0.082 0.218 0.257
+p.wYear 2019.ID 94.Freshwater  0.990 0.999 1.000
+p.wYear 2019.ID 94.Seagrass    0.010 0.041 0.053
+p.wYear 2019.ID 95.Estuarine   0.903 0.986 0.993
+p.wYear 2019.ID 95.Freshwater  0.285 0.416 0.452
+p.wYear 2019.ID 95.Seagrass    0.015 0.060 0.078
+p.wYear 2019.ID 96.Estuarine   0.161 0.332 0.370
+p.wYear 2019.ID 96.Freshwater  0.908 0.990 0.996
+p.wYear 2019.ID 96.Seagrass    0.098 0.151 0.166
+p.wYear 2019.ID 97.Estuarine   0.067 0.200 0.245
+p.wYear 2019.ID 97.Freshwater  0.994 1.000 1.000
+p.wYear 2019.ID 97.Seagrass    0.009 0.036 0.048
+p.wYear 2019.ID 98.Estuarine   0.154 0.317 0.368
+p.wYear 2019.ID 98.Freshwater  0.972 0.998 0.999
+p.wYear 2019.ID 98.Seagrass    0.034 0.084 0.102
+p.wYear 2020.ID 99.Estuarine   0.659 0.810 0.898
+p.wYear 2020.ID 99.Freshwater  0.121 0.220 0.251
+p.wYear 2020.ID 99.Seagrass    0.402 0.465 0.483
+p.wYear 2020.ID 100.Estuarine  0.985 0.997 0.999
+p.wYear 2020.ID 100.Freshwater 0.065 0.153 0.186
+p.wYear 2020.ID 100.Seagrass   0.012 0.041 0.053
+p.wYear 2020.ID 101.Estuarine  0.394 0.531 0.574
+p.wYear 2020.ID 101.Freshwater 0.280 0.389 0.407
+p.wYear 2020.ID 101.Seagrass   0.550 0.599 0.618
+p.wYear 2020.ID 102.Estuarine  0.142 0.282 0.327
+p.wYear 2020.ID 102.Freshwater 0.949 0.995 0.998
+p.wYear 2020.ID 102.Seagrass   0.057 0.106 0.122

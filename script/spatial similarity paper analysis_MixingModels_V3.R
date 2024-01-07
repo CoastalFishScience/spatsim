@@ -7,14 +7,15 @@
 # load libraries 
 library(MixSIAR)
 library(tidyverse)
-library(rjags)
+#library(rjags) - loads with mixsiar
 options(max.print = 6000000)
 
 # check out files used for mixing models (mix, source, TDF) ---------------
 
 ### mixing file (i.e., common snook values)
 
-mixcheck <- mix_formatted_07272023 #or should it be simply, mix_formatted.csv
+mix_formatted_07272023 <- read_csv("data/mix_formatted_07272023.csv") #or should it be simply, mix_formatted.csv
+mixcheck <- mix_formatted_07272023 
 glimpse(mixcheck)
 
 mix_summary <- mixcheck |> 
@@ -23,7 +24,7 @@ mix_summary <- mixcheck |>
 glimpse(mix_summary)
 
 ### source file (i.e., common snook resources)
-sourcecheck <- ss_snook_source_agg_UPDATED_07262023
+sourcecheck <- read_csv("data/ss_snook_source_agg_UPDATED_07262023.csv")
 glimpse(sourcecheck)
 
 ### trophic discrimination factor file (i.e., amt expct values to change for each trophic step)
@@ -32,14 +33,22 @@ glimpse(TDFcheck)
 
 
 mix = load_mix_data(file("~/Library/CloudStorage/Dropbox/R/github/spatsim/data/mix_formatted.csv"),
-                    iso_names=c("d13C","d34S"),
-                    factors= c("wYear"),
-                    fac_random=c(F),
-                    fac_nested=c(F),
+                    iso_names=c("d13C","d15N","d34S"),
+                    factors= c("wYear", "ID"),
+                    fac_random=c(F,T), #water year is nonrandom, id is random
+                    fac_nested=c(F,T),
                     cont_effects=NULL)
 
+
+# mix = load_mix_data(file("~/Library/CloudStorage/Dropbox/R/github/spatsim/data/mix_formatted.csv"),
+#                     iso_names=c("d13C","d15N","d34S"),
+#                     factors= c("wYear"),
+#                     fac_random=c(F), #water year is nonrandom, id is random
+#                     fac_nested=c(F),
+#                     cont_effects=NULL)
+
 # load source data
-source = load_source_data(file("~/Library/CloudStorage/Dropbox/R/github/spatsim/data/ss_snook_source_agg_UPDATED_07262023.csv"),
+source = load_source_data(file("data/ss_snook_source_agg_UPDATED_07262023.csv"),
                           source_factors=NULL,
                           conc_dep=FALSE,
                           data_type="means",
@@ -50,7 +59,7 @@ source = load_source_data(file("~/Library/CloudStorage/Dropbox/R/github/spatsim/
 # incomplete final line found by readTableHeader on '~/Library/CloudStorage/Dropbox/R/github/spatsim/data/ss_snook_source_agg_UPDATED_07262023.csv'
 
 # load TDF data
-discr = load_discr_data(file("~/Library/CloudStorage/Dropbox/R/github/spatsim/data/snook_agg_nona_UPDATED.csv"), mix)
+discr = load_discr_data(file("data/snook_agg_nona_UPDATED.csv"), mix)
 
 ### same warning as noted above 
 

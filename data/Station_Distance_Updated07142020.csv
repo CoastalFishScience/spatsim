@@ -1,0 +1,84 @@
+Station,Distance,VUE_Name,Latitude,Longitude
+Aaron's Cut North Base 05,12.59,Aaron's Cut North Base 05,25.39907,-81.00771
+Aaron's Cut South Base 04,11.93,Aaron's Cut South Base 04,25.3936,-81.01012
+BASE1,8.58,Shark River South Base 01,25.37307,-81.04224
+BASE2,10.03,Shark River South Base 02,25.37882,-81.02934
+Broad River Base BR1,22.19,Broad River Base BR1,25.4440333,-80.960933
+Broad River Base BR2,23.95,Broad River Base BR2,25.4574,-80.959033
+CC1,11.97,Whitewater Bay Base CC1,25.2891,-81.06321667
+CC2,11.88,Whitewater Bay Base CC2,25.2849833,-81.0627833
+DC1,14,Derek's Cut Base DC1,25.3941333,-81.0005167
+DC2,14.68,Derek's Cut Base DC2,25.39198525,-80.99678247
+Derek Cut South Base 03,11.66,Derek Cut South Base 03,25.38954,-81.0094
+Harney Mouth Base HM1,0.29,Harney Mouth Base HM1,25.41045,-81.146933
+Harney Mouth Base HM2,1.42,Harney Mouth Base HM2,25.4290667,-81.1406167
+KC1,24.34,Rookery Branch KC1,25.42619,-80.92746
+LR1,22.58,Whitewater Bay Base LR1,25.28265,-80.9252667
+LSR1,0.11,Shark River South SRSLittleShark1,25.3275,-81.14136
+LSR2,1,Shark River South SRSLittleShark2,25.33178,-81.1302
+MB1,10.63,Whitewater Bay Base MB1,25.2802,-81.0751833
+MB2,10,Whitewater Bay Base MB2,25.283566,-81.0797833
+NR1,18.29,Whitewater Bay Base NR1,25.3060333,-80.950667
+OT01,27.08,Otter Creek OT1,25.45645,-80.91965
+RBC2,26.93,Rookery Branch Central Base RBC2,25.43947,-80.90729
+RBE1,30.48,Rookery Branch East Base RBE1,25.45427,-80.88065
+RBE2,30.86,Rookery Branch East Base RBE2,25.45688,-80.87605
+RBE3,31.72,Rookery Branch East Base RBE3,25.46085,-80.86954
+RBHW1,31.64,Rookery Branch Headwater Base RBHW1,25.4633,-80.87614
+RBHW2,32.18,Rookery Branch Headwater Base RBHW2,25.46283,-80.86598
+RBHW3,32.03,Rookery Branch Headwater Base RBHW3,25.46135,-80.86662
+RBHW4,32.43,Rookery Branch Headwater Base RBHW4,25.45985,-80.86311
+RBL1,22.09,Rookery Branch Lower Base RBL1,25.43405,-80.95214
+RBL2,22.55,Rookery Branch Lower Base RBL2,25.43351,-80.95011
+RBN1,25.12,Rookery Branch North Base RBN1,25.43977,-80.93855
+RBN2,26.21,Rookery Branch North Base RBN2,25.43979,-80.93524
+RBS1,26.52,Rookery Branch South Base RBS1,25.42807,-80.91492
+RBS2,25.72,Rookery Branch South Base RBS2,25.42787,-80.91856
+RBU1,23.73,Rookery Branch Upper Base RBU1,25.44765,-80.94931
+RBU2,23.98,Rookery Branch Upper Base RBU2,25.45015,-80.94697
+RBW2,21.63,Rookery Branch West Base RBW2,25.41628,-80.95659
+Rookery Branch Central Base RBC1,26.32,Rookery Branch Central Base RBC1,25.43514,-80.91106
+Rookery Branch West Base RBW1,21.53,Rookery Branch West Base RBW1,25.41593,-80.95757
+SBE,12.9,Whitewater Bay Base SBE,25.304,-81.0028833
+SBW,12.8,Whitewater Bay Base SBW,25.29415,-81.0149833
+SR1,0.5,Shark River Base SR1,25.353183,-81.06665
+SR1A,10,Shark River South Base SR1A,25.38374,-81.02088
+SR1B,10.93,Shark River South Base SR1B,25.386,-81.01547
+SR2,1.59,Shark River Base SR2,25.350817,-81.08305
+SR3,4,Shark River Base SR3,25.34475,-81.092883
+SR4,4.5,Shark River Base SR4,25.339817,-81.100433
+SR5,5,Shark River Base SR5,25.3359,-81.10895
+SR6,6.22,Shark River Base SR6,25.3311,-81.120517
+SRM1,12.41,Shark River Middle Base SRM1,25.39768,-81.02817
+SRM2,12.67,Shark River Middle Base SRM2,25.39325,-81.02462
+SRN1,6.79,Harney River Base SRN1,25.43136,-81.08347
+SRN12,0.97,Shark River North SRN12,25.42894,-81.1405
+SRN13,1.17,Shark River North SRN 13,25.41242,-81.14002
+SRN2,7.3,Harney River Base SRN2,25.43057,-81.08884
+SRN3,4.26,Harney River Base SRN3,25.42996,-81.11208
+SRS11,0.45,Shark River South SRS11,25.35672,-81.10671
+SRS12,0.1,Shark River South SRS12,25.42887,-81.14041
+SRS12N,3,Shark River South SRS12NEW,25.37981,-81.09738
+SRS25,3.5,Shark River South SRS25NEW,25.36996,-81.10149
+SRS2N,3.65,Shark River South SRS2NEW,25.35085,-81.08303
+SRS3N,3.55,Shark River South SRS3NEW,25.34478,-81.09291
+SRS50,2,Shark River South 50,25.36179,-81.09212
+SRS51,2.47,Shark River South 51,25.36015,-81.09813
+SRS6NEW,0.2,SRS6NEW,25.33633,-81.11548
+Tarpon Bay West Base TBW2,15.67,Tarpon Bay West Base TBW2,25.41515,-81.00774
+TBE1,19.02,Tarpon Bay East Base TBE1,25.40418,-80.96767
+TBE2,18.16,Tarpon Bay East Base TBE2,25.40824,-80.96703
+TBM1A,16.67,Tarpon Bay Middle Base TBM1A,25.41941,-81.00063
+TBM2,17.9,Tarpon Bay Middle Base TBM2,25.4221,-80.98733
+TBM3,17.58,Tarpon Bay Middle Base TBM3,25.4171167,-80.989567
+TBM4,18.01,Tarpon Bay Middle Base TBM4,25.4132,-80.9864834
+TBM5,17,Tarpon Bay Middle Base TBM5,25.41437,-80.97639
+TBN1,18.22,Tarpon Bay North Base TBN1,25.42908,-81.00105
+TBN2,17.69,Tarpon Bay North Base TBN2,25.42922,-81.00391
+TBN3,19.25,Tarpon Bay North Base TBN3,25.42806,-80.97817
+TBN4,20.25,Tarpon Bay North Base TBN4,25.42963,-80.96657
+TBU1,22.13,Tarpon Bay Upper Base TBU1,25.43039,-80.95558
+TBU2,22.41,Tarpon Bay Upper Base TBU2,25.42893,-80.95228
+TBU3,19,Tarpon Bay Upper Base TBU3,25.4297722,-80.9693083
+TBW1,15.99,Tarpon Bay West Base TBW1,25.41043,-81.00841
+TBW3,15,Tarpon Bay West Base TBW3,25.41779,-81.01324
