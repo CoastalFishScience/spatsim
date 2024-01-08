@@ -125,5 +125,3 @@ output_sss_try = list(summary_save = TRUE,
                          plot_xy_save_png = FALSE)
 
 output_JAGS(jags.sss, mix, source, output_sss_try)
-
-
