@@ -28,7 +28,7 @@ sourcecheck <- read_csv("data/ss_snook_source_agg_UPDATED_07262023.csv")
 glimpse(sourcecheck)
 
 ### trophic discrimination factor file (i.e., amt expct values to change for each trophic step)
-TDFcheck <- snook_agg_nona_UPDATED
+TDFcheck <- read_csv("data/snook_agg_nona_UPDATED.csv")
 glimpse(TDFcheck)
 
 

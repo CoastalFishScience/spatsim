@@ -1,9 +1,9 @@
 # source$data_type: means
 # source$by_factor: NA
-# random effects: 0
+# random effects: 1
 # fixed effects: 1
-# nested factors: FALSE
-# factors: wYear
+# nested factors: FALSE TRUE
+# factors: wYear ID
 # continuous effects: 0
 # error structure: Residual * Process
 # source$conc_dep: FALSE
@@ -33,11 +33,20 @@ model{
     }
   }
 
+   fac2.sig ~ dunif(0,20);
+   fac2.invSig2 <- 1/(fac2.sig*fac2.sig);
+   # draw the fac2-specific ILR terms (random effect)
+   for(f2 in 1:factor2_levels){
+      for(src in 1:(n.sources-1)){
+          ilr.fac2[f2,src] ~ dnorm(0,fac2.invSig2);
+      }
+   }
+
    # DON'T generate individual deviates from the global/region/pack mean (but keep same model structure)
    for(i in 1:N) {
       for(src in 1:(n.sources-1)) {
          ilr.ind[i,src] <- 0;
-         ilr.tot[i,src] <- ilr.global[src] + ilr.fac1[Factor.1[i],src] + ilr.ind[i,src]; # add all effects together for each individual (in ilr-space)
+         ilr.tot[i,src] <- ilr.global[src] + ilr.fac1[Factor.1[i],src] + ilr.fac2[Factor.2[i],src] + ilr.ind[i,src]; # add all effects together for each individual (in ilr-space)
       }
    }
 
@@ -61,7 +70,7 @@ model{
       }
    }
 
-   # Transform ilr.fac1 into p.fac1 (fac1 not nested within fac2)
+   # Transform ilr.fac1 into p.fac1 (fac1 fixed, not nested within fac2)
    for(f1 in 1:factor1_levels) {
       for(src in 1:(n.sources-1)) {
         ilr.fac1.tot[f1,src] <- ilr.global[src] + ilr.fac1[f1,src];

@@ -683,5 +683,3 @@ ggscatterstats(
 )
 
 dev.off()
-
-      
