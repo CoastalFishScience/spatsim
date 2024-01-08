@@ -7,13 +7,99 @@
 
 
 # load in packages --------------------------------------------------------
+librarian::shelf(tidyverse, hypervolume, MixSIAR, readr, 
+                 writexl, ggpubr, ggthemes, ggplot2)
 
-library(tidyverse)
-library(hypervolume)
-library(ggpubr)
-library(ggthemes)
 
-#Function to make random points of n length
+# convert MixSIAR output to csv for HVs -----------------------------------
+
+# updated on 12/8/21****
+# function to convert MixSIAR output to a table to generate random data
+# to use for hypervolumes
+# file = name of .txt of summary statistics of MixSIAR
+# type = identifying information of the data set
+# ind = if true will output with columns as source values
+# nest = if nested mixing model, T will return the sources of nested
+
+mixTable = function(file,type,ind = F,nest = F){
+      require(tidyverse)
+      cn = c('ID', 'Mean', 'SD', '2.5%', '5%', '25%', '50%', '75%', '95%', '97.5%')
+      x = read_fwf(file, skip = 8)
+      names(x) = cn
+      x$source = NA
+      x$name = NA
+      x$code = NA
+      
+      if (nest == F){
+            for (i in 1:nrow(x)){
+                  temp = strsplit(x$ID, split = '.', fixed = T)
+                  x$source[i] = temp[[i]][3]
+                  x$name[i] = temp[[i]][2]
+                  
+                  x$type = type
+                  x$ymax = x$`75%` + 1.5*(x$`75%` - x$`25%`)
+                  x$ymin = x$`25%` - 1.5*(x$`75%` - x$`25%`)
+                  
+                  df = data.frame(x$name, x$type, x$source, x$Mean, x$SD, x$`2.5%`, x$`97.5%`,
+                                  x$`50%`, x$`25%`, x$`75%`, x$ymax, x$ymin)
+                  colnames(df) = c('name', 'type', 'source', 'mean', 'sd', 'lowend', 'highend',
+                                   'mid', 'low', 'up', 'ymax', 'ymin')
+            }
+      }else{
+            for (i in 1:nrow(x)){
+                  temp = strsplit(x$ID, split = '.', fixed = T)
+                  x$source[i] = temp[[i]][4]
+                  x$code[i] = temp[[i]][3]
+                  x$name[i] = temp[[i]][2]
+                  
+                  x$type = type
+                  x$ymax = x$`75%` + 1.5*(x$`75%` - x$`25%`)
+                  x$ymin = x$`25%` - 1.5*(x$`75%` - x$`25%`)
+                  
+                  df = tibble(x$name, x$type, x$source, x$code, x$Mean, x$SD, x$`2.5%`, x$`97.5%`,
+                              x$`50%`, x$`25%`, x$`75%`, x$ymax, x$ymin)
+                  colnames(df) = c('name', 'type', 'source', 'code', 'mean', 'sd', 'lowend', 'highend',
+                                   'mid', 'low', 'up', 'ymax', 'ymin')
+            }
+      }
+      
+      for (i in 1:nrow(df)){
+            if (df$ymax[i] > df$highend[i]){
+                  df$ymax[i] = df$highend[i]
+            }
+            if (df$ymin[i] < df$lowend[i]){
+                  df$ymin[i] = df$lowend[i]
+            }
+      }
+      df = df %>% drop_na %>%
+            filter(name != 'global')
+      
+      
+      if (ind == T){
+            if (nest == T){
+                  df = df %>% select(name, type, code, source, mean) %>%
+                        pivot_wider(names_from = 'source', values_from = 'mean')
+            }else{
+                  df = df %>% select(name, type, source, mean)%>%
+                        pivot_wider(names_from = 'source', values_from = 'mean')
+            }
+      }
+      
+      return(df)
+}
+
+df <- mixTable("snook_ss01082024_NORMAL_CRRCT.txt",'year',ind = F,nest = F)
+#df <- df [-c(8:12)]
+#write_csv(df, "/Users/mack/Desktop/RESEARCH/Manuscripts_R Scripts/movement/spatial similarity manuscript/df_with_year_ss.csv")
+# exported... year should be type, turn this right in excel
+df <- read.csv("df_with_year_ss.csv") # year should be the type - like the actual year itself
+# type is an integer, but needs to be a character
+df$type <- as.character(df$type)
+str(df)
+# number or iterations
+n = 20
+# Hypervolumes Function ---------------------------------------------------
+
 # data from random sample with mean and sd but 
 # can be generated between a high and low value if end_points = T
 # *** Note chose either column names or column numbers for ID_rows and names
@@ -116,7 +202,9 @@ HVvalues = function(df, ID_rows, names, mean, sd, n, z_score = F,
 }
 
 
-# load code
+
+# load csv generated above ------------------------------------------------
+
 g = read_csv('data/combined.csv') |> 
       pivot_longer(cols = c(green, brown), 
                    names_to = 'source',

@@ -126,8 +126,4 @@ output_sss_try = list(summary_save = TRUE,
 
 output_JAGS(jags.sss, mix, source, output_sss_try)
 
-# output_JAGS(jags.sss, mix, source, output_sss_NORMAL)
-
-# output_JAGS(jags.sss, mix, source, output_options = list(summary_save = TRUE))
-
 

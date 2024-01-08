@@ -242,6 +242,8 @@ Eadj_WETvDRY_Annual = E_year.month2_df %>%
 
 write.csv(Eadj_WETvDRY_Annual, "Eadj_WETvDRY_Annual_01_07_2024.csv")
 
+E_year.month2_df <- read_csv("Eadj_WETvDRY_Annual_01_07_2024.csv")
+
 ### PLOT SEASONAL EADJ VALUES (IE DRY VS WET)
 
 plot1 <- ggplot(E_year.month2_df, aes(x=Season, y=Eadj, fill=Season)) +
@@ -353,3 +355,113 @@ plot4 <- ggplot(E_year.month2_df, aes(x=wYear, y=Eadj, fill=Season)) +
 #        height = 5,
 #        units = c("cm"),
 #        dpi = 300)
+
+
+all <- read_csv("spatsim_eadj_snook_water_year_2012thru2022_01072024.csv")
+
+all <- all |> 
+      mutate(date = ym(Year.Month))
+
+ggplot(all, aes(date, Eadj)) +
+      geom_point(size = 2) +
+      facet_wrap(~wYear, scales = "free_x")+
+      geom_smooth()
+
+library(mgcv)
+
+all$date_num <- as.numeric(all$date)
+glimpse(all) #makes date numeric for ts 
+
+m1 <- gam(Eadj ~ s(date, bs = "cc", k = 12, by = wYear) + s(wYear, bs = "cr") + Season, 
+          data = all,
+          family = betar(link = "logit"), 
+          method = "REML")
+
+summary(m1)
+
+all$wYearFACT <- as.factor(all$wYear)
+
+# all_test = all |> 
+#       mutate(wMonth = if_else(
+#             Month |> 
+#                   between(6,12),
+#             Month - 5,
+#             Month + 7
+#       ))
+
+# move May to Wet season and will need to fix wMonth ifelse statement
+# between 5 and 12 and subtract 4, adding 8
+
+### below is correct
+
+# all_test = all |>
+#       mutate(wMonth = if_else(
+#             Month |>
+#                   between(5,12),
+#             Month - 4,
+#             Month + 8
+#       ))
+
+#also going to need to change wYear
+
+m2 <- gam(Eadj ~ s(date_num, bs = "cr", k = 12, by = wYearFACT) + s(wYear, bs = "cr") + Season, 
+          data = all,
+          family = betar(link = "logit"), 
+          method = "REML")
+
+summary(m2)
+
+ggplot(all, aes(date_num, Eadj)) +
+      geom_point(size = 2) +
+      facet_wrap(~wYearFACT, scales = "free_x")+
+      geom_smooth()
+
+ggplot(all, aes(date, Eadj)) +
+      geom_point(size = 2) +
+      facet_wrap(~wYear, scales = "free_x")+
+      geom_smooth()
+
+m3 <- gam(Eadj ~ s(wMonth, bs = "cr", k = 12, by = wYearFACT) + s(date_num, bs = "cr") + Season, 
+          data = all,
+          family = betar(link = "logit"), 
+          method = "REML")
+
+m3 <- gam(Eadj ~ s(wMonth, bs = "cc", k = 12) + s(date_num), 
+          data = all_test,
+          family = betar(link = "logit"), 
+          method = "REML")
+
+summary(m3)
+plot(m3)
+
+m4 <- gam(Eadj ~ s(wMonth, bs = "cc", k = 12) + s(wYear), 
+          data = all_test,
+          family = betar(link = "logit"), 
+          method = "REML")
+
+summary(m4)
+plot(m4)
+
+# we like model
+
+# gonna switch it up to where wet season is May (i.e., rainfall based first month of wet)
+
+all_test$wYear.Month = all_test$wYear + (all_test$wMonth/12) - (1/12)
+glimpse(all_test)
+
+# meeting next monday
+# to-do 
+# get ready the dataset of variables for models
+# reach out to dr massie -> condition manuscript stuff
+# set up with May in Wet Season
+# link hydro data with eadj stuff
+### average stage at MO215, previous month water stage, # of days <30 cm monthly
+# finish HVs
+
+###############################################################################
+###############################################################################
+###############################################################################
+
+# Revisions for Monday (January 15) ---------------------------------------
+
+
