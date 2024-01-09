@@ -39,6 +39,8 @@ dat <- read_csv("hv_sss_01082024.csv") |>
       left_join(mix_summary) |> 
       write_csv("hv_size_with_sample_size_01082024_UpdatedwYear.csv")
 
+dat <- read_csv("hv_size_with_sample_size_01082024_UpdatedwYear.csv")
+
 ggplot(dat, aes(wYear, hv_size))+
       geom_point(size = 2.5)+
       geom_line(linewidth = 1)+
@@ -77,3 +79,38 @@ ggplot(dat |> filter(!wYear%in%c(2011,2020)), aes(wYear, hv_size))+
 #dont take out 2020? Just a big outlier - keep in for analysis of e for dry season and one without
 #
 
+ggplot(dat|> filter(!wYear%in%c(2011)), aes(wYear, hv_size))+
+      geom_point(size = 2.5)+
+      geom_smooth(method = "lm")+
+      # geom_line(linewidth = 1)+
+      labs(x = 'Year', y = 'Volume')+
+      theme_bw()+
+      #scale_y_log10()+
+      #scale_color_viridis_d()+
+      theme(axis.title = element_text(size = 14), 
+            axis.text = element_text(size = 14, colour = "gray0"), 
+            plot.title = element_text(size = 14, hjust=0.5),
+            panel.grid.major = element_blank(),
+            panel.grid.minor = element_blank(),
+            legend.position = 'right',
+            legend.title = element_text(size = 14),
+            strip.text.x = element_text(size = 14),
+            legend.text = element_text(size = 12))
+
+ggplot(dat|> filter(!wYear%in%c(2011,2012,2019,2021,2022)), aes(wYear, hv_size))+
+      geom_point(size = 2.5)+
+      geom_smooth(method = "lm")+
+      # geom_line(linewidth = 1)+
+      labs(x = 'Year', y = 'Volume')+
+      theme_bw()+
+      #scale_y_log10()+
+      #scale_color_viridis_d()+
+      theme(axis.title = element_text(size = 14), 
+            axis.text = element_text(size = 14, colour = "gray0"), 
+            plot.title = element_text(size = 14, hjust=0.5),
+            panel.grid.major = element_blank(),
+            panel.grid.minor = element_blank(),
+            legend.position = 'right',
+            legend.title = element_text(size = 14),
+            strip.text.x = element_text(size = 14),
+            legend.text = element_text(size = 12))
