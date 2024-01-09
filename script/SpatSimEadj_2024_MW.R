@@ -1,43 +1,19 @@
 # background --------------------------------------------------------------
 
-#author: Mack White
-#project: SRFCEA - Snook Spatial Similarity Manuscript
-#goal of script: Calculate Eadj Values for Common Snook based on space use
-#date(s): January 2024
+###author: Mack White
+###project: SRFCEA - Snook Spatial Similarity Manuscript
+###goal of script: Calculate Eadj Values for Common Snook based on space use
+###date(s): January 2024
+###notes:
+# go to line 226 to start Monday, Jan 15
 
 # load in packages --------------------------------------------------------
 
-library(readr)
-library(ggplot2)
-library(car)
-library(reshape2)
-library(reshape)
-library(plyr)
-library(dplyr)
-library(tidyr)
-library(visreg)
-library(modEvA) 
-library(gridExtra)
-library(AICcmodavg)
-library(nlme)
-library(mgcv)
-library(lme4)
-library(splitstackshape) ###package to use cSplit and do text to column like excel
-library(chron)
-library(RInSp)#package for intraspecific niche variation
-library(boot)#package for boostrapping operations
-library(cowplot)
-library(ggpubr)
-library(lsmeans)
-library(MixSIAR)
-library(tidyverse)
-library(hypervolume)
-library(truncnorm)
-library(tidyverse)
-library(alphahull)
-library(dplyr)
-library(svMisc)
-library(writexl)
+librarian::shelf(readr, ggplot2, car, reshape, reshape2, plyr, dplyr,
+                 tidyr, visreg, modEvA, gridExtra, AICcmodavg, nlme, mgcv,
+                 lme4, splitstackshape, chron, RInSp, boot, cowplot, ggpubr,
+                 lsmeans, MixSIAR, hypervolume, truncnorm, tidyverse, alphahull,
+                 dplyr, svMisc, writexl, stringr, zoo)
 
 # pre-processing and manipulation -----------------------------------------
 
@@ -163,8 +139,8 @@ list.tags <- group_by(snook.90day.x, ID, Year)%>%
       summarise(Total.Det = sum(!is.na(Datetime_UTC)),
                 Total.Yr.Month = length(unique(fYear.Month)))
 
-write.csv(tags.summary, "tags.summary_spatsim_01072024.csv")
-write.csv(list.tags, "list.tags_spatsim_01072024.csv")
+write.csv(tags.summary, "tags.summary_spatsim_01082024.csv")
+write.csv(list.tags, "list.tags_spatsim_01082024.csv")
 
 
 #Creating the number of days as a metric of habitat use per ID|Zone|Year|Year.Month
@@ -191,11 +167,9 @@ fc <- function(d, i){
 E_year.month2<-lapply(list.snook.zones, fc)
 
 ###UPDATING DATAFRAME###
-library(stringr)
 E_year.month2_df<-ldply(E_year.month2, data.frame)
 colnames(E_year.month2_df)<-c("Year.Month", "Eadj")
 
-library(zoo)
 #using function zoo::yearmon to classify in R fYear.Month as date formated as Year|Month
 E_year.month2_df$fYear.Month <- as.yearmon(E_year.month2_df$Year.Month, "%Y/%m")
 
@@ -204,7 +178,9 @@ E_year.month2_df<-cSplit(E_year.month2_df, "Date2", sep = "/", type.convert = FA
 colnames(E_year.month2_df)[4:5]<-c("Year", "Month")
 
 E_year.month2_df$Year <- as.numeric(E_year.month2_df$Year)
-E_year.month2_df$fYear<-factor(E_year.month2_df$Year, levels = c("2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021"))
+E_year.month2_df$fYear<-factor(E_year.month2_df$Year, levels = c("2012", "2013", "2014", "2015", "2016", 
+                                                                 "2017", "2018", "2019", "2020", "2021",
+                                                                 "2022", "2023"))
 
 
 E_year.month2_df$fMonth<-factor(E_year.month2_df$Month)
@@ -214,22 +190,22 @@ levels(E_year.month2_df$fMonth) <- list("Jan" = c("01"), "Feb" = c("02"), "Mar" 
                                         "Oct" = c("10"), "Nov" = c("11"), "Dec" = c("12"))
 
 E_year.month2_df$Season<-factor(E_year.month2_df$fMonth)
-levels(E_year.month2_df$Season)<-list("Dry" = c("Jan", "Feb", "Mar", "Apr", "May", "Nov", "Dec"), 
-                                      "Wet" = c("Jun", "Jul", "Aug", "Sep", "Oct"))
+levels(E_year.month2_df$Season)<-list("Dry" = c("Jan", "Feb", "Mar", "Apr", "Nov", "Dec"), 
+                                      "Wet" = c("May", "Jun", "Jul", "Aug", "Sep", "Oct"))
 
 ### save things as is...
-write.csv(E_year.month2_df, "Eadj_2012_2023_SRSnook_MW_01_07_2024.csv")
-### read into excel and enter water year by hand... kind of confusing and dont know how to do using actual code
-
-### in excel... added water years, included wYear 2011... since it contained e adjusted values corresponded to large # of isotope samples... however, we only have dry 2011 edaj values (four months of dry season values) so wYear 2011 will need to be removed for plotting... further, we only have e adj values for very beginning of wYear 2021...(i.e., wet season) -> completely removed these values because they will plot alone AND gives us no information for trophic questions... once again, remove wYear 2011 for plotting but keep values for future comparisons
+write.csv(E_year.month2_df, "Eadj_2012_2023_SRSnook_MW_01_08_2024.csv")
+### read into excel and enter water year and month by hand... 
+### simpler than coding in
+### dropped wYear 2011 & 2023 as they only had a handful of observations
 
 ### read in revised csv file with water year appropriately categorized
-E_year.month2_df <- read.csv("Eadj_wYEAR_2011_2023_SRSnook_MW_01_07_2024.csv")
+E_year.month2_df <- read.csv("Eadj_wYear_2012_2023_SRSnook_MW_01_08_2024.csv")
 str(E_year.month2_df)
 ### make sure that wYear and season is a factor with levels
-E_year.month2_df$wYear<-factor(E_year.month2_df$wYear, levels = c("2011", "2012", "2013", "2014", 
+E_year.month2_df$wYear<-factor(E_year.month2_df$wYear, levels = c("2012", "2013", "2014", 
                                                                   "2015", "2016", "2017", "2018", 
-                                                                  "2019", "2020", "2021", "2022", "2023"))
+                                                                  "2019", "2020", "2021", "2022"))
 
 E_year.month2_df$Season<-factor(E_year.month2_df$Season, levels = c("Wet", "Dry"))
 
@@ -240,10 +216,20 @@ Eadj_WETvDRY_Annual = E_year.month2_df %>%
                 Eadj_Seasonal_Min = min(Eadj),
                 Eadj_Seasonal_Max = max(Eadj))
 
-write.csv(Eadj_WETvDRY_Annual, "Eadj_WETvDRY_Annual_01_07_2024.csv")
+write.csv(Eadj_WETvDRY_Annual, "Eadj_WETvDRY_Annual_01_08_2024.csv")
 
-E_year.month2_df <- read_csv("Eadj_WETvDRY_Annual_01_07_2024.csv")
+# E_year.month2_df <- read_csv("Eadj_WETvDRY_Annual_01_07_2024.csv")
 
+################################################################################
+################################################################################
+
+E_year.month2_df <- read_csv("Eadj_wYear_2012_2023_SRSnook_MW_01_08_2024.csv")
+
+E_year.month2_df$Season<-factor(E_year.month2_df$Season, levels = c("Wet", "Dry"))
+
+E_year.month2_df$wYear<-factor(E_year.month2_df$wYear, levels = c("2012", "2013", "2014", 
+                                                                  "2015", "2016", "2017", "2018", 
+                                                                  "2019", "2020", "2021", "2022"))
 ### PLOT SEASONAL EADJ VALUES (IE DRY VS WET)
 
 plot1 <- ggplot(E_year.month2_df, aes(x=Season, y=Eadj, fill=Season)) +
@@ -261,13 +247,14 @@ plot1 <- ggplot(E_year.month2_df, aes(x=Season, y=Eadj, fill=Season)) +
       theme(axis.title = element_text(size=16,face="bold", color = "black")) +
       theme(legend.position = "none")
 
-# ggsave(filename='figures/WETvDRY_withWY2011and2023_Eadj_MW_01_07_2024.png', 
+# ggsave(filename='figures/WETvDRY_Eadj_MW_01_08_2024.png',
 #        plot = last_plot(),
 #        scale = 2.5,
 #        width = 9,
 #        height = 5,
 #        units = c("cm"),
 #        dpi = 300)
+
 
 ### PLOT SEASONAL EADJ VALUES (IE DRY VS WET BUT FOR EACH YEAR)
 
@@ -288,7 +275,7 @@ plot2 <- ggplot(E_year.month2_df, aes(x=wYear, y=Eadj, fill=Season)) +
       theme(legend.text = element_text(size=16, face="bold", color = "black")) +
       theme(legend.position = c(0.9, 0.9))
 
-# ggsave(filename='figures/WETvDRY_withWY2011and2023_Eadj_Annual_MW_01_07_2024.png',
+# ggsave(filename='figures/WETvDRY_SEASONAL_Eadj_Annual_MW_01_08_2024.png',
 #        plot = last_plot(),
 #        scale = 2.5,
 #        width = 9,
@@ -296,90 +283,33 @@ plot2 <- ggplot(E_year.month2_df, aes(x=wYear, y=Eadj, fill=Season)) +
 #        units = c("cm"),
 #        dpi = 300)
 
-### For plotting purposes, get ride of wYear 2011 and 2023... has good dry season values, but not great wet season... will look funky... remove and plot below using the subset
-
-E_year.month2_df <- E_year.month2_df %>%
-      filter(!row_number() %in% c(1,2,3,4,137,138))
-
-### looks good! Got ride of wYear 2011 (really just dry 2011)
-
-### PLOT SEASONAL EADJ VALUES (IE DRY VS WET)
-
-plot3 <- ggplot(E_year.month2_df, aes(x=Season, y=Eadj, fill=Season)) +
-      geom_boxplot(width =0.8) +
-      scale_fill_manual(values = c("cadetblue", "darkgoldenrod")) +
-      labs(x = "Season", 
-           y = "Individual Specialization (Eadj)") +
-      theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
-            panel.background = element_blank(), axis.line = element_line(colour = "black")) + 
-      theme(plot.title = element_text(hjust = 0.5)) +
-      theme(plot.title = element_text(size=14, face="bold", color = "black")) +
-      theme(axis.text = element_text(size=16,face="bold", color = "black")) +
-      theme(axis.text.x = element_text(size=16,face="bold", color = "black")) +
-      theme(axis.text.y = element_text(size=16,face="bold", color = "black")) +
-      theme(axis.title = element_text(size=16,face="bold", color = "black")) +
-      theme(legend.position = "none")
-
-# ggsave(filename='figures/WETvDRY_withoutWY20112023_Eadj_MW_01_07_2024.png',
-#        plot = last_plot(),
-#        scale = 2.5,
-#        width = 9,
-#        height = 5,
-#        units = c("cm"),
-#        dpi = 300)
-
-
-### PLOT SEASONAL EADJ VALUES (IE DRY VS WET BUT FOR EACH YEAR)
-
-plot4 <- ggplot(E_year.month2_df, aes(x=wYear, y=Eadj, fill=Season)) +
-      geom_boxplot(width =0.8) +
-      scale_fill_manual(values = c("cadetblue", "darkgoldenrod")) +
-      labs(x = "Water Year", 
-           y = "Individual Specialization (Eadj)") +
-      theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
-            panel.background = element_blank(), axis.line = element_line(colour = "black")) + 
-      theme(plot.title = element_text(hjust = 0.5)) +
-      theme(plot.title = element_text(size=14, face="bold", color = "black")) +
-      theme(axis.text = element_text(size=16,face="bold", color = "black")) +
-      theme(axis.text.x = element_text(size=16,face="bold", color = "black")) +
-      theme(axis.text.y = element_text(size=16,face="bold", color = "black")) +
-      theme(axis.title = element_text(size=16,face="bold", color = "black")) +
-      theme(legend.title = element_blank()) +
-      theme(legend.text = element_text(size=16, face="bold", color = "black")) +
-      theme(legend.position = c(0.9, 0.9))
-
-# ggsave(filename='figures/WETvDRY_withoutWY20112023_Eadj_Annual_MW_01_07_2024.png',
-#        plot = last_plot(),
-#        scale = 2.5,
-#        width = 9,
-#        height = 5,
-#        units = c("cm"),
-#        dpi = 300)
-
-
-all <- read_csv("spatsim_eadj_snook_water_year_2012thru2022_01072024.csv")
-
-all <- all |> 
+dat <- E_year.month2_df |> 
       mutate(date = ym(Year.Month))
 
-ggplot(all, aes(date, Eadj)) +
+plot3 <- ggplot(dat, aes(date, Eadj)) +
       geom_point(size = 2) +
       facet_wrap(~wYear, scales = "free_x")+
       geom_smooth()
 
-library(mgcv)
+# ggsave(filename='figures/facet_eadj_smoothed_MW_01_08_2024.png',
+#        plot = last_plot(),
+#        scale = 2.5,
+#        width = 12,
+#        height = 5,
+#        units = c("cm"),
+#        dpi = 300)
 
-all$date_num <- as.numeric(all$date)
-glimpse(all) #makes date numeric for ts 
+dat$date_num <- as.numeric(dat$date)
+glimpse(dat) #makes date numeric for ts 
 
-m1 <- gam(Eadj ~ s(date, bs = "cc", k = 12, by = wYear) + s(wYear, bs = "cr") + Season, 
-          data = all,
-          family = betar(link = "logit"), 
-          method = "REML")
-
-summary(m1)
-
-all$wYearFACT <- as.factor(all$wYear)
+# m1 <- gam(Eadj ~ s(date, bs = "cc", k = 12, by = wYear) + s(wYear, bs = "cr") + Season, 
+#           data = dat,
+#           family = betar(link = "logit"), 
+#           method = "REML")
+# 
+# summary(m1)
+# 
+# all$wYearFACT <- as.factor(all$wYear)
 
 # all_test = all |> 
 #       mutate(wMonth = if_else(
@@ -403,48 +333,48 @@ all$wYearFACT <- as.factor(all$wYear)
 #       ))
 
 #also going to need to change wYear
+# 
+# m2 <- gam(Eadj ~ s(date_num, bs = "cr", k = 12, by = wYearFACT) + s(wYear, bs = "cr") + Season, 
+#           data = all,
+#           family = betar(link = "logit"), 
+#           method = "REML")
+# 
+# summary(m2)
+# 
+# ggplot(all, aes(date_num, Eadj)) +
+#       geom_point(size = 2) +
+#       facet_wrap(~wYearFACT, scales = "free_x")+
+#       geom_smooth()
+# 
+# ggplot(all, aes(date, Eadj)) +
+#       geom_point(size = 2) +
+#       facet_wrap(~wYear, scales = "free_x")+
+#       geom_smooth()
 
-m2 <- gam(Eadj ~ s(date_num, bs = "cr", k = 12, by = wYearFACT) + s(wYear, bs = "cr") + Season, 
-          data = all,
-          family = betar(link = "logit"), 
-          method = "REML")
+# m3 <- gam(Eadj ~ s(wMonth, bs = "cr", k = 12, by = wYear) + s(date_num, bs = "cr") + Season, 
+#           data = all,
+#           family = betar(link = "logit"), 
+#           method = "REML")
 
-summary(m2)
-
-ggplot(all, aes(date_num, Eadj)) +
-      geom_point(size = 2) +
-      facet_wrap(~wYearFACT, scales = "free_x")+
-      geom_smooth()
-
-ggplot(all, aes(date, Eadj)) +
-      geom_point(size = 2) +
-      facet_wrap(~wYear, scales = "free_x")+
-      geom_smooth()
-
-m3 <- gam(Eadj ~ s(wMonth, bs = "cr", k = 12, by = wYearFACT) + s(date_num, bs = "cr") + Season, 
-          data = all,
-          family = betar(link = "logit"), 
-          method = "REML")
+### model 3 - we liked last meeting
 
 m3 <- gam(Eadj ~ s(wMonth, bs = "cc", k = 12) + s(date_num), 
-          data = all_test,
+          data = dat,
           family = betar(link = "logit"), 
           method = "REML")
 
-summary(m3)
+summary(m3) #deviance explained increased after revising wYear/wMonth with May in Wet
 plot(m3)
 
+### model 4 - we also liked last meeting
+
 m4 <- gam(Eadj ~ s(wMonth, bs = "cc", k = 12) + s(wYear), 
-          data = all_test,
+          data = dat,
           family = betar(link = "logit"), 
           method = "REML")
 
 summary(m4)
 plot(m4)
-
-# we like model
-
-# gonna switch it up to where wet season is May (i.e., rainfall based first month of wet)
 
 all_test$wYear.Month = all_test$wYear + (all_test$wMonth/12) - (1/12)
 glimpse(all_test)

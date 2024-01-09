@@ -10,7 +10,7 @@
 librarian::shelf(tidyverse, hypervolume, MixSIAR, readr, 
                  writexl, ggpubr, ggthemes, ggplot2)
 
-df = read_csv("snook_ss01082024_final.csv") |> 
+df = read_csv("snook_ss01082024_final_UpdatedwYear.csv") |> 
       pivot_wider(names_from = source,
                   values_from = mean) |> 
       mutate(across(Estuarine:Seagrass, scale)) |> 
@@ -32,12 +32,12 @@ df$hv_size
 
 df |> 
       select(year, hv_size) |> 
-      write_csv("hv_sss_01082024.csv")
+      write_csv("hv_sss_01082024_UpdatedwYear.csv")
 
 dat <- read_csv("hv_sss_01082024.csv") |> 
       rename(wYear = year) |> 
       left_join(mix_summary) |> 
-      write_csv("hv_size_with_sample_size_01082024.csv")
+      write_csv("hv_size_with_sample_size_01082024_UpdatedwYear.csv")
 
 ggplot(dat, aes(wYear, hv_size))+
       geom_point(size = 2.5)+

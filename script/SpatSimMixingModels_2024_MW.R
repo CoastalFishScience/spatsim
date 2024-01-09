@@ -14,7 +14,7 @@ options(expressions=500000) #saw note online that this could help with output is
 
 # check out mixing file ---------------------------------------------------
 
-mixcheck <- read_csv("data/mix_formatted_01072024_ALL.csv")
+mixcheck <- read_csv("data/mix_formatted_01082024_ALL.csv")
 glimpse(mixcheck)
 
 mix_summary <- mixcheck |> 
@@ -37,7 +37,7 @@ glimpse(TDFcheck)
 
 # set up mixing file ------------------------------------------------------
 
-mix = load_mix_data(file("data/mix_formatted_01072024_ALL.csv"),
+mix = load_mix_data(file("data/mix_formatted_01082024_ALL.csv"),
                     iso_names=c("d13C","d15N","d34S"),
                     factors= c("wYear", "ID"),
                     fac_random=c(F,T), #water year is nonrandom, id is random
@@ -60,8 +60,8 @@ discr = load_discr_data(file("data/snook_agg_nona_UPDATED.csv"), mix)
 
 # Generate Isospace Plot --------------------------------------------------
 
-plot_data(filename="isospace_plot_01_08_2024", plot_save_pdf=TRUE, 
-          plot_save_png=TRUE, mix, source, discr)
+# plot_data(filename="isospace_plot_01_08_2024", plot_save_pdf=TRUE, 
+#           plot_save_png=TRUE, mix, source, discr)
 
 # Write and Run Jags Model ------------------------------------------------
 ### set up model
@@ -74,8 +74,8 @@ write_JAGS_model(model_filename, resid_err, process_err, mix, source)
 jags.sss = run_model(run= "normal", mix, source, discr, model_filename,
                      alpha.prior = 1, resid_err, process_err)
 
-# save(jags.sss, file = "SpatSimRJags01082024.RData")
-#load("SpatSimRJags01082024.RData") #model run on normal saved since it takes time
+save(jags.sss, file = "SpatSimRJags01082024_UpdatedWwYear.RData")
+#load("SpatSimRJags01082024_UpdatedWwYear.RData") #model run on normal saved since it takes time
 # Process JAGS output
 
 ### everything besides summary saved
@@ -103,8 +103,8 @@ jags.sss = run_model(run= "normal", mix, source, discr, model_filename,
 # output_JAGS(jags.sss, mix, source, output_sss_NORMAL)
 
 ###normal output list
-output_sss_try = list(summary_save = TRUE,
-                         summary_name = "snook_ss01082024_NORMAL_CRRCT",
+output_sss = list(summary_save = TRUE,
+                         summary_name = "snook_ss01082024_NORMAL_Updated",
                          sup_post = FALSE,
                          plot_post_save_pdf = FALSE,
                          plot_post_name = "lower_posterior_density",
@@ -118,10 +118,10 @@ output_sss_try = list(summary_save = TRUE,
                          heidel = FALSE,
                          geweke = TRUE,
                          diag_save = TRUE,
-                         diag_name = "snook_diag_01082024_NORMAL_CRRCT",
+                         diag_name = "snook_diag_01082024_NORMAL_Updated",
                          indiv_effect = FALSE,
                          plot_post_save_png = F,
                          plot_pairs_save_png = FALSE,
                          plot_xy_save_png = FALSE)
 
-output_JAGS(jags.sss, mix, source, output_sss_try)
+output_JAGS(jags.sss, mix, source, output_sss)
