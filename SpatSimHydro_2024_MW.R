@@ -11,77 +11,76 @@ librarian::shelf(tidyverse, dataRetrieval, ggplot2, lubridate,
                  reshape, reshape2, ggeffects)
 
 
-#Bottle Creek Gage Height near Rookery Branch, Everglades NPS 
-siteNumber <- "022908295" # found here https://waterdata.usgs.gov/monitoring-location/022908295/#parameterCode=00065&period=P7D
-ChoptankInfo <- readNWISdata(022908295) # don't mind warning, or error, still works
-parameterCd <- "00065" # parameter codes listed here -> http://water.nv.gov/hearings/past/Spring%20Valley%202006/exhibits/SNWA/5__Hydrochemistry_and_Geochemistry/Data/USGS/USGS_NWIS/ParameterCodes.htm
+# #Bottle Creek Gage Height near Rookery Branch, Everglades NPS 
+# siteNumber <- "022908295" # found here https://waterdata.usgs.gov/monitoring-location/022908295/#parameterCode=00065&period=P7D
+# ChoptankInfo <- readNWISdata(022908295) # don't mind warning, or error, still works
+# parameterCd <- "00065" # parameter codes listed here -> http://water.nv.gov/hearings/past/Spring%20Valley%202006/exhibits/SNWA/5__Hydrochemistry_and_Geochemistry/Data/USGS/USGS_NWIS/ParameterCodes.htm
+# 
+# BC_GH_data <- readNWISdv(
+#       siteNumber, parameterCd,
+#       "2012-05-01", "2023-04-30"
+# )
+# 
+# head(BC_GH_data)
+# 
+# botcreekGH <- BC_GH_data |> 
+#       mutate(w_lev = X_00065_00003) |> 
+#       mutate(s_date = Date) |>
+#       mutate(w_lev_m = w_lev*0.3048) |> 
+#       select(s_date, w_lev, w_lev_m) 
+# glimpse(botcreekGH)
+# summary(botcreekGH)
+#
 
-BC_GH_data <- readNWISdv(
-      siteNumber, parameterCd,
-      "2012-05-01", "2023-04-30"
-)
+# read in csv file which was corrected for elevation on previous project
+mo215 <- read_csv("data/mo215_elevation_corrected_water_levels.csv") |> 
+      select(-season)
+glimpse(mo215)
 
-head(BC_GH_data)
+# specify the date range for analysis
+start_date <- as.Date("2012-05-01") #start date
+end_date <- as.Date("2023-04-30") #end date
 
-botcreekGH <- BC_GH_data |> 
-      mutate(w_lev = X_00065_00003) |> 
-      mutate(s_date = Date) |>
-      mutate(w_lev_m = w_lev*0.3048) |> 
-      select(s_date, w_lev, w_lev_m) 
-glimpse(botcreekGH)
-summary(botcreekGH)
+# 
+mo215 <- mo215 %>%
+      filter(date >= start_date, date <= end_date) |> # filters dates
+      mutate(year = year(date),
+             month = month(date),
+             day = day(date)) #generates year, month, and day column
 
-dat <- botcreekGH |> 
-      mutate(date = as.Date(s_date), format = "%Y-%m-%d",
-             year = year(s_date),
-             month = month(s_date),
-             day = day(s_date))
+glimpse(mo215)
 
-dat$YearMonth <- paste(year(dat$date), 
-                             month(dat$date, 
-                                   label = FALSE, abbr = FALSE), 
-                             sep = "-")
-glimpse(dat)
+mo215$YearMonth <- paste(year(mo215$date),
+                             month(mo215$date,
+                                   label = FALSE, abbr = FALSE),
+                             sep = "-") #create YearMonth column
 
-# need to impute missing data?
-# confirm using bottle creek? maybe use both bottle creek and MO-215
-# need to correct from feet to cm
+mo215$YearMonth_Date <- as.Date(paste(mo215$YearMonth, "-01", sep = ""), 
+                                 format = "%Y-%m-%d")
 
-hydro <- dat |>
+glimpse(mo215)
+
+hydro <- mo215 |>
       group_by(YearMonth) |> 
-      mutate(monthly_mean_wl = mean(w_lev)) |> 
+      mutate(monthly_mean_stage_cm = mean(stage_cm)) |> 
       ungroup() |> 
-      arrange(YearMonth) |> 
+      # arrange(YearMonth) |> 
+      # group_by(YearMonth) |> 
+      # mutate(monthly_mean_stage_cm_prev = lag(monthly_mean_stage_cm)) |> 
+      # ungroup() |> 
       group_by(YearMonth) |> 
-      mutate(monthly_mean_wl_previous = lag(mean(w_lev))) |> 
-      ungroup() |> 
-      group_by(YearMonth) |> 
-      mutate(DaysBelow30 = sum(w_lev < 30, na.rm = TRUE)) |> 
+      mutate(DaysBelow30 = sum(stage_cm < 30, na.rm = TRUE)) |> 
       ungroup()
 
-# BC_gheight_plot <- ggplot(botcreekGH, aes(x=as.Date(s_date), y = as.numeric(w_lev_m), group = 1)) +
-#       geom_line(color = "black", linewidth = 0.5) +
-#       geom_point(size = 1.0) +
-#       geom_smooth() +
-#       # facet_wrap(~Site) +
-#       labs(x = "Sample Date",
-#            y = "Gage Height (m)",
-#            title = "Marsh Water Levels") +
-#       theme(panel.grid.major = element_blank(),
-#             panel.background = element_blank(),
-#             axis.line = element_line(colour = "black"),
-#             plot.title = element_text(hjust = 0.5, size=14, face="bold", color = "black"),
-#             # axis.text = element_text(size=12,face="bold", color = "black"),
-#             axis.title = element_text(size=12,face="bold", color = "black"),
-#             axis.text.x = element_text(angle = 45, hjust = 1., vjust = 1.1, face = "bold"),axis.text = element_text(color="black"),
-#             panel.grid.minor = element_blank(),legend.position = "none") +
-#       scale_x_date(date_labels = "%Y",breaks ='1 year')
-# BC_gheight_plot
+hydro_sum <- hydro |> 
+      group_by(YearMonth_Date) |> 
+      summarise(daysbelow30 = mean(DaysBelow30),
+                monthly_mean_stage_cm = mean(monthly_mean_stage_cm))
 
-# ggsave(filename='lter cnd wg projects/plots/bottlecreek_GH.png',
-#        plot = last_plot(),
-#        scale = 2.5,
-#        width = 11,
-#        height = 5,
-#        units = c("cm"),
-#        dpi = 300)
+hydro_sum <- hydro_sum |> 
+      arrange(YearMonth_Date) |> 
+      group_by(YearMonth_Date) |> 
+      mutate(monthly_mean_stage_cm_prev = lag(monthly_mean_stage_cm))
+      
+
+write_csv(hydro_sum, "data/mo215_hydro_summary_01_11_2024.csv")
