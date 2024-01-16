@@ -139,8 +139,8 @@ list.tags <- group_by(snook.90day.x, ID, Year)%>%
       summarise(Total.Det = sum(!is.na(Datetime_UTC)),
                 Total.Yr.Month = length(unique(fYear.Month)))
 
-write.csv(tags.summary, "tags.summary_spatsim_01082024.csv")
-write.csv(list.tags, "list.tags_spatsim_01082024.csv")
+# write.csv(tags.summary, "tags.summary_spatsim_01082024.csv")
+# write.csv(list.tags, "list.tags_spatsim_01082024.csv")
 
 
 #Creating the number of days as a metric of habitat use per ID|Zone|Year|Year.Month
@@ -291,6 +291,16 @@ plot3 <- ggplot(dat, aes(date, Eadj)) +
       facet_wrap(~wYear, scales = "free_x")+
       geom_smooth()
 
+plot4 <- ggplot(dat, aes(date, Eadj)) +
+      geom_point(size = 3, aes(color = Season)) +
+      # facet_wrap(~wYear, scales = "free_x")+
+      geom_path()
+
+# plot4 <- ggplot(dat, aes(date, Eadj)) +
+#       geom_point(size = 3, aes(color = Season)) +
+#       # facet_wrap(~wYear, scales = "free_x")+
+#       geom_path()
+
 # ggsave(filename='figures/facet_eadj_smoothed_MW_01_08_2024.png',
 #        plot = last_plot(),
 #        scale = 2.5,
@@ -394,4 +404,7 @@ glimpse(all_test)
 
 # Revisions for Monday (January 15) ---------------------------------------
 
+# - summary stats by dry season for eadj size & hypervolume into new dataset
+# - # tack on # of inds that went into each of the hyperpvolume calculations.
+# - # look at correlation between eadj and sample size 
 
