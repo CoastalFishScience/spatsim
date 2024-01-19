@@ -429,7 +429,7 @@ glimpse(snook_obs)
 dat_all <- left_join(dat, snook_obs, by = "Year.Month")
 glimpse(dat_all)
 
-# run correlation here for eadj and eadj sample size
+# run correlation here for eadj and eadj sample size kjhkjg
 
 #colored by year
 ggplot(dat_all, aes(x = eadj_n, y = Eadj, color = wYear)) + 
