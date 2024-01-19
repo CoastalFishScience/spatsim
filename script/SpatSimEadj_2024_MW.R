@@ -158,6 +158,10 @@ snook_yrd_zones<-subset(snook_yrd_zones, fYear.Month != "NA")
 snook_yrd_zones2<-subset(snook_yrd_zones, Zone != "NA")
 
 ##Create list of tracks vs receivers listed by year.month
+##Using E adjust from Zaccarelli et al. R package RinSp, "which account for E bias
+##when there are few resources observations per individual"
+there are few resource observations per individual. To account
+for this bias we recommend calculating an adjusted E
 dcast.snook<-function(x){
       dcast(x, ID ~ Zone, sum, value.var = "freq.v")}
 
