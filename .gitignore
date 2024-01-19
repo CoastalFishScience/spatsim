@@ -61,3 +61,7 @@ po/*~
 
 # RStudio Connect folder
 rsconnect/
+
+# RDS files
+*.rds
+
