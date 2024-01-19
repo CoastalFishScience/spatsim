@@ -2,13 +2,6 @@
 .Rhistory
 .Rapp.history
 
-# CSV Files
-*.csv
-
-# Excel Files
-*.xlsx
-*.xls
-
 # RDS Files
 *.rds
 
