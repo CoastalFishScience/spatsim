@@ -431,7 +431,44 @@ glimpse(dat_all)
 
 # run correlation here for eadj and eadj sample size
 
-ggplot(dat_all, aes(x = eadj_n, y = Eadj)) + 
+#colored by year
+ggplot(dat_all, aes(x = eadj_n, y = Eadj, color = wYear)) + 
+      geom_point() +
+      geom_smooth(method = "lm", se = FALSE) +
+      labs(x = "Eadj Sample Size", 
+           y = "Eadj") +
+      theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+            panel.background = element_blank(), axis.line = element_line(colour = "black")) + 
+      theme(plot.title = element_text(hjust = 0.5)) +
+      theme(plot.title = element_text(size=14, face="bold", color = "black")) +
+      theme(axis.text = element_text(size=16,face="bold", color = "black")) +
+      theme(axis.text.x = element_text(size=16,face="bold", color = "black")) +
+      theme(axis.text.y = element_text(size=16,face="bold", color = "black")) +
+      theme(axis.title = element_text(size=16,face="bold", color = "black")) +
+      theme(legend.title = element_blank()) +
+      theme(legend.text = element_text(size=16, face="bold", color = "black")) +
+      theme(legend.position = c(0.9, 0.9))
+
+#colored by stage
+ggplot(dat_all, aes(x = eadj_n, y = Eadj, color = monthly_mean_stage_cm)) + 
+      geom_point() +
+      geom_smooth(method = "lm", se = FALSE) +
+      labs(x = "Eadj Sample Size", 
+           y = "Eadj") +
+      theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+            panel.background = element_blank(), axis.line = element_line(colour = "black")) + 
+      theme(plot.title = element_text(hjust = 0.5)) +
+      theme(plot.title = element_text(size=14, face="bold", color = "black")) +
+      theme(axis.text = element_text(size=16,face="bold", color = "black")) +
+      theme(axis.text.x = element_text(size=16,face="bold", color = "black")) +
+      theme(axis.text.y = element_text(size=16,face="bold", color = "black")) +
+      theme(axis.title = element_text(size=16,face="bold", color = "black")) +
+      theme(legend.title = element_blank()) +
+      theme(legend.text = element_text(size=16, face="bold", color = "black")) +
+      theme(legend.position = c(0.9, 0.9))
+
+#colored by season
+ggplot(dat_all, aes(x = eadj_n, y = Eadj, color = Season)) + 
       geom_point() +
       geom_smooth(method = "lm", se = FALSE) +
       labs(x = "Eadj Sample Size", 
