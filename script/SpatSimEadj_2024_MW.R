@@ -132,6 +132,12 @@ snook.90day <- filter(snook2, ID %in% snook.90day$ID)
 snook.90day.x <- filter(snook.90day, Year < 2024)
 length(unique(snook.90day.x$ID))
 
+snook_obs <- snook.90day.x |> 
+      group_by(fYear.Month) |> 
+      summarise(n = n_distinct(ID))
+
+# write_csv(snook_obs, "snook_sample_size_eadj.csv")
+
 tags.summary <- group_by(snook.90day.x, Year)%>%
       summarise(n = length(unique(ID)))
 
@@ -194,7 +200,7 @@ levels(E_year.month2_df$Season)<-list("Dry" = c("Jan", "Feb", "Mar", "Apr", "Nov
                                       "Wet" = c("May", "Jun", "Jul", "Aug", "Sep", "Oct"))
 
 ### save things as is...
-write.csv(E_year.month2_df, "Eadj_2012_2023_SRSnook_MW_01_08_2024.csv")
+# write.csv(E_year.month2_df, "Eadj_2012_2023_SRSnook_MW_01_08_2024.csv")
 ### read into excel and enter water year and month by hand... 
 ### simpler than coding in
 ### dropped wYear 2011 & 2023 as they only had a handful of observations
@@ -216,7 +222,7 @@ Eadj_WETvDRY_Annual = E_year.month2_df %>%
                 Eadj_Seasonal_Min = min(Eadj),
                 Eadj_Seasonal_Max = max(Eadj))
 
-write.csv(Eadj_WETvDRY_Annual, "Eadj_WETvDRY_Annual_01_08_2024.csv")
+# write.csv(Eadj_WETvDRY_Annual, "Eadj_WETvDRY_Annual_01_08_2024.csv")
 
 # E_year.month2_df <- read_csv("Eadj_WETvDRY_Annual_01_07_2024.csv")
 
@@ -389,6 +395,8 @@ plot(m4)
 all_test$wYear.Month = all_test$wYear + (all_test$wMonth/12) - (1/12)
 glimpse(all_test)
 
+dat <- read_csv("spat_sim_allthegoods_01_15_2023.csv")
+
 # meeting next monday
 # to-do 
 # get ready the dataset of variables for models
@@ -398,6 +406,8 @@ glimpse(all_test)
 ### average stage at MO215, previous month water stage, # of days <30 cm monthly
 # finish HVs
 
+dat <- read_csv("spat_sim_allthegoods_01_15_2023.csv")
+
 ###############################################################################
 ###############################################################################
 ###############################################################################
@@ -406,5 +416,81 @@ glimpse(all_test)
 
 # - summary stats by dry season for eadj size & hypervolume into new dataset
 # - # tack on # of inds that went into each of the hyperpvolume calculations.
-# - # look at correlation between eadj and sample size 
+# - # look at correlation between eadj and sample size
 
+dat <- read_csv("spat_sim_allthegoods_01_15_2023.csv") 
+glimpse(dat)
+
+snook_obs <- read_csv("snook_sample_size_eadj.csv") |> 
+      rename(Year.Month = fYear.Month,
+             eadj_n = n)
+glimpse(snook_obs)
+
+dat_all <- left_join(dat, snook_obs, by = "Year.Month")
+glimpse(dat_all)
+
+# run correlation here for eadj and eadj sample size
+
+ggplot(dat_all, aes(x = eadj_n, y = Eadj)) + 
+      geom_point() +
+      geom_smooth(method = "lm", se = FALSE) +
+      labs(x = "Eadj Sample Size", 
+           y = "Eadj") +
+      theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+            panel.background = element_blank(), axis.line = element_line(colour = "black")) + 
+      theme(plot.title = element_text(hjust = 0.5)) +
+      theme(plot.title = element_text(size=14, face="bold", color = "black")) +
+      theme(axis.text = element_text(size=16,face="bold", color = "black")) +
+      theme(axis.text.x = element_text(size=16,face="bold", color = "black")) +
+      theme(axis.text.y = element_text(size=16,face="bold", color = "black")) +
+      theme(axis.title = element_text(size=16,face="bold", color = "black")) +
+      theme(legend.title = element_blank()) +
+      theme(legend.text = element_text(size=16, face="bold", color = "black")) +
+      theme(legend.position = c(0.9, 0.9))
+
+dat_summary <- dat |> 
+      group_by(wYear, Season) |> 
+      summarise(mean_e = mean(Eadj),
+                min_e = min(Eadj),
+                max_e = max(Eadj),
+                hv_size = mean(hv_size),
+                hv_n = mean(hv_n)) |> 
+      filter(Season == "Dry")
+
+# run correlation here for hv_size and hv_size sample size
+
+ggplot(dat_summary, aes(x = hv_n, y = hv_size)) + 
+      geom_point() +
+      geom_smooth(method = "lm", se = FALSE) +
+      labs(x = "Hypervolume Sample Size", 
+           y = "Niche Volume") +
+      theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+            panel.background = element_blank(), axis.line = element_line(colour = "black")) + 
+      theme(plot.title = element_text(hjust = 0.5)) +
+      theme(plot.title = element_text(size=14, face="bold", color = "black")) +
+      theme(axis.text = element_text(size=16,face="bold", color = "black")) +
+      theme(axis.text.x = element_text(size=16,face="bold", color = "black")) +
+      theme(axis.text.y = element_text(size=16,face="bold", color = "black")) +
+      theme(axis.title = element_text(size=16,face="bold", color = "black")) +
+      theme(legend.title = element_blank()) +
+      theme(legend.text = element_text(size=16, face="bold", color = "black")) +
+      theme(legend.position = c(0.9, 0.9))
+
+# run correlation here for hv_size and mean_e
+
+ggplot(dat_summary, aes(x = mean_e, y = hv_size)) + 
+      geom_point() +
+      geom_smooth(method = "lm", se = FALSE) +
+      labs(x = "Eadj Dry Season Mean", 
+           y = "Niche Volume") +
+      theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+            panel.background = element_blank(), axis.line = element_line(colour = "black")) + 
+      theme(plot.title = element_text(hjust = 0.5)) +
+      theme(plot.title = element_text(size=14, face="bold", color = "black")) +
+      theme(axis.text = element_text(size=16,face="bold", color = "black")) +
+      theme(axis.text.x = element_text(size=16,face="bold", color = "black")) +
+      theme(axis.text.y = element_text(size=16,face="bold", color = "black")) +
+      theme(axis.title = element_text(size=16,face="bold", color = "black")) +
+      theme(legend.title = element_blank()) +
+      theme(legend.text = element_text(size=16, face="bold", color = "black")) +
+      theme(legend.position = c(0.9, 0.9))
