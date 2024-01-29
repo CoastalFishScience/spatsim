@@ -1,0 +1,22 @@
+
+Family: Beta regression(32.843) 
+Link function: logit 
+
+Formula:
+Eadj ~ s(wMonth, bs = "cc", k = 10) + s(wYear)
+
+Parametric coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  0.23217    0.03043   7.629 2.36e-14 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Approximate significance of smooth terms:
+            edf Ref.df Chi.sq p-value    
+s(wMonth) 3.808  8.000  64.17  <2e-16 ***
+s(wYear)  6.356  7.522  42.13  <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+R-sq.(adj) =  0.456   Deviance explained = 50.1%
+-REML = -122.6  Scale est. = 1         n = 132

@@ -1,0 +1,7 @@
+Random effect variances not available. Returned R2 does not account for random effects.
+# Comparison of Model Performance Indices
+
+Name          |   Model |  AIC (weights) | AICc (weights) |  BIC (weights) |  RMSE |  Sigma | R2 (cond.) | R2 (marg.) |    R2
+-----------------------------------------------------------------------------------------------------------------------------
+q2.glm.Lstage | glmmTMB | -217.7 (0.437) | -217.5 (0.463) | -209.1 (0.878) | 0.104 | 21.901 |            |      0.034 |      
+q2.gam.Lstage |     gam | -218.2 (0.563) | -217.8 (0.537) | -205.1 (0.122) | 0.103 |  1.000 |            |            | 0.175
