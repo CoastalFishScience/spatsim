@@ -36,11 +36,11 @@ library(ggeffects)
 ###
 
 #all data
-sim = read_csv("./data/spat_sim_allthegoods_01_15_2023.csv")
+sim = read_csv("data/spat_sim_allthegoods_01_30_2024.csv")
 glimpse(sim)
 
 #sample size info
-nsize = read_csv("./data/snook_sample_size_eadj.csv") |>  
+nsize = read_csv("data/snook_sample_size_eadj.csv") |>  
       dplyr::rename(Year.Month = fYear.Month, eadj_n = n)
 glimpse(nsize)
 
