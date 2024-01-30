@@ -24,30 +24,31 @@ mix_summary <- mixcheck |>
 glimpse(mix_summary)
 
 ###january 29 -> checking to see if filtered properly... it was not!
-### filtering based on 3-month below:
+### filtering based on 3-month below: updated to two month filter on jan 30th!
 mixcheck_filtered <- mixcheck |> 
-      filter(Month %in% c("Mar", "Apr", "May", "Jun", "Jul"))
+      filter(Month %in% c("Jan", "Feb", "Mar", "Apr", "May", "Jun")) #two month integration/lag on wet season
 
 mix_summary_filtered <- mixcheck_filtered |> 
       group_by(wYear) |> 
       summarise(n = length(unique(ID)))
 
+# write_csv(mixcheck_filtered, "data/archive/mix_formatted_01302024_FILTERED.csv")
 # write_csv(mixcheck_filtered, "data/archive/mix_formatted_01292024_FILTERED.csv")
 ### lost 24 samples - break down below
 ### initial sample size without filtering
 
-#2011 - 12 to 9
-#2012 - 7 to 6
-#2013 - 11 to 10
-#2014 - 22 to 22
-#2015 - 0 to 0
-#2016 - 8 to 5
-#2017 - 14 to 11
-#2018 - 14 to 11
-#2019 - 4 to 2
-#2020 - 10 to 8
-#2021 - 4 to 4
-#2022 - 7 to 1
+#2011 - 12 to 9 to 
+#2012 - 7 to 6 to 
+#2013 - 11 to 10 to 
+#2014 - 22 to 22 to 
+#2015 - 0 to 0 to 
+#2016 - 8 to 5 to 
+#2017 - 14 to 11 to 
+#2018 - 14 to 11 to 
+#2019 - 4 to 2 to 
+#2020 - 10 to 8 to 
+#2021 - 4 to 4 to 
+#2022 - 7 to 1 to 
 
 # check out source file  --------------------------------------------------
 
@@ -63,7 +64,7 @@ glimpse(TDFcheck)
 
 # set up mixing file ------------------------------------------------------
 
-mix = load_mix_data(file("data/archive/mix_formatted_01292024_FILTERED.csv"),
+mix = load_mix_data(file("data/archive/mix_formatted_01302024_FILTERED.csv"),
                     iso_names=c("d13C","d15N","d34S"),
                     factors= c("wYear", "ID"),
                     fac_random=c(F,T), #water year is nonrandom, id is random
@@ -100,39 +101,19 @@ write_JAGS_model(model_filename, resid_err, process_err, mix, source)
 jags.sss = run_model(run= "long", mix, source, discr, model_filename,
                      alpha.prior = 1, resid_err, process_err)
 
-save(jags.sss, file = "data/SpatSimRJags01292024_UpdatedWwYear.RData") #-> #following filtering the 3 months
-load("data/SpatSimRJags01292024_UpdatedWwYear.RData")
+
+# save(jags.sss, file = "data/SpatSimRJags01302024_UpdatedWwYear.RData") #-> #following filtering the 3 months
+load("data/SpatSimRJags01302024_UpdatedWwYear.RData") #model run on long with 3month filter
+# save(jags.sss, file = "data/SpatSimRJags01292024_UpdatedWwYear.RData") #-> #following filtering the 3 months
+# load("data/SpatSimRJags01292024_UpdatedWwYear.RData") #model run on long with 3month filter
 # save(jags.sss, file = "SpatSimRJags01082024_UpdatedWwYear.RData") -> prior to filtering based on 3 months rule
 #load("SpatSimRJags01082024_UpdatedWwYear.RData") #model run on normal saved since it takes time
-# Process JAGS output
 
-### everything besides summary saved
-# output_sss_NORMAL = list(summary_save = TRUE,
-#                   summary_name = "snook_ss01082024_NORMAL",
-#                   sup_post = FALSE,
-#                   plot_post_save_pdf = FALSE,
-#                   plot_post_name = "lower_posterior_density",
-#                   sup_pairs = FALSE,
-#                   plot_pairs_save_pdf = FALSE,
-#                   plot_pairs_name = "lower_pairs_plot",
-#                   sup_xy = FALSE,
-#                   plot_xy_save_pdf = FALSE,
-#                   plot_xy_name = "lower_xy_plot",
-#                   gelman = FALSE, 
-#                   heidel = FALSE,
-#                   geweke = FALSE, 
-#                   diag_save = FALSE,
-#                   diag_name = "snook_diag_01082024_NORMAL",
-#                   indiv_effect = FALSE,
-#                   plot_post_save_png = F,
-#                   plot_pairs_save_png = FALSE,
-#                   plot_xy_save_png = FALSE)
-
-# output_JAGS(jags.sss, mix, source, output_sss_NORMAL)
+### Process JAGS output
 
 ###normal output list
 output_sss = list(summary_save = TRUE,
-                         summary_name = "snook_ss01292024_NORMAL_Updated",
+                         summary_name = "snook_ss01302024_NORMAL_Updated",
                          sup_post = FALSE,
                          plot_post_save_pdf = FALSE,
                          plot_post_name = "lower_posterior_density",
@@ -146,7 +127,7 @@ output_sss = list(summary_save = TRUE,
                          heidel = FALSE,
                          geweke = TRUE,
                          diag_save = TRUE,
-                         diag_name = "snook_diag_01292024_NORMAL_Updated",
+                         diag_name = "snook_diag_01302024_NORMAL_Updated",
                          indiv_effect = FALSE,
                          plot_post_save_png = F,
                          plot_pairs_save_png = FALSE,

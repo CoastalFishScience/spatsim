@@ -10,7 +10,10 @@
 librarian::shelf(tidyverse, hypervolume, MixSIAR, readr, 
                  writexl, ggpubr, ggthemes, ggplot2)
 
-df = read_csv("data/snook_ss01292024_UpdatedwYear_3monthFiltered.csv") |> 
+dat_check <- read_csv("data/snook_ss01302024_UpdatedwYear_2monthFiltered.csv")
+glimpse(dat_check)
+
+df = read_csv("data/snook_ss01302024_UpdatedwYear_2monthFiltered.csv") |> 
       pivot_wider(names_from = source,
                   values_from = mean) |> 
       mutate(across(Estuarine:Seagrass, scale)) |> 
@@ -33,14 +36,14 @@ df$hv_size
 
 df |> 
       select(year, hv_size) |> 
-      write_csv("hv_sss_01082024_UpdatedwYear.csv")
+      write_csv("hv_sss_01302024_UpdatedwYear.csv")
 
-dat <- read_csv("hv_sss_01082024.csv") |> 
+dat <- read_csv("hv_sss_01302024_UpdatedwYear.csv") |> 
       rename(wYear = year) |> 
-      left_join(mix_summary) |> 
-      write_csv("hv_size_with_sample_size_01082024_UpdatedwYear.csv")
+      left_join(mix_summary_filtered) |> #need to run mix_summary that is appropriate based on filtering job...
+      write_csv("hv_size_with_sample_size_01302024_UpdatedwYear.csv")
 
-dat <- read_csv("hv_size_with_sample_size_01082024_UpdatedwYear.csv")
+dat <- read_csv("hv_size_with_sample_size_01302024_UpdatedwYear.csv")
 
 ggplot(dat, aes(wYear, hv_size))+
       geom_point(size = 2.5)+
