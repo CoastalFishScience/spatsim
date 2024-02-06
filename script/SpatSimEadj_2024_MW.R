@@ -17,7 +17,7 @@ librarian::shelf(readr, ggplot2, car, reshape, reshape2, plyr, dplyr,
 
 # pre-processing and manipulation -----------------------------------------
 
-tracks <- read_rds("~/Library/CloudStorage/Dropbox/R/github/spatsim/data/RehageVUEdatabase_10182023.rds")
+tracks <- read_rds("~/Library/CloudStorage/Dropbox/R/github/spatsim/data/archive/RehageVUEdatabase_10182023.rds")
 glimpse(tracks)
 summary(tracks)
 
@@ -25,7 +25,7 @@ tracks$Station.Name <- as.character(tracks$Station.Name)
 tracks$Station <- tracks$Station.Name
 tracks$VUE_Name <- tracks$Station
 
-distance <- read_csv("data/Station_Distance_Updated07142020.csv")
+distance <- read_csv("data/archive/Station_Distance_Updated07142020.csv")
 glimpse(distance)
 summary(distance)
 
@@ -91,7 +91,7 @@ snook2$Receiver.ID<-factor(snook2$Receiver.ID)
 
 # Repeat Zone Delineation According to Matich et al 2017 ------------------
 
-zones<- read_csv("data/zones2019.csv")
+zones<- read_csv("data/archive/zones2019.csv")
 zones$f.Distance<-factor(zones$Distance)
 zones<-subset(zones, Zone != "NA")
 snook2<-merge(snook2, zones, by = "f.Distance", all.x = TRUE)
@@ -99,11 +99,11 @@ snook2<-merge(snook2, zones, by = "f.Distance", all.x = TRUE)
 # subset for data between 2012 and 2023
 snook2<-subset(snook2, Year > 2011 & Year < 2024)
 
-saveRDS(snook2, file = "spatsim_2012thru2023.rds")
+# saveRDS(snook2, file = "spatsim_2012thru2023.rds")
 
 ############### START BELOW ######################################################################
 
-snook2 <- readRDS("spatsim_2012thru2023.rds")
+snook2 <- readRDS("data/archive/spatsim_2012thru2023.rds")
 
 # Calculate POR metrics for each individual -------------------------------
 
@@ -136,7 +136,7 @@ snook_obs <- snook.90day.x |>
       group_by(fYear.Month) |> 
       summarise(n = n_distinct(ID))
 
-# write_csv(snook_obs, "snook_sample_size_eadj.csv")
+# write_csv(snook_obs, "tables/snook_sample_size_eadj.csv")
 
 tags.summary <- group_by(snook.90day.x, Year)%>%
       summarise(n = length(unique(ID)))
@@ -145,8 +145,8 @@ list.tags <- group_by(snook.90day.x, ID, Year)%>%
       summarise(Total.Det = sum(!is.na(Datetime_UTC)),
                 Total.Yr.Month = length(unique(fYear.Month)))
 
-# write.csv(tags.summary, "tags.summary_spatsim_01082024.csv")
-# write.csv(list.tags, "list.tags_spatsim_01082024.csv")
+# write.csv(tags.summary, "tables/tags.summary_spatsim_02052024.csv")
+# write.csv(list.tags, "tables/list.tags_spatsim_02052024.csv")
 
 
 #Creating the number of days as a metric of habitat use per ID|Zone|Year|Year.Month
@@ -160,8 +160,8 @@ snook_yrd_zones2<-subset(snook_yrd_zones, Zone != "NA")
 ##Create list of tracks vs receivers listed by year.month
 ##Using E adjust from Zaccarelli et al. R package RinSp, "which account for E bias
 ##when there are few resources observations per individual"
-there are few resource observations per individual. To account
-for this bias we recommend calculating an adjusted E
+# there are few resource observations per individual. To account
+# for this bias we recommend calculating an adjusted E
 dcast.snook<-function(x){
       dcast(x, ID ~ Zone, sum, value.var = "freq.v")}
 
