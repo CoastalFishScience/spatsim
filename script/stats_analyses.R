@@ -197,12 +197,12 @@ ggarrange(seasonal_trend, yearly_vars,
           ncol = 1, vjust = 1, align = "v")
 
 #saving for publication
-ggsave("./figs/manuscript/q1.fittedmodels.plot.tiff", units = "in", width = 6,
-       height = 10, dpi =  600, compression = "lzw")
+# ggsave("./figs/manuscript/q1.fittedmodels.plot.tiff", units = "in", width = 6,
+#        height = 10, dpi =  600, compression = "lzw")
 
 #Saving model output for publication
 summary.final.q1model<-summary(q1.m1)
-capture.output(summary.final.q1model, file="tables/summary.final.q1model.txt")
+# capture.output(summary.final.q1model, file="tables/summary.final.q1model.txt")
 
 #########Q2 - Hydrological effects############################################
 
@@ -218,12 +218,12 @@ cross_corr = sim |> select(monthly_mean_stage_cm, monthly_mean_stage_cm_prev,
                                daysbelow30) |> 
       chart.Correlation(method = "kendall", histogram=TRUE, pch=19)
 
-tiff("./figs/manuscript/covariate-corr.tiff",width = 9, height = 9, units = 'in', 
-     res = 600, compression = 'lzw')
-cross_corr = sim |> select(monthly_mean_stage_cm, monthly_mean_stage_cm_prev,
-                            daysbelow30) |> 
-      chart.Correlation(method = "kendall", histogram=TRUE, pch=19)
-dev.off()
+# tiff("./figs/manuscript/covariate-corr.tiff",width = 9, height = 9, units = 'in', 
+#      res = 600, compression = 'lzw')
+# cross_corr = sim |> select(monthly_mean_stage_cm, monthly_mean_stage_cm_prev,
+#                             daysbelow30) |> 
+#       chart.Correlation(method = "kendall", histogram=TRUE, pch=19)
+# dev.off()
 
 #Single variable model comparisons------
 sim_all = sim_all |> 
@@ -352,7 +352,7 @@ q2.gam.stage = gam(Eadj ~ s(mean_stage),
                    family = betar(link = "logit"), 
                    method = "REML")
 summary.final.q2model1<-summary(q2.gam.stage)
-capture.output(summary.final.q2model1, file="tables/summary.final.q2model1.txt")
+# capture.output(summary.final.q2model1, file="tables/summary.final.q2model1.txt")
 
 
 q2.gam.days = gam(Eadj ~ s(daysbelow30), 
@@ -360,7 +360,7 @@ q2.gam.days = gam(Eadj ~ s(daysbelow30),
                   family = betar(link = "logit"), 
                   method = "REML")
 summary.final.q2model2<-summary(q2.gam.days)
-capture.output(summary.final.q2model2, file="tables/summary.final.q2model2.txt")
+# capture.output(summary.final.q2model2, file="tables/summary.final.q2model2.txt")
 
 #daysbelow30 effects
 q2.days.vis = visreg(q2.gam.days, type = "conditional", scale = "response")
@@ -394,7 +394,10 @@ stage_vs_E<-ggplot(q2.stage.fit, aes(mean_stage, visregFit))+
       geom_line(linetype = 2, colour = "black", aes(y = visregLwr))+
       geom_line(linetype = 2, colour = "black", aes(y = visregUpr)) +
       labs(x = "River Stage (cm)", y = "Eadj")+
-      scale_x_continuous(breaks = c(0, 5, 10, 15, 20, 25, 30)) +
+      # scale_x_continuous(breaks = c(0, 5, 10, 15, 20, 25, 30)) +
+      ### x axis goes to 80, but constricted to 30 cm in above line of code
+      ### this is reason for wonky figure with shrunken x axis
+      scale_x_continuous(breaks = c(0, 10, 20, 30, 40, 50, 60, 70, 80)) +
       ylim(0.3,0.8)+
       theme(axis.text = element_text(size = 14, face = "bold", colour = "black"),
             axis.title = element_text(size = 16, face = "bold", colour = "black"),
@@ -411,8 +414,8 @@ ggarrange(stage_vs_E, days_vs_E,
           ncol = 1, vjust = 1, align = "v")
 
 #saving for publication
-ggsave("./figs/manuscript/q2.fittedmodels.plot.tiff", units = "in", width = 6,
-       height = 10, dpi =  600, compression = "lzw")
+# ggsave("./figs/manuscript/q2.fittedmodels.plot.tiff", units = "in", width = 6,
+#        height = 10, dpi =  600, compression = "lzw")
 
 
 ###############################################################################
