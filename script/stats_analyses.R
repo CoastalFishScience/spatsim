@@ -157,7 +157,7 @@ seasonal_trend<-ggplot(q1.m1.month, aes(wMonth, visregFit))+
       geom_line(linewidth = 2, colour= "black") + theme_bw()+
       geom_line(linetype = 2, colour = "black", aes(y = visregLwr))+
       geom_line(linetype = 2, colour = "black", aes(y = visregUpr)) +
-      labs(x = "Water Year Month (May-April)", y = "Eadj", title = "Seasonal trend")+
+      labs(x = "Water Year Month (May-April)", y = "Individual Specialization (Eadj)", title = "Seasonal trend")+
       scale_x_continuous(breaks = c(2, 4, 6, 8, 10, 12)) +
       ylim(0.3,0.8) +
       theme(axis.text = element_text(size = 14, face = "bold", colour = "black"), 
@@ -177,7 +177,7 @@ yearly_vars<-ggplot(q1.m1.year, aes(wYear, visregFit))+
       geom_line(size = 2, colour= "black") + theme_bw()+
       geom_line(linetype = 2, colour = "black", aes(y = visregLwr))+
       geom_line(linetype = 2, colour = "black", aes(y = visregUpr)) +
-      labs(x = "Water Year (May-April)", y = "Eadj", title = "Inter-annual trend")+
+      labs(x = "Water Year (May-April)", y = "Individual Specialization (Eadj)", title = "Inter-annual trend")+
       scale_x_continuous(breaks = c(2012, 2014, 2016, 2018, 2020, 2022)) +
       ylim(0.3,0.8)+
       theme(axis.text = element_text(size = 14, face = "bold", colour = "black"), 
@@ -196,9 +196,9 @@ ggarrange(seasonal_trend, yearly_vars,
           labels = c('a)','b)'),
           ncol = 1, vjust = 1, align = "v")
 
-#saving for publication
-# ggsave("./figs/manuscript/q1.fittedmodels.plot.tiff", units = "in", width = 6,
-#        height = 10, dpi =  600, compression = "lzw")
+# saving for publication
+ggsave("./figs/manuscript/q1.fittedmodels.plot.tiff", units = "in", width = 6,
+       height = 10, dpi =  600, compression = "lzw")
 
 #Saving model output for publication
 summary.final.q1model<-summary(q1.m1)
@@ -371,7 +371,7 @@ days_vs_E<-ggplot(q2.days.fit, aes(daysbelow30, visregFit))+
       geom_line(size = 2, colour= "black") + theme_bw()+
       geom_line(linetype = 2, colour = "black", aes(y = visregLwr))+
       geom_line(linetype = 2, colour = "black", aes(y = visregUpr)) +
-      labs(x = "Days with stage below 30 cm", y = "Eadj")+
+      labs(x = "Days with stage below 30 cm", y = "Individual Specialization (Eadj)")+
       scale_x_continuous(breaks = c(0, 5, 10, 15, 20, 25, 30)) +
       ylim(0.3,0.8)+
       theme(axis.text = element_text(size = 14, face = "bold", colour = "black"),
@@ -393,7 +393,7 @@ stage_vs_E<-ggplot(q2.stage.fit, aes(mean_stage, visregFit))+
       geom_line(size = 2, colour= "black") + theme_bw()+
       geom_line(linetype = 2, colour = "black", aes(y = visregLwr))+
       geom_line(linetype = 2, colour = "black", aes(y = visregUpr)) +
-      labs(x = "River Stage (cm)", y = "Eadj")+
+      labs(x = "River Stage (cm)", y = "Individual Specialization (Eadj)")+
       # scale_x_continuous(breaks = c(0, 5, 10, 15, 20, 25, 30)) +
       ### x axis goes to 80, but constricted to 30 cm in above line of code
       ### this is reason for wonky figure with shrunken x axis
@@ -414,9 +414,8 @@ ggarrange(stage_vs_E, days_vs_E,
           ncol = 1, vjust = 1, align = "v")
 
 #saving for publication
-# ggsave("./figs/manuscript/q2.fittedmodels.plot.tiff", units = "in", width = 6,
-#        height = 10, dpi =  600, compression = "lzw")
-
+ggsave("./figs/manuscript/q2.fittedmodels.plot.tiff", units = "in", width = 6,
+        height = 10, dpi =  600, compression = "lzw")
 
 ###############################################################################
 
