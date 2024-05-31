@@ -233,7 +233,8 @@ Eadj_WETvDRY_Annual = E_year.month2_df %>%
 ################################################################################
 ################################################################################
 
-E_year.month2_df <- read_csv("Eadj_wYear_2012_2023_SRSnook_MW_01_08_2024.csv")
+# E_year.month2_df <- read_csv("Eadj_wYear_2012_2023_SRSnook_MW_01_08_2024.csv")
+E_year.month2_df <- read_csv("data/archive/Eadj_wYear_2012_2023_SRSnook_MW_01_08_2024.csv")
 
 E_year.month2_df$Season<-factor(E_year.month2_df$Season, levels = c("Wet", "Dry"))
 
@@ -271,7 +272,7 @@ plot1 <- ggplot(E_year.month2_df, aes(x=Season, y=Eadj, fill=Season)) +
 plot2 <- ggplot(E_year.month2_df, aes(x=wYear, y=Eadj, fill=Season)) +
       geom_boxplot(width =0.8) +
       scale_fill_manual(values = c("cadetblue", "darkgoldenrod")) +
-      labs(x = "Water Year", 
+      labs(x = "Year", 
            y = "Individual Specialization (Eadj)") +
       theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
             panel.background = element_blank(), axis.line = element_line(colour = "black")) + 
@@ -285,7 +286,7 @@ plot2 <- ggplot(E_year.month2_df, aes(x=wYear, y=Eadj, fill=Season)) +
       theme(legend.text = element_text(size=16, face="bold", color = "black")) +
       theme(legend.position = c(0.9, 0.9))
 
-# ggsave(filename='figures/WETvDRY_SEASONAL_Eadj_Annual_MW_01_08_2024.png',
+# ggsave(filename='figures/WETvDRY_SEASONAL_Eadj_Annual_MW_05_31_2024.tiff',
 #        plot = last_plot(),
 #        scale = 2.5,
 #        width = 9,
