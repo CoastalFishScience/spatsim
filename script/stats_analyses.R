@@ -468,7 +468,7 @@ cor.test(dat_summary2$hv_size, dat_summary2$mean_e, method = "pearson")
 corr_all<- ggplot(dat_summary, aes(x = mean_e, y = log(hv_size))) + 
       geom_point() +
       geom_smooth(method = "lm", se = TRUE, color = "black") +
-      labs(x = "Eadj Dry Season Mean", 
+      labs(x = expression(bold('Dry Season Space Use Specialization (' *E[adj]* ')')), 
            y = "log(Niche Volume)") +
       stat_cor(p.accuracy = 0.01, r.accuracy = 0.01, label.x.npc = .5)+
       xlim(0.4,0.7) +
