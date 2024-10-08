@@ -127,9 +127,9 @@ ggsave("./figs/manuscript/supp-three-panel-corr.tiff", units = "in", width = 15,
 sim_all$Season<-factor(sim_all$Season, levels = c("Wet", "Dry"))
 
 sim_all |> 
-      ggplot(aes(x=as.factor(wYear), y=Eadj, fill=Season)) +
-      geom_boxplot(width =0.8) +
-      scale_fill_manual(values = c("cadetblue", "darkgoldenrod")) +
+      # ggplot(aes(x=as.factor(wYear), y=Eadj, fill=Season)) +
+      # geom_boxplot(width =0.8) +
+      scale_color_manual(values = c("cadetblue", "darkgoldenrod")) +
       labs(x = "Hydrologic Year", 
            y = expression(bold('Space Use Specialization (' *E[adj]* ')'))) +
       theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
@@ -146,3 +146,53 @@ sim_all |>
 
 ggsave("./figs/manuscript/supp-eadj-seasonal-boxplot.tiff", units = "in", width = 10,
        height = 6, dpi =  600, compression = "lzw")
+
+### round two figure revisions
+
+sim_all <- sim_all |> 
+      mutate(wyearmonth = paste(wYear, wMonth, sep = "-"),
+             wdate = as.Date(paste0(wyearmonth, "-01"), format = "%Y-%m-%d"),
+             regdate = as.Date(paste0(Year.Month, "/01"), format = "%Y/%m/%d"))
+
+sim_all |> 
+      ggplot(aes(x = wdate, y = Eadj, color = Season)) +
+      geom_point(size = 2) +       # Keep the points
+      geom_line(aes(group = 1), size = 1) +  # Add a line that runs through the points
+      scale_color_manual(values = c("cadetblue", "darkgoldenrod")) +
+      labs(x = "Hydrologic Year-Month", 
+           y = expression(bold('Space Use Specialization (' *E[adj]* ')'))) +
+      theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+            panel.background = element_blank(), axis.line = element_line(colour = "black")) + 
+      theme(plot.title = element_text(hjust = 0.5)) +
+      theme(plot.title = element_text(size=14, face="bold", color = "black")) +
+      theme(axis.text = element_text(size=16,face="bold", color = "black")) +
+      theme(axis.text.x = element_text(size=16,face="bold", color = "black")) +
+      theme(axis.text.y = element_text(size=16,face="bold", color = "black")) +
+      theme(axis.title = element_text(size=16,face="bold", color = "black")) +
+      theme(legend.title = element_blank()) +
+      theme(legend.text = element_text(size=16, face="bold", color = "black")) +
+      theme(legend.position = c(0.95, 0.95))
+
+# ggsave("./figs/manuscript/supp-eadj-seasonal-boxplot-roundtworevisions.tiff", units = "in", width = 10,
+#        height = 6, dpi =  600, compression = "lzw")
+# ggsave("./figs/manuscript/supp-eadj-seasonal-boxplot-roundtworevisions.png", units = "in", width = 10,
+#        height = 6, dpi =  600)
+
+# sim_all |> 
+#       ggplot(aes(x = regdate, y = Eadj, color = Season)) +
+#       geom_point(size = 2) +       # Keep the points
+#       geom_line(aes(group = 1), size = 1) +  # Add a line that runs through the points
+#       scale_color_manual(values = c("cadetblue", "darkgoldenrod")) +
+#       labs(x = "Year-Month", 
+#            y = expression(bold('Space Use Specialization (' *E[adj]* ')'))) +
+#       theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+#             panel.background = element_blank(), axis.line = element_line(colour = "black")) + 
+#       theme(plot.title = element_text(hjust = 0.5)) +
+#       theme(plot.title = element_text(size=14, face="bold", color = "black")) +
+#       theme(axis.text = element_text(size=16,face="bold", color = "black")) +
+#       theme(axis.text.x = element_text(size=16,face="bold", color = "black")) +
+#       theme(axis.text.y = element_text(size=16,face="bold", color = "black")) +
+#       theme(axis.title = element_text(size=16,face="bold", color = "black")) +
+#       theme(legend.title = element_blank()) +
+#       theme(legend.text = element_text(size=16, face="bold", color = "black")) +
+#       theme(legend.position = c(0.95, 0.95))
